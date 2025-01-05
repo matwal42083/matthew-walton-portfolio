@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/contactStyles.css" />
+    <script
+      src="https://kit.fontawesome.com/36f7f4f045.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Lobster+Two:ital,wght@1,700&family=Luckiest+Guy&family=Passion+One&family=Paytone+One&family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/36f7f4f045.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Matwal Portfolio - Contact</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img src="/images/matwalPicLogo.jpg" alt="matwal pic" />
+          <h2>
+            Matthew Walton <br />
+            (Matwal)
+          </h2>
+        </div>
+        <div class="nav">
+          <ul>
+            <li><a href="/html/index.html">Home</a></li>
+            <li><a href="/html/about.html">About</a></li>
+            <li><a href="/html/portfoilo.html">Portfolio</a></li>
+            <li><a href="/html/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="toggle-btn">
+          <a><i class="fa-regular fa-sun" id="toggle-btn"></i></a>
+        </div>
+      </div>
+    </header>
+    <nav class="breadcrumbs">
+      <ul class="crumble">
+        <li class="list-item" id="crumble1">
+          <a href="/html/index.html"><i class="fa-solid fa-house"></i>Home</a>
+        </li>
+        <li class="list-item" id="crumble2">
+          <a href="/html/about.html"
+            ><i class="fa-solid fa-exclamation-circle"></i>About</a
+          >
+        </li>
+        <li class="list-item" id="crumble3">
+          <a href="/html/portfoilo.html"
+            ><i class="fa-solid fa-diagram-project"></i>Portfolio</a
+          >
+        </li>
+        <li class="list-item" id="crumble4">
+          <a href="/html/contact.html"
+            ><i class="fa-solid fa-phone"></i>Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="flex-container">
+        <div class="flex-item1">
+          <div class="sidebar">
+            <div class="menu-bar">
+              <i class="fa-solid fa-bars" id="hamburgerBar"></i>
+              <ul class="sidebar-list">
+                <li class="sidebar-list-items">
+                  <a href="/html/index.html"><i class="fa-solid fa-house"></i>Home</a>
+                </li>
+                <li class="sidebar-list-items">
+                  <a href="/html/about.html"><i class="fa-solid fa-exclamation-circle"></i>About</a>
+                </li>
+                <li class="sidebar-list-items">
+                  <a href="/html/portfoilo.html"><i class="fa-solid fa-project-diagram"></i>Projects</a>
+                </li>
+                <li class="sidebar-list-items">
+                  <a href="/html/contact.html"><i class="fa-solid fa-phone"></i>Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex-item2">
+          <div class="contact-container">
+            <form action="/submit_form" method="post" class="contact-form">
+              <h2>Contact Form</h2>
+              <p>Please fill out the form below, If you interested in my computer abilities</p>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required />
+              </div>
+              <div class="form-group">
+                <label for="company">Company:</label>
+                <input type="text" id="company" name="company" placeholder="Your Company" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message"></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+    <div class="footer-container">
+      <p>My Social Media and GitHub</p>
+      <ul class="social-media-list">
+        <li>
+          <a href="#"><i class="fa-brands fa-square-facebook" id="fb"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-square-x-twitter" id="X"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-square-github" id="gh"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-square-reddit" id="rt"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-linkedin" id="ln"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-square-youtube" id="yt"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-mastodon" id="md"></i></a>
+          </li>
+        </li>
+      </ul>
+    </div>
+  </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

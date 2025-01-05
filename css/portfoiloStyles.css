@@ -1,0 +1,454 @@
+/* YOUR FONT FAMILY CHOICES
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Bebas Neue', sans-serif;
+*/
+/* Websites color pallet 
+   yellow - #dcd80d , light Baby Blue - #4ac6ff, Darknight Blue - #01072c */ 
+
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color:#01072c;
+ 
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid #4ac6ff;
+  background-color:#01072c;
+  
+
+}
+.nav ul {
+  list-style: none;
+  list-style-position: inside;
+  
+}
+
+.nav li {
+  display: inline;
+  margin-left:  1.5rem;
+  margin-right:  1.5rem;
+  margin-top:  0.625rem;
+}
+
+
+.nav li a {
+  text-decoration: none;
+  color: #4ac6ff;
+  font-size: 1rem;
+  border: 2px solid #4ac6ff;
+  border-radius: 5px;
+  padding: 6px 10px;
+}
+.nav li a:hover {
+ background-color: #4ac6ff;
+ border:#dcd80d 2px solid;
+ color: #01072c;
+ transition: background-color 6s ease-in-out;
+ transition: color 0.5s ease;
+}
+.nav {
+ margin-bottom: 1.5rem;
+}
+.logo {
+  margin-top: 1px;
+}
+
+.logo img {
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  margin-top: 0.1875rem;
+  margin-left: 0.625rem;
+  border: 2px solid #4ac6ff;
+
+
+}
+.logo h2 {
+  margin-left: 0.625rem;
+  margin-bottom: 5px;
+  font-size: 1.30rem;
+  float: right;
+  position: relative;
+  bottom: 0.1875rem;
+  color: #4ac6ff;
+}
+
+.toggle-btn {
+  border: 1px solid black;
+  padding: 0.3125rem 0.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  position: relative;
+  bottom: 0.1875rem;
+  background-color:#4ac6ff;
+}
+
+.toggle-btn i {
+  margin-right: 3px;
+}
+
+
+.breadcrumbs {
+  font-size: 0.810rem;
+  background-color: #dcd80d;
+  border-bottom: 2px solid #4ac6ff;
+  position: relative;
+  padding: 1px;
+  display: flex; /* Use flexbox for layout */
+  list-style: none;
+}
+
+.list-item i {
+  margin-right: 10px;
+  vertical-align: middle;
+  position: relative; /* Adjust vertical alignment */
+  left: 5px;
+}
+
+.list-item a {
+  padding-right: 4px;
+
+}
+
+.list-item a:hover {
+  border-bottom: gold 2px solid;
+  padding: 1px;
+}
+
+.breadcrumbs ul {
+  list-style: none;
+  list-style-position: inside;
+}
+
+.breadcrumbs li:first-child {
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%); /* Arrow head for the first breadcrumb */
+  border-radius: 5px 0 0 5px; /* Optional: Add rounded corners to the first breadcrumb */
+}
+
+.breadcrumbs li {
+  display: inline;
+  margin: 0rem 1.875rem 0rem 1.875rem;
+  border-radius: 5px;
+}
+.breadcrumbs li {
+  position: relative;
+  padding: 10px 20px;
+  background-color: #4ac6ff; /* Light baby blue color */
+  margin-right: 10px; /* Adjust margin to create space for the arrow */
+  color: white; /* Text color */
+  font-size: 1em;
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 0, 100% 100%, calc(100% - 20px) 100%, 0 100%, 20px 50%);
+}
+
+.breadcrumbs li:nth-child(2) {
+  position: relative;
+  padding: 10px 20px;
+  background-color: #4ac6ff; /* Light baby blue color */
+  margin-right: 10px; /* Adjust margin to create space for the arrow */
+  color: white; /* Text color */
+  font-size: 1em;
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 0, 100% 100%, calc(100% - 20px) 100%, 0 100%, 20px 50%);/* Adjusted arrow shape */
+}
+
+.breadcrumbs li:nth-child(3) {
+  margin-right: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20px 50%);
+  border-radius: 0 3px 3px 0;
+}
+
+.breadcrumbs li.sub-crumb {
+  background-color: #020b47; /* Darker background color */
+  font-size: 0.8em; /* Smaller font size */
+  padding: 8px 16px; /* Smaller padding */
+  clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%, 15px 50%); /* Adjusted arrow shape */
+}
+
+.breadcrumbs li.sub-crumb a {
+  color: #fff; /* White text color for better contrast */
+}
+
+.breadcrumbs li.sub-crumb:last-child {
+  margin-right: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 15px 50%);
+  border-radius: 0 3px 3px 0;
+}
+
+.breadcrumbs li a {
+  text-decoration: none;
+  color: black;
+}
+
+
+    .flex-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    flex: 1;
+  }
+  
+  .flex-item1 {
+    flex: 0 0 200px;
+    background-color: #01072c;
+    padding: 20px;
+    border: 1px solid ;
+    border-radius: 5px;
+    position: relative;
+    right: 20px;
+    margin-right: 30px;
+  }
+  
+  .grid-item {
+    background-color: #fff;
+  }
+  .sidebar {
+    width: 250px; /* Adjust the width of the sidebar as needed */
+  }
+  
+  .sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .sidebar .menu-bar {
+    background-color: #01072c;
+    padding: 15px;
+    position: relative;
+    bottom: 20px;
+    left: 10px;
+  
+  }
+  
+  .sidebar li {
+    display: flex;
+    background-color: #d9d9d9fc;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    border-bottom: 1px solid rgba(129, 128, 128, 0.265);
+    border-right: 1px solid rgba(87, 87, 87, 0.312);
+    border-top: 1px solid rgba(116, 116, 116, 0.102);
+    width: 100%; /* Make the list items take the full width of the sidebar */
+    padding: 5px 10px; /* Adjust padding as needed */
+    margin: 5px 0; /* Adjust margin as needed */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    border-radius: 5px;
+  }
+  .sidebar li:nth-child(3){
+    background-color: #fffc85;
+  }
+
+  .sidebar li a {
+    text-decoration: none;
+    color: black;
+    display: block; /* Make the anchor tags take the full width of the list items */
+    width: 100%; /* Ensure the anchor tag takes the full width */
+    text-align: center; /* Center the text inside the anchor tag */
+  }
+  #hamburgerBar {
+    color:#4ac6ff;
+  }
+  .sidebar li:hover {
+    background-color: #4ac6ff; /* Change background color on hover */
+    color: #01072c; /* Change text color on hover */
+    box-shadow: 0px 4px 6px #f1ee36e8;
+    border-top: 1px solid #dcd80d;
+    border-bottom: 1px solid #dcd80d;
+    border-left: 3px solid #dcd80d;
+    border-right: 3px solid #dcd80d;
+    border-radius: 5px; /* Add a box shadow on hover */
+    transform: scale(1.05); /* Slightly increase the size on hover */
+  }
+  .sidebar li:focus {
+    background-color: #2c83a867; /* Change background color on hover */
+    color: #01072c; /* Change text color on hover */
+    box-shadow: 0px 4px 6px #f1ee36e8;
+    border-top: 1px solid #dcd80d;
+    border-bottom: 1px solid #dcd80d;
+    border-left: 3px solid #dcd80d;
+    border-right: 3px solid #dcd80d;
+    border-radius: 5px; /* Add a box shadow on hover */
+    transform: scale(1.05); /* Slightly increase the size on hover */
+  }
+  
+  .sidebar li:active {
+    background-color: #8bdaff82; /* Change background color on hover */
+    color: #01072c; /* Change text color on hover */
+    box-shadow: 0px 4px 6px #f1ee36e8;
+    border-top: 1px solid #dcd80d;
+    border-bottom: 1px solid #dcd80d;
+    border-left: 3px solid #dcd80d;
+    border-right: 3px solid #dcd80d;
+    border-radius: 5px; /* Add a box shadow on hover */
+    transform: scale(1.05); /* Slightly increase the size on hover */
+  }
+  .sidebar-list-items a i {
+    margin-right: 1rem;
+    text-align: center;
+    padding: 0.625rem 1.875rem 0.625rem 0.625rem;
+  }
+  
+  .menu-bar {
+    border: 1px solid #4ac6ff;
+    border-radius: 3px;
+    padding: 0.125rem;
+    background-color: white;
+    margin-bottom: 20px;
+    width: 260px;
+  }
+
+
+  
+.flex-item2 {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .gallery-container {
+    margin-top: 20px;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .gallery-item {
+    background-color: #eee;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  .gallery-item a{
+    text-decoration: none;
+    color: black;
+  }
+  footer {
+    background-color: rgba(1, 7, 44, 0.834);
+    color: #4ac6ff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    border-top: 2px solid rgba(3, 175, 255, 0.869);
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .social-media-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0; /* Ensure there's some margin for spacing */
+  }
+  
+  .social-media-list li {
+    margin: 0 10px;
+  }
+
+  .social-media-list li {
+    margin: 0 10px;
+  }
+  
+  .social-media-list a {
+    text-decoration: none;
+    
+  }
+  #fb {
+    color:#0867ff40;
+    
+  }
+  #X {
+    color:rgba(222, 222, 222, 0.286);
+  }
+  #gh {
+    color:rgba(222, 222, 222, 0.286);
+  }
+  
+  .fa-brands {
+    font-size: 35px;
+  }
+  #ln {
+    color: rgba(0, 118, 181, 0.328);
+  }
+  #yt {
+    color:rgba(255, 0, 51, 0.307);
+  }
+  #rt {
+    color: rgba(255, 68, 0, 0.303);
+  }
+  #md {
+    color: #5948dd3d;
+  }
+  
+
+  
+  #fb:hover {
+    color:#0867ff;
+    transform: scale(1.5); 
+    transition: transform 0.3s ease-in-out, color 0.1s ease-in-out;
+    }
+  #X:hover {
+    color:rgb(255, 255, 255);
+    transform: scale(1.5); 
+    transition: transform 0.3s ease-in-out, color 0.1s ease-in-out;
+  }
+  #gh:hover {
+    color:rgb(250, 250, 250);
+    transform: scale(1.5); 
+    transition: transform 0.3s ease-in-out, color 0.1s ease-in-out;
+  }
+  
+  #ln:hover {
+    color: rgb(0, 119, 181);
+    transform: scale(1.5); 
+    transition: transform 0.3s ease-in-out, color 0.1s ease-in-out;
+  }
+  #yt:hover {
+    color:rgb(255, 0, 51);
+    transform: scale(1.5); 
+    transition: transform 0.3s ease-in-out, color 0.1s ease-in-out;
+  }
+  #rt:hover {
+    color: rgb(255, 69, 0);
+    transform: scale(1.5); 
+    transition: transform 0.3s ease-in-out, color 0.1s ease-in-out;
+  }
+  #md:hover {
+    color: #5A48DD;
+    transform: scale(1.5); 
+    transition: transform 0.3s ease-in-out, color 0.1s ease-in-out;
+  }
