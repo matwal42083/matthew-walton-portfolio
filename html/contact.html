@@ -95,19 +95,19 @@
               <p>Please fill out the form below, If you interested in my computer abilities</p>
               <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required />
+                <input type="text" id="name" name="name" placeholder="Your Name" pattern="[a-zA-Z0-9\s]" minlength="2" maxlength="50" required />
               </div>
               <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required />
+                <input type="email" id="email" name="email" placeholder="Your Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required />
               </div>
               <div class="form-group">
                 <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required />
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" pattern="^[+\d()./ -]{8,20}$" required />
               </div>
               <div class="form-group">
                 <label for="company">Company:</label>
-                <input type="text" id="company" name="company" placeholder="Your Company" />
+                <input type="text" id="company" name="company" placeholder="Your Company" pattern="^[a-zA-Z0-9\s]" required/>
               </div>
               <div class="form-group">
                 <label for="message">Message:</label>
