@@ -80,7 +80,7 @@ body {
 
 
 }
-.logo h2 {
+.logo h1 {
   margin-left: 0.625rem;
   margin-bottom: 5px;
   font-size: 1.30rem;
@@ -133,24 +133,23 @@ body {
 }
 
 .breadcrumbs li:first-child {
-  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);/* Arrow head for the first breadcrumb */
   border-radius: 3px 0 0 3px; /* Optional: Add rounded corners to the first breadcrumb */
 }
 
 .breadcrumbs li {
   display: inline;
   margin: 0rem 1.875rem 0rem 1.875rem;
-  border-right: 0.110rem solid #4ac6ff;
+ 
 
 }
 
 .breadcrumbs li {
   position: relative;
-  padding: 10px 20px;
+  padding: 5px 10px;
   background-color: #4ac6ff; /* Light baby blue color */
   margin-right: 10px; /* Adjust margin to create space for the arrow */
   font-size: 1em;
-  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 20px 50%);
+
 }
 
 .breadcrumbs li:last-child {
@@ -161,6 +160,7 @@ body {
   left: 5px;
 }
 .breadcrumbs li a {
+  border-bottom: #dcd80d 2px solid;;
   text-decoration: none;
   color: black;
 }
@@ -195,9 +195,7 @@ body {
   right: 20px;
 }
 
-.grid-item {
-  background-color: #fff;
-}
+
 .sidebar {
   width: 250px; /* Adjust the width of the sidebar as needed */
 }
@@ -319,36 +317,42 @@ body {
   border-radius: 7px;
   font-family: 'Bebas Neue', sans-serif;
 }
+
 /* Bio content*/
 .bio-content{
-  text-indent: 60px;
-  word-spacing:0.03125rem;
-  letter-spacing:0.03125rem;
-  font-family: 'Bebas Neue', sans-serif;
- 
-  padding: 10px;
-  border-radius: 10px;
+  text-indent: 2rem; /* Modernized indentation */
+  word-spacing: 0.05rem; /* Slightly increased for readability */
+  letter-spacing: 0.02rem; /* Slightly reduced for a cleaner look */
+  font-family: 'Roboto', sans-serif; /* More readable font stack -  add fallback fonts*/
+  line-height: 1.6; /* Improved line height for readability */
+  margin-bottom: 1rem; /* Consistent spacing between paragraphs */
+  padding: 1rem; /* Increased padding for better visual comfort */
+  border-radius: 5px; /* Subdued border-radius */
+  background-color: rgba(238, 238, 238, 0.4); /* Subtle background color with opacity */
 }
+
 
 /* Apply this to your .grid-item */
 .grid-item {
-  display: flex; /* Enable flexbox for vertical centering */
-  flex-direction: column; /* Align content vertically */
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;  
   padding: 20px;
-  border: 1px solid #ddd;
+  border: none; /* Removed border */
   border-radius: 5px;
-  text-align: left;
   grid-column: 1 / -1; 
   grid-row: 1 / -1; 
   overflow: hidden;
+  background-color: #fff;
 }
 
 .grid-item p {
   width: 100%;
-  /* Add some bottom margin to create visual separation if needed */
- 
+  margin-bottom: 1rem; /* Spacing between paragraphs within grid item */
 }
+
+
 
 footer {
   background-color:rgba(1, 7, 44, 0.834);

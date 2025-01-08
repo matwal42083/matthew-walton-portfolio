@@ -76,7 +76,7 @@ body {
 
 
 }
-.logo h2 {
+.logo h1 {
   margin-left: 0.625rem;
   margin-bottom: 5px;
   font-size: 1.30rem;
@@ -132,11 +132,6 @@ body {
   list-style-position: inside;
 }
 
-.breadcrumbs li:first-child {
-  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%); /* Arrow head for the first breadcrumb */
-  border-radius: 5px 0 0 5px; /* Optional: Add rounded corners to the first breadcrumb */
-}
-
 .breadcrumbs li {
   display: inline;
   margin: 0rem 1.875rem 0rem 1.875rem;
@@ -150,20 +145,20 @@ body {
   margin-right: 10px; /* Adjust margin to create space for the arrow */
   color: white; /* Text color */
   font-size: 1em;
-  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 0, 100% 100%, calc(100% - 20px) 100%, 0 100%, 20px 50%);
+ 
 }
 
 .breadcrumbs li:last-child {
   margin-right: 0;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20px 50%);
-  border-radius: 0 3px 3px 0;
+ 
+ 
 }
 
 .breadcrumbs li.sub-crumb {
   background-color:#020b47; /* Darker background color */
   font-size: 0.8em; /* Smaller font size */
   padding: 8px 16px; /* Smaller padding */
-  clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%, 15px 50%); /* Adjusted arrow shape */
+   /* Adjusted arrow shape */
 }
 
 .breadcrumbs li.sub-crumb a {
@@ -174,7 +169,6 @@ body {
 
 .breadcrumbs li.sub-crumb:last-child {
   margin-right: 0;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 15px 50%);
   border-radius: 0 3px 3px 0;
 }
 .breadcrumbs li:last-child {
