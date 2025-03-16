@@ -127,19 +127,21 @@ body {
 
 }
 
-.list-item a:hover {
-  border-bottom: gold 2px solid;
-  padding: 1px;
-}
+
 
 .breadcrumbs ul {
   list-style: none;
   list-style-position: inside;
 }
 
-.breadcrumbs li:first-child {
-  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%); /* Arrow head for the first breadcrumb */
-  border-radius: 5px 0 0 5px; /* Optional: Add rounded corners to the first breadcrumb */
+.breadcrumbs li:nth-child(2)::before {
+  content: ">>>";
+  margin-right: 40px;
+}
+
+.breadcrumbs li:nth-child(2)::after {
+  content: ">>>";
+  margin-left: 40px;
 }
 
 .breadcrumbs li {
@@ -147,53 +149,7 @@ body {
   margin: 0rem 1.875rem 0rem 1.875rem;
   border-radius: 5px;
 }
-.breadcrumbs li {
-  position: relative;
-  padding: 10px 20px;
-  background-color: #4ac6ff; /* Light baby blue color */
-  margin-right: 10px; /* Adjust margin to create space for the arrow */
-  color: white; /* Text color */
-  font-size: 1em;
-  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 0, 100% 100%, calc(100% - 20px) 100%, 0 100%, 20px 50%);
-}
 
-.breadcrumbs li:nth-child(2) {
-  position: relative;
-  padding: 10px 20px;
-  background-color: #4ac6ff; /* Light baby blue color */
-  margin-right: 10px; /* Adjust margin to create space for the arrow */
-  color: white; /* Text color */
-  font-size: 1em;
-  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 0, 100% 100%, calc(100% - 20px) 100%, 0 100%, 20px 50%);/* Adjusted arrow shape */
-}
-
-.breadcrumbs li:nth-child(3) {
-  margin-right: 0;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20px 50%);
-  border-radius: 0 3px 3px 0;
-}
-
-.breadcrumbs li.sub-crumb {
-  background-color: #020b47; /* Darker background color */
-  font-size: 0.8em; /* Smaller font size */
-  padding: 8px 16px; /* Smaller padding */
-  clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%, 15px 50%); /* Adjusted arrow shape */
-}
-
-.breadcrumbs li.sub-crumb a {
-  color: #fff; /* White text color for better contrast */
-}
-
-.breadcrumbs li.sub-crumb:last-child {
-  margin-right: 0;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 15px 50%);
-  border-radius: 0 3px 3px 0;
-}
-
-.breadcrumbs li a {
-  text-decoration: none;
-  color: black;
-}
 
 
     .flex-container {

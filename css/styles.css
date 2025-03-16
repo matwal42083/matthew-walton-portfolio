@@ -114,7 +114,6 @@ body {
   border-bottom: 2px solid #4ac6ff;
   position: relative;
   padding: 1px;
-  display: flex; /* Use flexbox for layout */
   list-style: none;
 }
 
@@ -132,38 +131,18 @@ body {
   list-style-position: inside;
 }
 
-.breadcrumbs li:first-child {
-  border-radius: 3px 0 0 3px; /* Optional: Add rounded corners to the first breadcrumb */
-}
+
 
 .breadcrumbs li {
   display: inline;
   margin: 0rem 1.875rem 0rem 1.875rem;
- 
-
 }
 
-.breadcrumbs li {
-  position: relative;
-  padding: 5px 10px;
-  background-color: #4ac6ff; /* Light baby blue color */
-  margin-right: 10px; /* Adjust margin to create space for the arrow */
-  font-size: 1em;
 
-}
 
-.breadcrumbs li:last-child {
-  margin-right: 0;
-}
-.breadcrumbs li i {
-  position: relative;
-  left: 5px;
-}
-.breadcrumbs li a {
-  border-bottom: #dcd80d 2px solid;;
-  text-decoration: none;
-  color: black;
-}
+
+
+/* hidden breadcrumbs */
 
  #crumble2{
    display: none;

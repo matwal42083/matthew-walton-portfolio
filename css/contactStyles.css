@@ -104,10 +104,8 @@ body {
 .breadcrumbs {
   font-size: 0.810rem;
   background-color: #fffb00;
-  border-bottom: 2px solid #4ac6ff;
   position: relative;
-  padding: 1px;
-  display: flex; /* Use flexbox for layout */
+  padding: 1px;/* Use flexbox for layout */
   list-style: none;
 }
 
@@ -125,39 +123,25 @@ body {
   list-style-position: inside;
 }
 
-.breadcrumbs li:first-child {
-  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);/* Arrow head for the first breadcrumb */
-  border-radius: 3px 0 0 3px; /* Optional: Add rounded corners to the first breadcrumb */
+.breadcrumbs li:nth-child(2)::before {
+  content: ">>>";
+  margin-right: 40px;
 }
+
+.breadcrumbs li:nth-child(2)::after {
+  content: ">>>";
+  margin-left: 40px;
+}
+
+.breadcrumbs li:nth-child(3)::after {
+  content: ">>>";
+  margin-left: 40px;
+}
+
 
 .breadcrumbs li {
   display: inline;
   margin: 0rem 1.875rem 0rem 1.875rem;
-  border-right: 0.110rem solid #4ac6ff;
-
-}
-
-.breadcrumbs li {
-  position: relative;
-  padding: 10px 20px;
-  background-color: #4ac6ff; /* Light baby blue color */
-  margin-right: 10px; /* Adjust margin to create space for the arrow */
-  font-size: 1em;
-  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%, 20px 50%);
-}
-
-.breadcrumbs li:last-child {
-  margin-right: 0;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20px 50%);
-  border-radius: 0 3px 3px 0;
-}
-.breadcrumbs li i {
-  position: relative;
-  left: 5px;
-}
-.breadcrumbs li a {
-  text-decoration: none;
-  color: black;
 }
 
 .flex-container {
