@@ -19,6 +19,46 @@ body {
   font-family: sans-serif;
   background-color:#01072c;
 }
+/* Styles for light and dark mode */
+body.light-mode {
+  background: white;
+  color: #01072c;
+}
+
+body.dark-mode {
+  background: black;
+  color: white;
+}
+
+body.light-mode header,
+body.light-mode footer {
+  background: white;
+  color: #01072c;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background: black;
+  color: white;
+}
+
+body.light-mode .nav a {
+  color: black;
+}
+
+body.dark-mode .nav a {
+  color: white;
+}
+
+body.light-mode p {
+  color: #01072c;
+}
+
+body.dark-mode p {
+  color: white;
+}
+/* End of light and dark mode */
+
 /* Header and all the elements in the header*/
 .header-container {
   display: flex;
@@ -124,6 +164,7 @@ body {
 
 .list-item a {
   padding-right: 4px;
+  color:black;
 }
 
 .breadcrumbs ul {
@@ -166,10 +207,7 @@ body {
 
 .flex-item1 {
   flex: 0 0 200px;
-  background-color: #01072c;
   padding: 20px;
-  border: 1px solid ;
-  border-radius: 5px;
   position: relative;
   right: 20px;
 }
@@ -262,18 +300,34 @@ body {
   text-align: center;
   padding: 0.625rem 1.875rem 0.625rem 0.625rem;
 }
+
+/* DevCard section*/
 .devCard img {
-  max-width: 275px;
-  max-height: 400px;
+  width: 300px;
+  height: 350px;
   border: 1px solid rgba(0, 0, 0, 0.499);
   background-color: #4ac6ff;
   border-radius: 10px;
   padding: 5px;
   box-shadow: -4px -4px 3px rgba(5, 27, 49, 0.443);
   position: relative;
-  top: 20px;
+  top: 10px;
   left: 10px;
 }
+
+/* Spotify container */
+
+.spotify {
+  background-color: rgba(37, 255, 37, 0.935);
+  width: 300px;
+  height: 400px;
+  position: relative;
+  border-radius: 10;
+  padding: 10px;
+  top: 20px;
+}
+
+
 
 
 .menu-bar {

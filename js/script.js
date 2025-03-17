@@ -1,106 +1,80 @@
-/*
-const toggle =  document.getElementById('toggle-btn');
+const toggle = document.getElementById('toggle-btn');
 const body = document.querySelector('body');
+const header = document.getElementById('headerContainer');
+const footer = document.getElementById('footerContainer');
 
 // Load the theme preference from localStorage
-const currentTheme = localStorage.getItem('light') || 'dark';
+const currentTheme = localStorage.getItem('theme') || 'dark';
 
-// set the initial theme based on the stored preference
-// light mode function 
-function lightMode(currentTheme) {
-  if (currentTheme === 'light') {
-    body.style.background = 'white';
-    body.style.color = 'black';
-    toggle.classList.add('fa-sun');
-    toggle.innerText = 'Light';
-  };
-  // change nav links text color to black
-  const navLinks = document.querySelectorAll('.nav a ');
+// Set the initial theme based on the stored preference
+function lightMode() {
+  body.style.background = 'white';
+  body.style.color = '#01072c';
+  header.style.background = 'white';
+  header.style.color = '#01072c';
+  footer.style.background = 'white';
+  footer.style.color = '#01072c';
+  toggle.classList.add('fa-sun');
+  toggle.classList.remove('fa-moon');
+  toggle.innerText = ' Light';
+  // Change nav links text color to black
+  const navLinks = document.querySelectorAll('.nav a');
   navLinks.forEach(link => {
     link.style.color = 'black';
-  })
-};
-// dark mode function 
-function darkMode(currentTheme) {
-  if (currentTheme === 'dark') {
-    body.style.background = 'black';
-    body.style.color = 'white';
-    toggle.classList.add('fa-moon');
-    toggle.innerText = 'Dark';
-  };
-  // change nav links text color to white
+  });
+  // Change paragraph text color to black
+  const paragraphs = document.querySelectorAll('p');
+  paragraphs.forEach(p => {
+    p.style.color = '#01072c';
+  });
+}
+
+function darkMode() {
+  body.style.background = '#01072c';
+  body.style.color = 'white';
+  header.style.background = '#01072c';
+  header.style.color = 'white';
+  footer.style.background = '#01072c';
+  footer.style.color = 'white';
+  toggle.classList.add('fa-moon');
+  toggle.classList.remove('fa-sun');
+  toggle.innerText = ' Dark';
+  // Change nav links text color to white
   const navLinks = document.querySelectorAll('.nav a');
   navLinks.forEach(link => {
     link.style.color = 'white';
-  })
-};
+  });
+  // Change paragraph text color to white
+  const paragraphs = document.querySelectorAll('p');
+  paragraphs.forEach(p => {
+    p.style.color = 'black';
+  });
+}
 
-// Event listener fot the toggle button
+// Set the initial theme based on the stored preference
+if (currentTheme === 'light') {
+  lightMode();
+} else {
+  darkMode();
+}
+
+// Event listener for the toggle button
 toggle.addEventListener('click', function() {
-  this.classList.toggle('fa-moon');
-  this.classList.toggle('fa-sun');
- 
-  if (this.classList.contains('fa-sun')) {
-    lightMode('light');
-    localStorage.setItem('light', 'light');
-  } else if (this.classList.contains('fa-moon')) {
-    darkMode('dark');
-    localStorage.setItem('light', 'dark');
+  if (toggle.classList.contains('fa-sun')) {
+    darkMode();
+    localStorage.setItem('theme', 'dark');
+  } else {
+    lightMode();
+    localStorage.setItem('theme', 'light');
   }
-})
+});
 
- document.addEventListener('DOMContentLoaded', function() {
-  const currentTheme = localStorage.getItem('light');
-  if(currentTheme === 'light') {
-    lightMode('light');
-  } else if (currentTheme === 'dark') {
-    darkMode('dark');
+document.addEventListener('DOMContentLoaded', function() {
+  const currentTheme = localStorage.getItem('theme');
+  if (currentTheme === 'light') {
+    lightMode();
+  } else {
+    darkMode();
   }
- })
-
-
-
-
-
-
-
-
-
-
-/* functions for light & dark mode feature
-
-
-const toggle = document.getElementById('toggle-btn');
-
-const body = document.querySelector('body');
-
-toggle.addEventListener('click', function() {
-    this.classList.toggle('fa-moon');
-    if(this.classList.toggle('fa-sun')) {
-        body.style.background = 'white';
-        body.style.color = 'black';
-        body.style.transition = '1s';
-        toggle.innerText = ' Light';
- 
-        // Change nav links text color to black
-        const navLinks = document.querySelectorAll('.nav a');
-        navLinks.forEach(link => {
-            link.style.color = 'black';
-        });
-    } else {
-        body.style.background = 'black';
-        body.style.color = 'white';
-        body.style.transition = '1s';
-        toggle.innerText = ' Dark';
-   
-        // Change nav links text color to white
-        const navLinks = document.querySelectorAll('.nav a');
-        navLinks.forEach(link => {
-            link.style.color = 'white';
-        });
-    }
-})
-
-
-*/
+}); 
 

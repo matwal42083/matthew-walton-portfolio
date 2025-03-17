@@ -1,10 +1,15 @@
+
+
+
 .grid {
     width:600px;
-    height: auto; 
+    height: 600px; 
     border: 4px solid rgb(184, 1, 1);
     display: flex;
     flex-wrap: wrap;
     background-color: black;
+
+    
   
     
 
@@ -32,6 +37,7 @@
 
 .laser {
     background-color: rgba(235, 5, 5, 0.904);
+  
 }
 
 .boom {
@@ -47,7 +53,3 @@ h1 {
     color: aliceblue;
 }
 
-header {
-    background:-webkit-linear-gradient(top, rgb(239, 46, 32) 8%, rgb(255, 0, 0) 3%, black 15%);
-    padding: 20px 0px 0px 0px;
-}

@@ -21,8 +21,8 @@
     <title>Matwal Portfolio - About</title>
   </head>
   <body>
-    <header>
-      <div class="header-container">
+   <header>
+      <div class="header-container" id="headerContainer">
         <div class="logo">
           <img src="/images/matwalPicLogo.jpg" alt="matwal pic"/>
           <h1>
@@ -39,22 +39,32 @@
           </ul>
         </div>
         <div class="toggle-btn">
-          <a><i class="fa-regular fa-sun" id="toggle-btn"></i>Light</a>
+          <a><i class="fa-regular fa-sun" id="toggle-btn"></i></a>
         </div>
       </div>
     </header>
-    <nav class="breadcrumbs">
+    <nav class="breadcrumbs" id="breadcrumbs">
       <ul class="crumble">
         <li class="list-item" id="crumble1">
           <a href="/html/index.html"><i class="fa-solid fa-house"></i>Home</a>
         </li>
         <li class="list-item" id="crumble2">
-          <a href="/html/about.html">
-            <i class="fa-solid fa-exclamation-circle"></i>About</a>
+          <a href="/html/about.html"
+            ><i class="fa-solid fa-exclamation-circle"></i>About</a
+          >
         </li>
-
-          </ul>
-       </nav>
+        <li class="list-item" id="crumble3">
+          <a href="/html/portfoilo.html"
+            ><i class="fa-solid fa-diagram-project"></i>Portfolio</a
+          >
+        </li>
+        <li class="list-item" id="crumble4">
+          <a href="/html/contact.html"
+            ><i class="fa-solid fa-phone"></i>Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
        <main>
         <section class="flex-container">
          <div class="flex-item1">
@@ -160,7 +170,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer id="footerContainer">
       <div class="footer-container">
         <p>My Social Media and GitHub</p>
         <ul class="social-media-list">

@@ -107,7 +107,7 @@ body {
 
 .breadcrumbs {
   font-size: 0.810rem;
-  background-color: #dcd80d;
+  background-color: #fffb00;
   border-bottom: 2px solid #4ac6ff;
   position: relative;
   padding: 1px;
@@ -123,8 +123,8 @@ body {
 }
 
 .list-item a {
-  padding-right: 4px;
-
+  padding-right: 4px; 
+  color: black;
 }
 
 
@@ -137,11 +137,13 @@ body {
 .breadcrumbs li:nth-child(2)::before {
   content: ">>>";
   margin-right: 40px;
+  color: black;
 }
 
 .breadcrumbs li:nth-child(2)::after {
   content: ">>>";
   margin-left: 40px;
+  color: black;
 }
 
 .breadcrumbs li {
@@ -162,10 +164,7 @@ body {
   
   .flex-item1 {
     flex: 0 0 200px;
-    background-color: #01072c;
     padding: 20px;
-    border: 1px solid ;
-    border-radius: 5px;
     position: relative;
     right: 20px;
     margin-right: 30px;
