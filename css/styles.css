@@ -166,6 +166,20 @@ body.light-mode .logo img {
  body.dark-mode .logo img {
   border: 2px solid #eeff00;
  }
+
+ body.light-mode #X #gh {
+  color: rgba(22, 22, 22, 0.295);
+ }
+ body.light-mode #X #gh:hover {
+  color: rgb(22, 22, 22);
+ }
+
+ body.dark-mode #X #gh {
+  color: rgba(222, 222, 222, 0.286);
+ }
+ body.dark-mode #X #gh:hover {
+  color: rgb(222, 222, 222);
+ }
 /* End of light and dark mode */
 
 /* Header and all the elements in the header*/
@@ -339,7 +353,7 @@ body.light-mode .logo img {
   position: relative;
   bottom: 20px;
   left: 10px;
-  box-shadow:  -5px -5px 10px #4ac6ff;
+  
 
 }
 
@@ -372,7 +386,6 @@ body.light-mode .logo img {
 .sidebar li:hover {
   background-color: #4ac6ff; /* Change background color on hover */
   color: #01072c; /* Change text color on hover */
-  box-shadow: 0px 4px 6px #f1ee36e8;
   border-top: 1px solid #dcd80d;
   border-bottom: 1px solid #dcd80d;
   border-left: 3px solid #dcd80d;
@@ -448,6 +461,7 @@ body.light-mode .logo img {
   border: 1px solid #eeff00;
   border-radius: 3px;
   padding: 0.125rem;
+  box-shadow:  -5px -5px 10px #4ac6ff;
   background-color: white;
   margin-bottom: 20px;
   width: 260px;
@@ -492,10 +506,10 @@ body.light-mode .logo img {
   grid-row: 1 / -1; 
   overflow: hidden;
   background-color: #fff;
-  border-top:2px solid #eeff00;
-  border-bottom: 2px solid #eeff00;
-  border-left: 5px solid #eeff00;
-  border-right: 5px solid#eeff00;
+  border-top:1px solid #eeff00;
+  border-bottom: 1px solid #eeff00;
+  border-left: 4px solid #eeff00;
+  border-right: 4px solid#eeff00;
 }
 
 .grid-item p {
@@ -547,7 +561,7 @@ footer {
   color:rgba(222, 222, 222, 0.286);
 }
 #gh {
-  color:rgba(99, 97, 97, 0.286);
+  color:rgba(222, 222, 222, 0.286);
 }
 
 .fa-brands {
@@ -597,5 +611,14 @@ footer {
 }
 #md:hover {
   color: #5A48DD;
+  transform: scale(1.5); 
+}
+
+#X:hover {
+  color:rgb(0, 0, 0);
+  transform: scale(1.5); 
+}
+#gh:hover {
+  color:rgba(0, 0, 0, 0.933);
   transform: scale(1.5); 
 }
