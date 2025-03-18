@@ -57,6 +57,115 @@ body.light-mode p {
 body.dark-mode p {
   color: white;
 }
+
+
+body.light-mode {
+  background: white;
+  color: #01072c;
+}
+
+body.dark-mode {
+  background: black;
+  color: white;
+}
+
+body.light-mode header,
+body.light-mode footer {
+  background: white;
+  color: #01072c;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background: black;
+  color: white;
+}
+
+body.light-mode .nav a {
+  color: black;
+}
+
+body.dark-mode .nav a {
+  color: white;
+}
+
+body.light-mode p {
+  color: #01072c;
+}
+
+body.dark-mode p {
+  color: white;
+}
+
+body.light-mode .sidebar li {
+  background-color: #d9d9d9fc;
+  color: black;
+}
+
+body.dark-mode .sidebar li {
+  background-color: #01072c;
+  color: white;
+}
+
+body.light-mode .sidebar li:hover,
+body.light-mode .sidebar li:focus,
+body.light-mode .sidebar li:active {
+  background-color: #4ac6ff;
+  color: #01072c;
+}
+
+body.dark-mode .sidebar li:hover,
+body.dark-mode .sidebar li:focus,
+body.dark-mode .sidebar li:active {
+  background-color: #4ac6ff;
+  color: #01072c;
+}
+
+body.light-mode .devCard img {
+  background-color: #4ac6ff;
+  border: 1px solid #deec1d;
+}
+
+body.dark-mode .devCard img {
+  background-color: #01072c;
+  border: 1px solid white;
+}
+
+body.light-mode .spotify {
+  background-color: rgb(31, 31, 31);
+  border: 1px solid rgba(37, 255, 37, 0.935);
+}
+
+body.dark-mode .spotify {
+  background-color: #01072c;
+  border: 1px solid white;
+}
+
+body.light-mode .menu-bar {
+  background-color: white;
+  border: 1px solid #eeff00;
+}
+
+body.dark-mode .menu-bar {
+  background-color: #01072c;
+  border: 1px solid white;
+}
+
+body.light-mode .nav li a {
+  border: 2px solid #01072c;
+} 
+
+body.dark-mode .nav li a {
+  border: 2px solid #eeff00;
+}
+
+body.light-mode .logo img {
+  border: 2px solid #01072c;
+ }
+
+ body.dark-mode .logo img {
+  border: 2px solid #eeff00;
+ }
 /* End of light and dark mode */
 
 /* Header and all the elements in the header*/
@@ -67,8 +176,8 @@ body.dark-mode p {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  padding: 0;
-  border-bottom: 2px solid #4ac6ff;
+  padding-top: 5px;
+  padding-bottom: 5px;
   background-color: #01072c;
   
 /* Nav Bar for the header*/
@@ -90,7 +199,7 @@ body.dark-mode p {
   text-decoration: none;
   color: #4ac6ff;
   font-size: 1rem;
-  border: 2px solid #4ac6ff;
+  border: 2px solid #eeff00;
   border-radius: 5px;
   padding: 6px 10px;
 }
@@ -116,7 +225,7 @@ body.dark-mode p {
   border-radius: 100%;
   margin-top: 0.1875rem;
   margin-left: 0.625rem;
-  border: 2px solid #4ac6ff;
+  border: 2px solid #eeff00;
 
 
 }
@@ -150,8 +259,9 @@ body.dark-mode p {
 
 .breadcrumbs {
   font-size: 0.810rem;
-  background-color: #fffb00;
-  border-bottom: 2px solid #4ac6ff;
+  background-color: #4ac6ff;
+  border-top: 2px solid #eeff00;
+  border-bottom: 2px solid #eeff00;
   position: relative;
   padding: 1px;
   list-style: none;
@@ -199,23 +309,19 @@ body.dark-mode p {
 
 .flex-container {
   display: flex;
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 20px auto;
   padding: 0 20px;
   flex: 1;
 }
 
 .flex-item1 {
-  flex: 0 0 200px;
+  flex: 0 0 150px;
   padding: 20px;
   position: relative;
   right: 20px;
 }
 
-
-.sidebar {
-  width: 250px; /* Adjust the width of the sidebar as needed */
-}
 
 .sidebar li:first-child {
   background-color: #fffd85;
@@ -225,6 +331,7 @@ body.dark-mode p {
   padding: 0;
   margin: 0;
   list-style: none;
+
 }
 .sidebar .menu-bar {
   background-color: #01072c;
@@ -232,6 +339,7 @@ body.dark-mode p {
   position: relative;
   bottom: 20px;
   left: 10px;
+  box-shadow:  -5px -5px 10px #4ac6ff;
 
 }
 
@@ -303,35 +411,41 @@ body.dark-mode p {
 
 /* DevCard section*/
 .devCard img {
-  width: 300px;
+  width: 275px;
   height: 350px;
-  border: 1px solid rgba(0, 0, 0, 0.499);
-  background-color: #4ac6ff;
+  border: 1px solid #deec1d;
+  background-color: rgb(74, 198, 255);
   border-radius: 10px;
-  padding: 5px;
-  box-shadow: -4px -4px 3px rgba(5, 27, 49, 0.443);
+  padding: 10px;
+  box-shadow:  -5px -5px 10px #4ac6ff;
   position: relative;
-  top: 10px;
-  left: 10px;
+  top: 5px;
+  bottom: 5px;
+  left: 8px;
 }
 
 /* Spotify container */
 
 .spotify {
-  background-color: rgba(37, 255, 37, 0.935);
-  width: 300px;
+  background-color:rgb(31, 31, 31);
+  box-shadow: -5px -5px 10px rgb(49, 180, 49);
+  border: 1px solid rgba(37, 255, 37, 0.935);
+  width: 275px;
   height: 400px;
   position: relative;
-  border-radius: 10;
-  padding: 10px;
-  top: 20px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  top: 23px;
+  left: 8px;
 }
 
 
 
 
 .menu-bar {
-  border: 1px solid #4ac6ff;
+  border: 1px solid #eeff00;
   border-radius: 3px;
   padding: 0.125rem;
   background-color: white;
@@ -346,8 +460,8 @@ body.dark-mode p {
   grid-template-columns: 1fr; /* This ensures equal width columns */
   height: 100%; 
   width: 100%;
-  border-left: 3px solid gold;
-  border-radius: 7px;
+  border: none;
+  padding: 5px;
   font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -359,7 +473,7 @@ body.dark-mode p {
   font-family: 'Roboto', sans-serif; /* More readable font stack -  add fallback fonts*/
   line-height: 1.6; /* Improved line height for readability */
   margin-bottom: 1rem; /* Consistent spacing between paragraphs */
-  padding: 1rem; /* Increased padding for better visual comfort */
+  padding: 10px; /* Increased padding for better visual comfort */
   border-radius: 5px; /* Subdued border-radius */
   background-color: rgba(238, 238, 238, 0.4); /* Subtle background color with opacity */
 }
@@ -370,22 +484,29 @@ body.dark-mode p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   position: relative;  
-  padding: 20px;
-  border: none; /* Removed border */
+  padding: 25px;
   border-radius: 5px;
   grid-column: 1 / -1; 
   grid-row: 1 / -1; 
   overflow: hidden;
   background-color: #fff;
+  border-top:2px solid #eeff00;
+  border-bottom: 2px solid #eeff00;
+  border-left: 5px solid #eeff00;
+  border-right: 5px solid#eeff00;
 }
 
 .grid-item p {
   width: 100%;
-  margin-bottom: 1rem; /* Spacing between paragraphs within grid item */
+  margin-bottom: 1rem;   /* Spacing between paragraphs within grid item */
+  color: black;
 }
 
-
+.grid-item h2 {
+  color: black;
+}
 
 footer {
   background-color:rgba(1, 7, 44, 0.834);
@@ -393,7 +514,7 @@ footer {
   text-align: center;
   padding: 10px 0;
   margin-top: auto;
-  border-top: 2px solid rgba(3, 175, 255, 0.869);
+  border-top: 2px solid #eeff00;
 }
 
 .footer-container {
@@ -426,7 +547,7 @@ footer {
   color:rgba(222, 222, 222, 0.286);
 }
 #gh {
-  color:rgba(222, 222, 222, 0.286);
+  color:rgba(99, 97, 97, 0.286);
 }
 
 .fa-brands {
@@ -458,7 +579,7 @@ footer {
   transform: scale(1.5); 
 }
 #gh:hover {
-  color:rgb(250, 250, 250);
+  color:rgba(247, 247, 247, 0.931);
   transform: scale(1.5); 
 }
 

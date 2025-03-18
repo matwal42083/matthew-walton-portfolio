@@ -57,7 +57,8 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
   border-bottom: 2px solid #4ac6ff;
   background-color: #01072c;
 }
@@ -297,6 +298,34 @@ body {
   margin-bottom: 20px;
   width: 260px;
 }
+.devCard img {
+  width: 275px;
+  height: 350px;
+  border: 1px solid rgba(0, 0, 0, 0.499);
+  background-color: #4ac6ff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow:  -5px -5px 10px #4ac6ff;
+  position: relative;
+  top: 5px;
+  bottom: 5px;
+  left: 8px;
+}
+
+/* Spotify container */
+
+.spotify {
+  background-color:rgb(31, 31, 31);
+  box-shadow: -5px -5px 10px rgb(49, 180, 49);
+  border: 1px solid rgba(37, 255, 37, 0.935);
+  width: 275px;
+  height: 375px;
+  position: relative;
+  border-radius: 10px;
+  padding: 10px;
+  top: 23px;
+  left: 8px;
+}
 
 .flex-item2 {
   flex: 1;
@@ -329,6 +358,7 @@ body {
   margin: 0;
   padding: 20px;
   background-color: #f4f4f4;
+  color: black;
   text-align: center;
 }
 
@@ -450,6 +480,7 @@ body {
 
 .coverLetterContainer {
   border: 1px solid rgba(194, 194, 194, 0.353);
+  color: black;
   border-radius: 5px;
   padding: 15px;
 }

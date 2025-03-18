@@ -2,7 +2,8 @@ const toggle = document.getElementById('toggle-btn');
 const body = document.querySelector('body');
 const header = document.getElementById('headerContainer');
 const footer = document.getElementById('footerContainer');
-
+const logoBorder = document.getElementById('logoImg');
+const LogoName = document.querySelector('h1');
 // Load the theme preference from localStorage
 const currentTheme = localStorage.getItem('theme') || 'dark';
 
@@ -12,6 +13,8 @@ function lightMode() {
   body.style.color = '#01072c';
   header.style.background = 'white';
   header.style.color = '#01072c';
+  logoBorder.style.border = '2px solid rgb(1, 7, 44)';
+  LogoName.style.color = 'rgb(1, 7, 44)';
   footer.style.background = 'white';
   footer.style.color = '#01072c';
   toggle.classList.add('fa-sun');
@@ -21,11 +24,7 @@ function lightMode() {
   const navLinks = document.querySelectorAll('.nav a');
   navLinks.forEach(link => {
     link.style.color = 'black';
-  });
-  // Change paragraph text color to black
-  const paragraphs = document.querySelectorAll('p');
-  paragraphs.forEach(p => {
-    p.style.color = '#01072c';
+    link.style.border = '2px solid rgb(1, 7, 44)';
   });
 }
 
@@ -34,6 +33,8 @@ function darkMode() {
   body.style.color = 'white';
   header.style.background = '#01072c';
   header.style.color = 'white';
+  logoBorder.style.border = '2px solid rgb(238, 255, 0)';
+  LogoName.style.color = 'rgb(74, 198, 255)';
   footer.style.background = '#01072c';
   footer.style.color = 'white';
   toggle.classList.add('fa-moon');
@@ -43,12 +44,9 @@ function darkMode() {
   const navLinks = document.querySelectorAll('.nav a');
   navLinks.forEach(link => {
     link.style.color = 'white';
+    link.style.border = '2px solid rgb(238, 255, 0)';
   });
-  // Change paragraph text color to white
-  const paragraphs = document.querySelectorAll('p');
-  paragraphs.forEach(p => {
-    p.style.color = 'black';
-  });
+
 }
 
 // Set the initial theme based on the stored preference
