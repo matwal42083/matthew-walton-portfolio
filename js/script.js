@@ -11,9 +11,33 @@ const spotify = document.getElementById('spotifyContainer');
 const devCard = document.getElementById('devCard');
 const grid = document.getElementById('gridItem');
 const iconX = document.getElementById('X');
-const iconGhub = document.getElementById('gh')
+const iconGhub = document.getElementById('gh');
+const sidebarItems = document.querySelectorAll('.sidebar li');
 // Load the theme preference from localStorage
 const currentTheme = localStorage.getItem('theme') || 'dark';
+
+
+function setHoverColor(element, color) {
+  element.addEventListener('mouseover', function() {
+    element.style.color = color;
+  });
+  element.addEventListener('mouseout', function() {
+    element.style.color = '';
+  });
+}
+
+
+function setHoverBorderColor(elements, color) {
+  elements.forEach(element => {
+    element.addEventListener('mouseover', function() {
+      element.style.borderColor = color;
+    });
+    element.addEventListener('mouseout', function() {
+      element.style.borderColor = '';
+    });
+  });
+}
+
 
 // Set the initial theme based on the stored preference
 function lightMode() {
@@ -35,8 +59,6 @@ function lightMode() {
   grid.style.borderRight = '4px solid rgb(1, 7, 44)';
   grid.style.borderLeft = '4px solid rgb(1, 7, 44)';
   footer.style.borderTop = '2px solid rgb(1, 7, 44)';
-  iconX.style.color = 'rgba(22, 22, 22, 0.29)';
-  iconGhub.style.color = 'rgba(22, 22, 22, 0.29)';
   footer.style.background = 'white';
   footer.style.color = '#01072c';
   toggle.classList.add('fa-sun');
@@ -48,6 +70,10 @@ function lightMode() {
     link.style.color = 'black';
     link.style.border = '2px solid rgb(1, 7, 44)';
   });
+
+  setHoverColor(iconX, 'black');
+  setHoverColor(iconGhub, 'black');
+  setHoverBorderColor(sidebarItems, 'rgb(1, 7, 44)');
 }
 
 function darkMode() {
@@ -70,8 +96,6 @@ function darkMode() {
   grid.style.borderLeft = '4px solid rgb(238, 255, 0)';
   footer.style.borderTop = '2px solid rgb(238, 255, 0)';
   footer.style.background = 'rgb(1, 7, 44)';
-  iconX.style.color = 'rgba(222, 222, 222, 0.286)';
-  iconGhub.style.color = 'rgba(222, 222, 222, 0.286)';
   footer.style.color = 'white';
   toggle.classList.add('fa-moon');
   toggle.classList.remove('fa-sun');
@@ -82,7 +106,10 @@ function darkMode() {
     link.style.color = 'white';
     link.style.border = '2px solid rgb(238, 255, 0)';
   });
-
+ 
+  setHoverColor(iconX, 'white');
+  setHoverColor(iconGhub, 'white');
+  setHoverBorderColor(sidebarItems, 'rgb(238, 255, 0)');
 }
 
 // Set the initial theme based on the stored preference
