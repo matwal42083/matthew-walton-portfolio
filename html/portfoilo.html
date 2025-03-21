@@ -40,43 +40,70 @@
       </div>
     </div>
   </header>
-  <nav class="breadcrumbs">
+  <nav class="breadcrumbs" id="breadcrumbs">
     <ul class="crumble">
       <li class="list-item" id="crumble1">
         <a href="/html/index.html"><i class="fa-solid fa-house"></i>Home</a>
       </li>
       <li class="list-item" id="crumble2">
-        <a href="/html/about.html"><i class="fa-solid fa-exclamation-circle"></i>About</a>
+        <a href="/html/about.html"
+          ><i class="fa-solid fa-exclamation-circle"></i>About</a
+        >
       </li>
       <li class="list-item" id="crumble3">
-        <a href="/html/portfoilo.html"><i class="fa-solid fa-diagram-project"></i>Portfolio</a>
+        <a href="/html/portfoilo.html"
+          ><i class="fa-solid fa-diagram-project"></i>Portfolio</a
+        >
+      </li>
+      <li class="list-item" id="crumble4">
+        <a href="/html/contact.html"
+          ><i class="fa-solid fa-phone"></i>Contact</a
+        >
       </li>
     </ul>
   </nav>
   <main>
     <section class="flex-container">
       <div class="flex-item1">
-        <div class="sidebar">
-          <div class="menu-bar">
-            <i class="fa-solid fa-bars" id="hamburgerBar"></i>
-            <ul class="sidebar-list">
-              <li class="sidebar-list-items">
-                <a href="/html/index.html"><i class="fa-solid fa-house"></i>Home</a>
-              </li>
-              <li class="sidebar-list-items">
-                <a href="/html/about.html"><i class="fa-solid fa-exclamation-circle"></i>About</a>
-              </li>
-              <li class="sidebar-list-items">
-                <a href="/html/portfoilo.html"><i class="fa-solid fa-project-diagram"></i>Projects</a>
-              </li>
-              <li class="sidebar-list-items">
-                <a href="/html/contact.html"><i class="fa-solid fa-phone"></i>Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="flex-item2">
+       <div class="sidebar">
+         <div class="menu-bar" id="menuBar">
+           <i class="fa-solid fa-bars" id="hamburgerBar"></i>
+           <ul class="sidebar-list">
+             <li class="sidebar-list-items">
+               <a href="/html/index.html"><i class="fa-solid fa-house"></i>Home</a>
+             </li>
+             <li class="sidebar-list-items">
+               <a href="/html/about.html"><i class="fa-solid fa-exclamation-circle"></i>About</a>
+             </li>
+             <li class="sidebar-list-items">
+               <a href="/html/portfoilo.html"><i class="fa-solid fa-project-diagram"></i>Projects</a>
+             </li>
+             <li class="sidebar-list-items">
+               <a href="/html/contact.html"><i class="fa-solid fa-phone"></i>Contact</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+       <div class="devCard" id="devCard">
+         <img
+             src="/images/matwalDevCard1.png"
+             width="300"
+             alt="Matthew Walton's Dev Card"
+         />
+       </div>
+       <div class="spotify" id="spotifyContainer">
+         <iframe style="border-radius: 20px"
+          src="https://open.spotify.com/embed/playlist/5WLp2EAJJCzbE4BsIiUw22?utm_source=generator&theme=0" 
+          width="100%" 
+          height="100%" 
+          frameBorder="0" 
+          allowfullscreen=""
+          allow="autoplay;clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+          loading="lazy">
+         </iframe>
+       </div>
+     </div>
+      <div class="flex-item2"  id="gridItem">
         <div class="gallery-container">
           <div class="certification-title">
             <h2>Certifications</h2>
@@ -252,8 +279,8 @@
         </li>
       </li>
     </ul>
-  </div>
-</footer>
-  <script src="/js/script.js"></script>
+   </div>
+ </footer>
+<script src="/js/script.js"></script>
 </body>
 </html>

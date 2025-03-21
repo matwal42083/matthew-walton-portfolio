@@ -29,7 +29,6 @@ body {
   margin: 0;
   padding-top: 5px;
   padding-bottom: 5px;
-  border-bottom: 2px solid #4ac6ff;
   background-color:#01072c;
   
 
@@ -52,7 +51,7 @@ body {
   text-decoration: none;
   color: #4ac6ff;
   font-size: 1rem;
-  border: 2px solid #4ac6ff;
+  border: 2px solid #dcd80d;;
   border-radius: 5px;
   padding: 6px 10px;
 }
@@ -108,8 +107,9 @@ body {
 
 .breadcrumbs {
   font-size: 0.810rem;
-  background-color: #fffb00;
-  border-bottom: 2px solid #4ac6ff;
+  background-color: #4ac6ff;
+  border-top: 2px solid #eeff00;
+  border-bottom: 2px solid #eeff00;
   position: relative;
   padding: 1px;
   display: flex; /* Use flexbox for layout */
@@ -153,6 +153,9 @@ body {
   border-radius: 5px;
 }
 
+#crumble4{
+  display: none;
+  }
 
 
     .flex-container {
@@ -178,10 +181,15 @@ body {
     width: 250px; /* Adjust the width of the sidebar as needed */
   }
   
+  .sidebar li:nth-child(3) {
+    background-color: #fcfbcf;
+  }
+  
   .sidebar ul {
     padding: 0;
     margin: 0;
     list-style: none;
+  
   }
   .sidebar .menu-bar {
     background-color: #01072c;
@@ -189,6 +197,7 @@ body {
     position: relative;
     bottom: 20px;
     left: 10px;
+    
   
   }
   
@@ -207,10 +216,7 @@ body {
     transition: all 0.3s ease; /* Smooth transition for hover effects */
     border-radius: 5px;
   }
-  .sidebar li:nth-child(3){
-    background-color: #fffc85;
-  }
-
+  
   .sidebar li a {
     text-decoration: none;
     color: black;
@@ -222,9 +228,8 @@ body {
     color:#4ac6ff;
   }
   .sidebar li:hover {
-    background-color: #4ac6ff; /* Change background color on hover */
+    background-color: #fffd7f; /* Change background color on hover */
     color: #01072c; /* Change text color on hover */
-    box-shadow: 0px 4px 6px #f1ee36e8;
     border-top: 1px solid #dcd80d;
     border-bottom: 1px solid #dcd80d;
     border-left: 3px solid #dcd80d;
@@ -233,9 +238,8 @@ body {
     transform: scale(1.05); /* Slightly increase the size on hover */
   }
   .sidebar li:focus {
-    background-color: #2c83a867; /* Change background color on hover */
+    background-color: #9a980f; /* Change background color on hover */
     color: #01072c; /* Change text color on hover */
-    box-shadow: 0px 4px 6px #f1ee36e8;
     border-top: 1px solid #dcd80d;
     border-bottom: 1px solid #dcd80d;
     border-left: 3px solid #dcd80d;
@@ -245,9 +249,8 @@ body {
   }
   
   .sidebar li:active {
-    background-color: #8bdaff82; /* Change background color on hover */
+    background-color:#cfcc01; /* Change background color on hover */
     color: #01072c; /* Change text color on hover */
-    box-shadow: 0px 4px 6px #f1ee36e8;
     border-top: 1px solid #dcd80d;
     border-bottom: 1px solid #dcd80d;
     border-left: 3px solid #dcd80d;
@@ -261,16 +264,45 @@ body {
     padding: 0.625rem 1.875rem 0.625rem 0.625rem;
   }
   
+
   .menu-bar {
-    border: 1px solid #4ac6ff;
+    border: 1px solid #eeff00;
     border-radius: 3px;
     padding: 0.125rem;
+    box-shadow:  -5px -5px 10px #4ac6ff;
     background-color: white;
     margin-bottom: 20px;
     width: 260px;
   }
-
-
+  
+  .devCard img {
+    width: 275px;
+    height: 350px;
+    border: 1px solid rgba(0, 0, 0, 0.499);
+    background-color: #4ac6ff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow:  -5px -5px 10px #4ac6ff;
+    position: relative;
+    top: 5px;
+    bottom: 5px;
+    left: 8px;
+  }
+  
+  /* Spotify container */
+  
+  .spotify {
+    background-color:rgb(31, 31, 31);
+    box-shadow: -5px -5px 10px rgb(49, 180, 49);
+    border: 1px solid rgba(37, 255, 37, 0.935);
+    width: 275px;
+    height: 375px;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    top: 23px;
+    left: 8px;
+  }
   
 .flex-item2 {
     flex: 1;
@@ -315,7 +347,7 @@ body {
     text-align: center;
     padding: 10px 0;
     margin-top: auto;
-    border-top: 2px solid rgba(3, 175, 255, 0.869);
+    border-top: 2px solid #dcd80d;;
   }
   
   .footer-container {
@@ -344,15 +376,16 @@ body {
     text-decoration: none;
     
   }
+
   #fb {
     color:#0867ff40;
     
   }
   #X {
-    color:rgba(222, 222, 222, 0.286);
+    color:rgba(136, 135, 135, 0.566);
   }
   #gh {
-    color:rgba(222, 222, 222, 0.286);
+    color:rgba(136, 135, 135, 0.566);
   }
   
   .fa-brands {
@@ -371,41 +404,36 @@ body {
     color: #5948dd3d;
   }
   
-
-  
+  /* Hover Icons*/
+  #fb, #X, #gh, #ln, #yt, #rt, #md:hover {
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Add transition for smooth effect */
+  }
   #fb:hover {
     color:#0867ff;
     transform: scale(1.5); 
-    transition: transform 0.3s ease-in-out, color 0.1s ease-in-out;
     }
   #X:hover {
-    color:rgb(255, 255, 255);
     transform: scale(1.5); 
-    transition: transform 0.3s ease-in-out, color 0.1s ease-in-out;
   }
   #gh:hover {
-    color:rgb(250, 250, 250);
     transform: scale(1.5); 
-    transition: transform 0.3s ease-in-out, color 0.1s ease-in-out;
   }
   
   #ln:hover {
     color: rgb(0, 119, 181);
     transform: scale(1.5); 
-    transition: transform 0.3s ease-in-out, color 0.1s ease-in-out;
   }
   #yt:hover {
     color:rgb(255, 0, 51);
     transform: scale(1.5); 
-    transition: transform 0.3s ease-in-out, color 0.1s ease-in-out;
   }
   #rt:hover {
     color: rgb(255, 69, 0);
     transform: scale(1.5); 
-    transition: transform 0.3s ease-in-out, color 0.1s ease-in-out;
   }
   #md:hover {
     color: #5A48DD;
     transform: scale(1.5); 
-    transition: transform 0.3s ease-in-out, color 0.1s ease-in-out;
   }
+  
+  
