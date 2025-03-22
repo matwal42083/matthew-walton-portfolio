@@ -14,10 +14,6 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Lobster+Two:ital,wght@1,700&family=Luckiest+Guy&family=Passion+One&family=Paytone+One&family=Philosopher&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/36f7f4f045.js"
-      crossorigin="anonymous"
-    ></script>
     <title>Matwal Portfolio - Contact</title>
   </head>
   <body>
@@ -68,34 +64,51 @@
     <main>
       <section class="flex-container">
         <div class="flex-item1">
-          <div class="sidebar">
-            <div class="menu-bar">
-              <i class="fa-solid fa-bars" id="hamburgerBar"></i>
-              <ul class="sidebar-list">
-                <li class="sidebar-list-items">
-                  <a href="/html/index.html"><i class="fa-solid fa-house"></i>Home</a>
-                </li>
-                <li class="sidebar-list-items">
-                  <a href="/html/about.html"><i class="fa-solid fa-exclamation-circle"></i>About</a>
-                </li>
-                <li class="sidebar-list-items">
-                  <a href="/html/portfoilo.html"><i class="fa-solid fa-project-diagram"></i>Projects</a>
-                </li>
-                <li class="sidebar-list-items">
-                  <a href="/html/contact.html"><i class="fa-solid fa-phone"></i>Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="flex-item2">
+         <div class="sidebar">
+           <div class="menu-bar" id="menuBar">
+             <i class="fa-solid fa-bars" id="hamburgerBar"></i>
+             <ul class="sidebar-list">
+               <li class="sidebar-list-items">
+                 <a href="/html/index.html"><i class="fa-solid fa-house"></i>Home</a>
+               </li>
+               <li class="sidebar-list-items">
+                 <a href="/html/about.html"><i class="fa-solid fa-exclamation-circle"></i>About</a>
+               </li>
+               <li class="sidebar-list-items">
+                 <a href="/html/portfoilo.html"><i class="fa-solid fa-project-diagram"></i>Projects</a>
+               </li>
+               <li class="sidebar-list-items">
+                 <a href="/html/contact.html"><i class="fa-solid fa-phone"></i>Contact</a>
+               </li>
+             </ul>
+           </div>
+         </div>
+         <div class="devCard">
+           <img
+               src="/images/matwalDevCard1.png"
+               alt="Matthew Walton's Dev Card"
+           />
+         </div>
+         <div class="spotify" id="spotifyContainer">
+           <iframe style="border-radius: 20px"
+            src="https://open.spotify.com/embed/playlist/5WLp2EAJJCzbE4BsIiUw22?utm_source=generator&theme=0" 
+            width="100%" 
+            height="100%" 
+            frameBorder="0" 
+            allowfullscreen=""
+            allow="autoplay;clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
+           </iframe>
+         </div>
+       </div>
+        <div class="flex-item2" id="gridItem">
           <div class="contact-container">
             <form action="/submit_form" method="post" class="contact-form">
               <h2>Contact Form</h2>
               <p>Please fill out the form below, If you interested in my computer abilities</p>
               <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" pattern="[a-zA-Z0-9\s]" minlength="2" maxlength="50" required />
+                <input type="text" id="name" name="name" placeholder="Your Name" pattern="[a-zA-Z0-9\s]+" minlength="2" maxlength="50" required />
               </div>
               <div class="form-group">
                 <label for="email">Email:</label>
@@ -107,7 +120,7 @@
               </div>
               <div class="form-group">
                 <label for="company">Company:</label>
-                <input type="text" id="company" name="company" placeholder="Your Company" pattern="^[a-zA-Z0-9\s]" required/>
+                <input type="text" id="company" name="company" placeholder="Your Company" pattern="^[a-zA-Z0-9\s]+" required/>
               </div>
               <div class="form-group">
                 <label for="message">Message:</label>
@@ -120,34 +133,33 @@
       </section>
     </main>
     <footer id="footerContainer">
-    <div class="footer-container">
-      <p>My Social Media and GitHub</p>
-      <ul class="social-media-list">
-        <li>
-          <a href="#"><i class="fa-brands fa-square-facebook" id="fb"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-square-x-twitter" id="X"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-square-github" id="gh"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-square-reddit" id="rt"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-linkedin" id="ln"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-square-youtube" id="yt"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa-brands fa-mastodon" id="md"></i></a>
+      <div class="footer-container">
+        <p>My Social Media and GitHub</p>
+        <ul class="social-media-list">
+          <li>
+            <a href="#"><i class="fa-brands fa-square-facebook" id="fb"></i></a>
           </li>
-        </li>
-      </ul>
-    </div>
-  </footer>
+          <li>
+            <a href="#"><i class="fa-brands fa-square-x-twitter" id="X"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-square-github" id="gh"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-square-reddit" id="rt"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin" id="ln"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-square-youtube" id="yt"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-mastodon" id="md"></i></a>
+            </li>
+        </ul>
+      </div>
+    </footer>
     <script src="/js/script.js"></script>
   </body>
 </html>
