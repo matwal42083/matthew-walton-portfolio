@@ -6,22 +6,15 @@
     <link rel="stylesheet" href="/css/contactStyles.css" />
     <script
       src="https://kit.fontawesome.com/36f7f4f045.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Lobster&family=Lobster+Two:ital,wght@1,700&family=Luckiest+Guy&family=Passion+One&family=Paytone+One&family=Philosopher&display=swap"
-      rel="stylesheet"
-    />
-    <title>Matwal Portfolio - Contact</title>
+      crossorigin="anonymous"></script>
+    <title>Matwal Portfolio</title>
   </head>
   <body>
     <header>
       <div class="header-container" id="headerContainer">
         <div class="logo">
           <img src="/images/matwalPicLogo.jpg" alt="matwal pic" id="logoImg"/>
-          <h1>
+          <h1 class="profileName" id="profileTite">
             Matthew Walton <br />
             (Matwal)
           </h1>
@@ -39,7 +32,7 @@
         </div>
       </div>
     </header>
-    <nav class="breadcrumbs">
+    <nav class="breadcrumbs" id="breadcrumbs">
       <ul class="crumble">
         <li class="list-item" id="crumble1">
           <a href="/html/index.html"><i class="fa-solid fa-house"></i>Home</a>
@@ -64,43 +57,50 @@
     <main>
       <section class="flex-container">
         <div class="flex-item1">
-         <div class="sidebar">
-           <div class="menu-bar" id="menuBar">
-             <i class="fa-solid fa-bars" id="hamburgerBar"></i>
-             <ul class="sidebar-list">
-               <li class="sidebar-list-items">
-                 <a href="/html/index.html"><i class="fa-solid fa-house"></i>Home</a>
-               </li>
-               <li class="sidebar-list-items">
-                 <a href="/html/about.html"><i class="fa-solid fa-exclamation-circle"></i>About</a>
-               </li>
-               <li class="sidebar-list-items">
-                 <a href="/html/portfoilo.html"><i class="fa-solid fa-project-diagram"></i>Projects</a>
-               </li>
-               <li class="sidebar-list-items">
-                 <a href="/html/contact.html"><i class="fa-solid fa-phone"></i>Contact</a>
-               </li>
-             </ul>
+          <div class="sidebar">
+            <div class="menu-bar" id="menuBar">
+              <i class="fa-solid fa-bars" id="hamburgerBar"></i>
+              <ul class="sidebar-list">
+                <li class="sidebar-list-items" id="Highlight1">
+                  <a href="/html/index.html"><i class="fa-solid fa-house"></i>Home</a
+                  >
+                </li>
+                <li class="sidebar-list-items" id="Highlight2">
+                  <a href="/html/about.html"><i class="fa-solid fa-exclamation-circle"></i>About</a
+                  >
+                </li>
+                <li class="sidebar-list-items" id="Highlight3">
+                  <a href="/html/portfoilo.html"
+                    ><i class="fa-solid fa-project-diagram"></i>Projects</a
+                  >
+                </li>
+                <li class="sidebar-list-items" id="Highlight4">
+                  <a href="/html/contact.html"
+                    ><i class="fa-solid fa-phone"></i>Contact</a
+                  >
+                </li>
+              </ul>
            </div>
-         </div>
-         <div class="devCard">
-           <img
-               src="/images/matwalDevCard1.png"
-               alt="Matthew Walton's Dev Card"
-           />
-         </div>
-         <div class="spotify" id="spotifyContainer">
-           <iframe style="border-radius: 20px"
-            src="https://open.spotify.com/embed/playlist/5WLp2EAJJCzbE4BsIiUw22?utm_source=generator&theme=0" 
-            width="100%" 
-            height="100%" 
-            frameBorder="0" 
-            allowfullscreen=""
-            allow="autoplay;clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-            loading="lazy">
-           </iframe>
-         </div>
-       </div>
+          </div>
+          <div class="devCard" id="devCard">
+            <img
+                src="/images/matwalDevCard1.png"
+                width="300"
+                alt="Matthew Walton's Dev Card"
+            />
+          </div>
+          <div class="spotify" id="spotifyContainer">
+            <iframe style="border-radius: 20px"
+             src="https://open.spotify.com/embed/playlist/5WLp2EAJJCzbE4BsIiUw22?utm_source=generator&theme=0" 
+             width="100%" 
+             height="100%" 
+             frameBorder="0" 
+             allowfullscreen=""
+             allow="autoplay;clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+             loading="lazy">
+            </iframe>
+          </div>
+        </div>
         <div class="flex-item2" id="gridItem">
           <div class="contact-container">
             <form action="/submit_form" method="post" class="contact-form">
