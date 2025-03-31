@@ -1,5 +1,3 @@
-
-
 .breadcrumbs {
   font-size: 0.810rem;
   background-color: #4ac6ff;
@@ -49,60 +47,45 @@
   margin: 0rem 1.875rem 0rem 1.875rem;
 }
 
-.flex-container {
-  display: flex;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 0 20px;
-  flex: 1;
-}
-
-.flex-item1 {
-  flex: 0 0 200px;
-  padding: 20px;
-  position: relative;
-  right: 20px;
-  margin-right: 30px;
-}
 
 
 
-.sidebar {
-  width: 250px; /* Adjust the width of the sidebar as needed */
-}
+
 
 .sidebar li:nth-child(4) {
   background-color: #fcfbcf;
 }
 
 
-/*contact form field*/
-.flex-item2 {
-  background-color: white;
-  margin-left: 20px;
-}
+/* Flex container for sidebar and main content */
 
+
+
+/* Contact form container */
+
+
+/* Contact form container */
 .contact-container {
-  max-width: 100%; /* Use 100% width for responsiveness */
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 30rem; /* Set a smaller width for the contact form (480px converted to rem) */
+  margin: 0 auto; /* Center the form horizontally within the container */
+  padding: 1.25rem; /* 20px converted to rem */
   background-color: #fafafa;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px converted to rem */
   display: flex;
   justify-content: center; /* Center the form horizontally */
   align-items: center; /* Center the form vertically */
   flex-direction: column;
 }
 
+/* Form styles */
 form {
   background-color: rgba(202, 237, 255, 0.499);
-  padding: 15px;
-  border: 1px solid #01072c;
-  border-radius: 5px;
+  padding: 0.9375rem; /* 15px converted to rem */
+  border: 0.0625rem solid #01072c; /* 1px converted to rem */
+  border-radius: 0.3125rem; /* 5px converted to rem */
   width: 100%; /* Ensure the form takes full width */
-  max-width: 800px; /* Limit the maximum width */
+  max-width: 25rem; /* Set a smaller max width for the form (400px converted to rem) */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  max-height: 800px;
 }
 
 .contact-form {
