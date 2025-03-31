@@ -52,8 +52,6 @@ function lightMode() {
   hamburgerBar.style.color = 'rgb(1, 7, 44)';
   menu.style.background = 'white';
   menu.style.border = '1px solid rgb(1, 7, 44)';
-  menu.style.boxShadow = ' -5px -5px 10px rgba(86, 85, 85, 0.7)';
-  spotify.style.boxShadow = '-5px -5px 10px rgba(86, 85, 85, 0.7)';
   grid.style.borderTop = '1px solid rgb(1, 7, 44)';
   grid.style.borderBottom = '1px solid rgb(1, 7, 44)';
   grid.style.borderRight = '4px solid rgb(1, 7, 44)';
@@ -88,8 +86,6 @@ function darkMode() {
   hamburgerBar.style.color = 'rgb(74, 198, 255)';
   menu.style.border = '1px solid rgb(238, 255, 0)';
   menu.style.background = 'rgb(1, 7, 44)';
-  menu.style.boxShadow = ' -5px -5px 10px rgb(74, 198, 255)';
-  spotify.style.boxShadow = '-5px -5px 10px rgb(49, 180, 49)';
   grid.style.borderTop = '1px solid rgb(238, 255, 0)';
   grid.style.borderBottom = '1px solid rgb(238, 255, 0)';
   grid.style.borderRight = '4px solid rgb(238, 255, 0)';
@@ -137,5 +133,21 @@ document.addEventListener('DOMContentLoaded', function() {
   } else {
     darkMode();
   }
-}); 
+});
+
+// Delay navigation to allow everything to load
+function delayNavigation(event) {
+  event.preventDefault(); // Prevent the default navigation behavior
+  const targetUrl = event.currentTarget.href; // Get the target URL
+
+  // Add a delay (e.g., 500ms)
+  setTimeout(() => {
+    window.location.href = targetUrl; // Navigate to the target URL
+  }, 500); // Adjust the delay time as needed
+}
+
+// Attach the delayNavigation function to all links
+document.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', delayNavigation);
+});
 

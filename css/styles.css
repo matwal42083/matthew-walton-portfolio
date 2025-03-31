@@ -8,259 +8,9 @@
 /* Websites color pallet 
    yellow - #dcd80d , light Baby Blue - #4ac6ff, Darknight Blue - #01072c */ 
 
+
+
 /* Dark mode styles - make these specific enough */
-
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  font-family: sans-serif;
-  background-color:#01072c;
-}
-/* Styles for light and dark mode */
-body, header, footer, .nav a, #logoImg, h1, #breadcrumbs, #menuBar, #hamburgerBar, #spotifyContainer, #gridItem {
-  transition: all 0.5s ease;
-}
-
-body.light-mode {
-  background: white;
-  color: #01072c;
-}
-
-body.dark-mode {
-  background: black;
-  color: white;
-}
-
-body.light-mode header,
-body.light-mode footer {
-  background: white;
-  color: #01072c;
-}
-
-body.dark-mode header,
-body.dark-mode footer {
-  background: black;
-  color: white;
-}
-
-body.light-mode .nav a {
-  color: black;
-}
-
-body.dark-mode .nav a {
-  color: white;
-}
-
-body.light-mode p {
-  color: #01072c;
-}
-
-body.dark-mode p {
-  color: white;
-}
-
-
-body.light-mode {
-  background: white;
-  color: #01072c;
-}
-
-body.dark-mode {
-  background: black;
-  color: white;
-}
-
-body.light-mode header,
-body.light-mode footer {
-  background: white;
-  color: #01072c;
-}
-
-body.dark-mode header,
-body.dark-mode footer {
-  background: black;
-  color: white;
-}
-
-body.light-mode .nav a {
-  color: black;
-}
-
-body.dark-mode .nav a {
-  color: white;
-}
-
-body.light-mode p {
-  color: #01072c;
-}
-
-body.dark-mode p {
-  color: white;
-}
-
-body.light-mode .sidebar li {
-  background-color: #d9d9d9fc;
-  color: black;
-}
-
-body.dark-mode .sidebar li {
-  background-color: #01072c;
-  color: white;
-}
-
-body.light-mode .sidebar li:hover,
-body.light-mode .sidebar li:focus,
-body.light-mode .sidebar li:active {
-  background-color: #4ac6ff;
-  color: #01072c;
-}
-
-body.dark-mode .sidebar li:hover,
-body.dark-mode .sidebar li:focus,
-body.dark-mode .sidebar li:active {
-  background-color: #4ac6ff;
-  color: #01072c;
-}
-
-body.light-mode .devCard img {
-  background-color: #4ac6ff;
-  border: 1px solid #deec1d;
-}
-
-body.dark-mode .devCard img {
-  background-color: #01072c;
-  border: 1px solid white;
-}
-
-body.light-mode .spotify {
-  background-color: rgb(31, 31, 31);
-  border: 1px solid rgba(37, 255, 37, 0.935);
-}
-
-body.dark-mode .spotify {
-  background-color: #01072c;
-  border: 1px solid white;
-}
-
-body.light-mode .menu-bar {
-  background-color: white;
-  border: 1px solid #eeff00;
-}
-
-body.dark-mode .menu-bar {
-  background-color: #01072c;
-  border: 1px solid white;
-}
-
-body.light-mode .nav li a {
-  border: 2px solid #01072c;
-} 
-
-body.dark-mode .nav li a {
-  border: 2px solid #eeff00;
-}
-
-body.light-mode .logo img {
-  border: 2px solid #01072c;
- }
-
- body.dark-mode .logo img {
-  border: 2px solid #eeff00;
- }
-
-
-
-/* End of light and dark mode */
-
-/* Header and all the elements in the header*/
-.header-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: #01072c;
-  
-/* Nav Bar for the header*/
-}
-.nav ul {
-  list-style: none;
-  list-style-position: inside;
-  
-}
-
-.nav li {
-  display: inline;
-  margin-left:  1.5rem;
-  margin-right:  1.5rem;
-  margin-top:  0.625rem;
-}
-
-.nav li a {
-  text-decoration: none;
-  color: #4ac6ff;
-  font-size: 1rem;
-  border: 2px solid #eeff00;
-  border-radius: 5px;
-  padding: 6px 10px;
-}
-.nav li a:hover {
- background-color: #4ac6ff;
- border: 2px solid #dcd80d;
- color: #01072c;
- transition: background-color 6s ease-in-out;
- transition: color 0.5s ease;
-}
-.nav {
- margin-bottom: 1.5rem;
-}
-
-/* the logo of the page which is my picture*/
-.logo {
-  margin-top: 1px;
-}
-
-.logo img {
-  width: 65px;
-  height: 65px;
-  border-radius: 100%;
-  margin-top: 0.1875rem;
-  margin-left: 0.625rem;
-  border: 2px solid #eeff00;
-
-
-}
-.logo h1 {
-  margin-left: 0.625rem;
-  margin-bottom: 5px;
-  font-size: 1.30rem;
-  float: right;
-  position: relative;
-  bottom: 0.1875rem;
-  color:#4ac6ff;
-}
-/* the toggle button for hte dark mode*/
-
-.toggle-btn {
-  border: 1px solid black;
-  padding: 0.3125rem 0.5rem;
-  margin-right: 1.5rem;
-  margin-bottom: 1.5rem;
-  border-radius: 5px;
-  position: relative;
-  bottom: 0.1875rem;
-  background-color:#4ac6ff;
-}
-
-.toggle-btn i {
-  margin-right: 3px;
-}
 
 /* breadcrumbs and the crumbles*/
 
@@ -314,150 +64,9 @@ body.light-mode .logo img {
 
 /* The breadcrumbs */
 
-.flex-container {
-  display: flex;
-  max-width: 1250px;
-  margin: 20px auto;
-  padding: 0 20px;
-  flex: 1;
-}
-
-.flex-item1 {
-  flex: 0 0 150px;
-  padding: 20px;
-  position: relative;
-  right: 20px;
-}
-
-
 .sidebar li:first-child {
   background-color: #fcfbc2;
 }
-
-.sidebar ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-
-}
-.sidebar .menu-bar {
-  background-color: #01072c;
-  padding: 15px;
-  position: relative;
-  bottom: 20px;
-  left: 10px;
-  
-
-}
-
-.sidebar li {
-  display: flex;
-  background-color: #d9d9d9fc;
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
-  border-bottom: 1px solid rgba(129, 128, 128, 0.265);
-  border-right: 1px solid rgba(87, 87, 87, 0.312);
-  border-top: 1px solid rgba(116, 116, 116, 0.102);
-  width: 100%; /* Make the list items take the full width of the sidebar */
-  padding: 5px 10px; /* Adjust padding as needed */
-  margin: 5px 0; /* Adjust margin as needed */
-  box-sizing: border-box; /* Ensure padding and border are included in the width */
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
-  border-radius: 5px;
-}
-
-.sidebar li a {
-  text-decoration: none;
-  color: black;
-  display: block; /* Make the anchor tags take the full width of the list items */
-  width: 100%; /* Ensure the anchor tag takes the full width */
-  text-align: center; /* Center the text inside the anchor tag */
-}
-#hamburgerBar {
-  color:#4ac6ff;
-}
-.sidebar li:hover {
-  background-color: #fffd7f; /* Change background color on hover */
-  color: #01072c; /* Change text color on hover */
-  border-top: 1px solid rgb(1, 7, 44);
-  border-bottom: 1px solid rgb(1, 7, 44);
-  border-left: 3px solid rgb(1, 7, 44);
-  border-right: 3px solid rgb(1, 7, 44);
-  border-radius: 5px; /* Add a box shadow on hover */
-  transform: scale(1.05); /* Slightly increase the size on hover */
-}
-.sidebar li:focus {
-  background-color: #9a980f; /* Change background color on hover */
-  color: #01072c; /* Change text color on hover */
-  border-top: 1px solid rgb(1, 7, 44);
-  border-bottom: 1px solid rgb(1, 7, 44);
-  border-left: 3px solid rgb(1, 7, 44);
-  border-right: 3px solid rgb(1, 7, 44);
-  border-radius: 5px; /* Add a box shadow on hover */
-  transform: scale(1.05); /* Slightly increase the size on hover */
-}
-
-.sidebar li:active {
-  background-color:#cfcc01; /* Change background color on hover */
-  color: #01072c; /* Change text color on hover */
-  border-top: 1px solid rgb(1, 7, 44);
-  border-bottom: 1px solid rgb(1, 7, 44);
-  border-left: 3px solid rgb(1, 7, 44);
-  border-right: 3px solid rgb(1, 7, 44);
-  border-radius: 5px; /* Add a box shadow on hover */
-  transform: scale(1.05); /* Slightly increase the size on hover */
-}
-.sidebar-list-items a i {
-  margin-right: 1rem;
-  text-align: center;
-  padding: 0.625rem 1.875rem 0.625rem 0.625rem;
-}
-
-/* DevCard section*/
-.devCard img {
-  width: 275px;
-  height: 350px;
-  border: 1px solid #deec1d;
-  background-color: rgb(74, 198, 255);
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow:  -5px -5px 10px #4ac6ff;
-  position: relative;
-  top: 5px;
-  bottom: 5px;
-  left: 8px;
-}
-
-/* Spotify container */
-
-.spotify {
-  background-color:rgb(31, 31, 31);
-  box-shadow: -5px -5px 10px rgb(49, 180, 49);
-  border: 1px solid rgba(37, 255, 37, 0.935);
-  width: 275px;
-  height: 400px;
-  position: relative;
-  border-radius: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-  top: 23px;
-  left: 8px;
-}
-
-
-
-
-.menu-bar {
-  border: 1px solid #eeff00;
-  border-radius: 3px;
-  padding: 0.125rem;
-  box-shadow:  -5px -5px 10px #4ac6ff;
-  background-color: white;
-  margin-bottom: 20px;
-  width: 260px;
-}
-
 
 /* Inside your existing .grid-container styles */
 .grid-container {
@@ -466,7 +75,7 @@ body.light-mode .logo img {
   height: 100%; 
   width: 100%;
   border: none;
-  padding: 5px;
+  padding: 0.3125rem; /* 5px converted to rem */
   font-family: 'Bebas Neue', sans-serif;
 }
 .titleBox {
@@ -477,24 +86,24 @@ body.light-mode .logo img {
 }
 .bioTitle {
   position: relative;
-  right: 50px;
+  right: 3.125rem; /* 50px converted to rem */
 }
 #eggHead {
-  width: 100px;
-  height: 100px;
+  width: 6.25rem; /* 100px converted to rem */
+  height: 6.25rem; /* 100px converted to rem */
   position: relative;
-  right: 250px;
+  right: 15.625rem; /* 250px converted to rem */
 }
 /* Bio content*/
 .bio-content{
   text-indent: 2rem; /* Modernized indentation */
   word-spacing: 0.05rem; /* Slightly increased for readability */
   letter-spacing: 0.02rem; /* Slightly reduced for a cleaner look */
-  font-family: 'Roboto', sans-serif; /* More readable font stack -  add fallback fonts*/
+  font-family: 'Roboto', sans-serif; /* More readable font stack - add fallback fonts */
   line-height: 1.6; /* Improved line height for readability */
   margin-bottom: 1rem; /* Consistent spacing between paragraphs */
-  padding: 20px; /* Increased padding for better visual comfort */
-  border-radius: 5px; /* Subdued border-radius */
+  padding: 1.25rem; /* 20px converted to rem */
+  border-radius: 0.3125rem; /* 5px converted to rem */
   background-color: rgba(238, 238, 238, 0.4); /* Subtle background color with opacity */
 }
 
@@ -506,16 +115,16 @@ body.light-mode .logo img {
   align-items: center;
   justify-content: flex-start;
   position: relative;  
-  padding: 25px;
-  border-radius: 5px;
+  padding: 1.5625rem; /* 25px converted to rem */
+  border-radius: 0.3125rem; /* 5px converted to rem */
   grid-column: 1 / -1; 
   grid-row: 1 / -1; 
   overflow: hidden;
   background-color: #fff;
-  border-top:1px solid #eeff00;
-  border-bottom: 1px solid #eeff00;
-  border-left: 4px solid #eeff00;
-  border-right: 4px solid#eeff00;
+  border-top: 0.0625rem solid #eeff00; /* 1px converted to rem */
+  border-bottom: 0.0625rem solid #eeff00; /* 1px converted to rem */
+  border-left: 0.25rem solid #eeff00; /* 4px converted to rem */
+  border-right: 0.25rem solid #eeff00; /* 4px converted to rem */
 }
 
 .grid-item p {
@@ -528,93 +137,4 @@ body.light-mode .logo img {
   color: black;
 }
 
-footer {
-  background-color:rgb(1, 7, 44);
-  color: #4ac6ff;
-  text-align: center;
-  padding: 10px 0;
-  margin-top: auto;
-  border-top: 2px solid #eeff00;
-}
-
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.social-media-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
- 
-}
-
-
-.social-media-list li {
-  margin: 0 10px;
-}
-
-.social-media-list a {
-  text-decoration: none;
-  
-}
- #fb {
-  color:#0867ff40;
-  
-}
-#X {
-  color:rgba(136, 135, 135, 0.566);
-}
-#gh {
-  color:rgba(136, 135, 135, 0.566);
-}
-
-.fa-brands {
-  font-size: 35px;
-}
-#ln {
-  color: rgba(0, 118, 181, 0.328);
-}
-#yt {
-  color:rgba(255, 0, 51, 0.307);
-}
-#rt {
-  color: rgba(255, 68, 0, 0.303);
-}
-#md {
-  color: #5948dd3d;
-}
-
-/* Hover Icons*/
-#fb, #X, #gh, #ln, #yt, #rt, #md:hover {
-  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Add transition for smooth effect */
-}
-#fb:hover {
-  color:#0867ff;
-  transform: scale(1.5); 
-  }
-#X:hover {
-  transform: scale(1.5); 
-}
-#gh:hover {
-  transform: scale(1.5); 
-}
-
-#ln:hover {
-  color: rgb(0, 119, 181);
-  transform: scale(1.5); 
-}
-#yt:hover {
-  color:rgb(255, 0, 51);
-  transform: scale(1.5); 
-}
-#rt:hover {
-  color: rgb(255, 69, 0);
-  transform: scale(1.5); 
-}
-#md:hover {
-  color: #5A48DD;
-  transform: scale(1.5); 
-}
 
