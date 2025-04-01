@@ -8,34 +8,9 @@ font-family: 'Bebas Neue', sans-serif;*/
 /* Website Color Palette */
 
 /* Breadcrumbs and Crumbles */
-.breadcrumbs {
-  font-size: 0.810rem;
-  background-color: var(--light-blue);
-  border-top: 0.125rem solid var(--yellow); /* 2px converted to rem */
-  border-bottom: 0.125rem solid var(--yellow); /* 2px converted to rem */
-  position: relative;
-  padding: 0.0625rem; /* 1px converted to rem */
-  list-style: none;
-}
 
-.list-item i {
-  margin-right: 0.625rem; /* 10px converted to rem */
-}
 
-.list-item a {
-  padding-right: 0.25rem; /* 4px converted to rem */
-  color: black;
-}
 
-.breadcrumbs ul {
-  list-style: none;
-  list-style-position: inside;
-}
-
-.breadcrumbs li {
-  display: inline;
-  margin: 0 1.875rem; /* 30px converted to rem */
-}
 
 /* Hidden Breadcrumbs */
 #crumble2,

@@ -1,32 +1,5 @@
 /* Breadcrumbs Styles */
-.breadcrumbs {
-  font-size: 0.810rem;
-  background-color: var(--light-blue);
-  border-top: 0.125rem solid var(--yellow); /* 2px converted to rem */
-  border-bottom: 0.125rem solid var(--yellow); /* 2px converted to rem */
-  position: relative;
-  padding: 0.0625rem; /* 1px converted to rem */
-  list-style: none;
-}
 
-.list-item i {
-  margin-right: 0.625rem; /* 10px converted to rem */
-}
-
-.list-item a {
-  padding-right: 0.25rem; /* 4px converted to rem */
-  color: black;
-}
-
-.breadcrumbs ul {
-  list-style: none;
-  list-style-position: inside;
-}
-
-.breadcrumbs li {
-  display: inline;
-  margin: 0 1.875rem; /* 30px converted to rem */
-}
 
 .breadcrumbs li:nth-child(3)::after {
   content: ">>>";
@@ -42,17 +15,15 @@
 
 /* Contact Form Container */
 .contact-container {
-  max-width: 100rem; /* Set a smaller width for the contact form (480px converted to rem) */
+   /* Set a smaller width for the contact form (480px converted to rem) */
   margin: 0 auto; /* Center the form horizontally within the container */
   padding: 1.25rem; /* 20px converted to rem */
   background-color: #fafafa;
-  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px converted to rem */
   display: flex;
   justify-content: center; /* Center the form horizontally */
   align-items: center; /* Center the form vertically */
   flex-direction: column;
-  position: relative;
-  left: 50px;
+
   width: 100%;
 }
 
@@ -63,8 +34,7 @@ form {
   border: 0.0625rem solid var(--dark-blue); /* 1px converted to rem */
   border-radius: 0.3125rem; /* 5px converted to rem */
   width: 100%;
-  max-width: 100rem; /* Set a smaller max width for the form (400px converted to rem) */
-  
+  /* Set a smaller max width for the form (400px converted to rem) */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
@@ -115,21 +85,5 @@ form {
   background-color: #555;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .flex-container {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .sidebar {
-    flex: 0 0 auto;
-    margin-bottom: 1.25rem; /* 20px converted to rem */
-  }
-
-  .contact-container {
-    padding: 1rem; /* Adjust padding for smaller screens */
-  }
-}
 
 

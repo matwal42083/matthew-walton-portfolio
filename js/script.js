@@ -220,3 +220,41 @@ document.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', delayNavigation);
 });
 
+// Social Media Icons with Text
+const socialMediaIcons = document.querySelectorAll('.social-media-list i');
+
+// Add hover behavior to show text
+socialMediaIcons.forEach(icon => {
+  const socialMediaName = icon.getAttribute('data-name'); // Get the name from a custom attribute
+
+  // Create a span element for the text
+  const textElement = document.createElement('span');
+  textElement.textContent = socialMediaName;
+  textElement.style.position = 'absolute';
+  textElement.style.fontSize = '0.75rem'; // Smaller font size
+  textElement.style.color = 'inherit'; // Match the icon's color
+  textElement.style.visibility = 'hidden'; // Initially hidden
+  textElement.style.opacity = '0'; // Initially invisible
+  textElement.style.transition = 'visibility 0.3s ease, opacity 0.3s ease';
+  textElement.style.top = '100%'; // Position below the icon
+  textElement.style.left = '50%'; // Center the text horizontally
+  textElement.style.transform = 'translateX(-50%)'; // Adjust for centering
+  textElement.style.whiteSpace = 'nowrap'; // Prevent text wrapping
+
+  // Append the text element to the icon's parent
+  icon.parentElement.style.position = 'relative'; // Ensure the parent is positioned
+  icon.parentElement.appendChild(textElement);
+
+  // Show the text on hover
+  icon.addEventListener('mouseover', () => {
+    textElement.style.visibility = 'visible';
+    textElement.style.opacity = '1';
+  });
+
+  // Hide the text when the mouse leaves
+  icon.addEventListener('mouseout', () => {
+    textElement.style.visibility = 'hidden';
+    textElement.style.opacity = '0';
+  });
+});
+

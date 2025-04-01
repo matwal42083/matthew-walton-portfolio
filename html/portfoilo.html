@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/base.css" /> <!-- Shared styles -->
-    <link rel="stylesheet" href="/css/portfoiloStyles.css" /> <!-- Page-specific styles -->
+    <link rel="stylesheet" href="/css/base.css"/> <!-- Shared styles -->
+    <link rel="stylesheet" href="/css/portfoiloStyles.css"/> <!-- Page-specific styles -->
     <script
       src="https://kit.fontawesome.com/36f7f4f045.js"
       crossorigin="anonymous"></script>
@@ -87,7 +87,7 @@
       <div class="gallery-container">
         <div class="certification-title">
           <h2>Certifications</h2>
-            <p>I have a lot of certifications, because I didn't just learned my skills just anywhere's. I went 
+            <p class="certDetails">I have a lot of certifications, because I didn't just learned my skills just anywhere's. I went 
            for the better experience. One is from FullStack Academy, I have multi from sololearn, 
            then freeCodeCamp and Codecademy. freeCodeCamp and Codecademy is where I really sharpen my skills and 
            was able to learn more skills as well, which I took that advantage of learning.
@@ -136,7 +136,7 @@
         </div>
        <div class="projects-gallery-title">
          <h2>Projects Gallery</h2>
-           <p>This is my projects gallery of all of my projects I've done,
+           <p class="projectDetails">This is my projects gallery of all of my projects I've done,
          none of these projects are really big or neither are products. 
          there simply just practice projects. I'm still learning and I'm focused on 
          mastering JavaScript and Java, and learn most of JavaScripts frameworks and libraries.
@@ -242,33 +242,32 @@
     </main>
   </section>
   <footer id="footerContainer">
-  <div class="footer-container">
-    <p>My Social Media and GitHub</p>
-    <ul class="social-media-list">
-      <li>
-        <a href="#"><i class="fa-brands fa-square-facebook" id="fb"></i></a>
-      </li>
-      <li>
-        <a href="#"><i class="fa-brands fa-square-x-twitter" id="X"></i></a>
-      </li>
-      <li>
-        <a href="#"><i class="fa-brands fa-square-github" id="gh"></i></a>
-      </li>
-      <li>
-        <a href="#"><i class="fa-brands fa-square-reddit" id="rt"></i></a>
-      </li>
-      <li>
-        <a href="#"><i class="fa-brands fa-linkedin" id="ln"></i></a>
-      </li>
-      <li>
-        <a href="#"><i class="fa-brands fa-square-youtube" id="yt"></i></a>
-      </li>
-      <li>
-        <a href="#"><i class="fa-brands fa-mastodon" id="md"></i></a>
+    <div class="footer-container">
+      <p>My Social Media and GitHub</p>
+      <ul class="social-media-list">
+        <li>
+          <a href="#"><i class="fa-brands fa-square-facebook" id="fb" data-name="Facebook"></i></a>
         </li>
-      </li>
-    </ul>
-   </div>
+        <li>
+          <a href="#"><i class="fa-brands fa-square-x-twitter" id="X" data-name="X"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-square-github" id="gh" data-name="GitHub"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-square-reddit" id="rt" data-name="Reddit"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-linkedin" id="ln" data-name="LinkedIn"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-square-youtube" id="yt" data-name="YouTube"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-mastodon" id="md" data-name="Mastodon"></i></a>
+        </li>
+      </ul>
+    </div>
  </footer>
 <script src="/js/script.js" defer></script>
 </body>

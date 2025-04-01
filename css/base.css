@@ -9,7 +9,9 @@
   --black: #000000;
   --footer-blue: rgb(1, 7, 44);
   --hover-yellow: #fffd7f;
+
 }
+
 
 html,
 body {
@@ -20,7 +22,9 @@ body {
   background-color: var(--dark-blue);
   color: var(--white);
   box-sizing: border-box;
+
 }
+
 
 /* Smooth transitions for theme changes */
 body,
@@ -189,7 +193,34 @@ body.dark-mode #gh:hover, body.dark-mode #X:hover {
 .toggle-btn i {
   margin-right: 0.1875rem; /* 3px converted to rem */
 }
+/* breadcrumbs styles*/
+.breadcrumbs {
+  font-size: 0.810rem;
+  background-color: var(--light-blue);
+  border-top: 0.125rem solid var(--yellow); /* 2px converted to rem */
+  border-bottom: 0.125rem solid var(--yellow); /* 2px converted to rem */
+  position: relative;
+  padding: 0.0625rem; /* 1px converted to rem */
+  list-style: none;
+}
 
+.list-item i {
+  margin-right: 0.625rem; /* 10px converted to rem */
+}
+
+.list-item a {
+  padding-right: 0.25rem; /* 4px converted to rem */
+  color: black;
+}
+
+.breadcrumbs ul {
+  list-style: none;
+  list-style-position: inside;
+}
+.breadcrumbs li {
+  display: inline;
+  margin: 0 1.875rem; /* 30px converted to rem */
+}
 /* Sidebar Styles */
 .flex-container {
   display: flex;
@@ -287,10 +318,28 @@ footer {
   gap: 0.625rem; /* 10px converted to rem */
 }
 
+.social-media-list i {
+  text-decoration: none;
+  font-size: 35px; /* 35px converted to rem */
+
+}
 .social-media-list a {
   text-decoration: none;
-  font-size: 2.1875rem; /* 35px converted to rem */
+  color: var(--white);
+}
 
+/* Style for the social media text */
+.social-media-list span {
+  position: absolute;
+  font-size: 0.75rem; /* Smaller font size */
+  color: inherit; /* Match the icon's color */
+  visibility: hidden; /* Initially hidden */
+  opacity: 0; /* Initially invisible */
+  transition: visibility 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+  white-space: nowrap; /* Prevent text wrapping */
+  top: 100%; /* Position below the icon */
+  left: 50%; /* Center the text horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
 }
 
 #fb:hover {
@@ -304,16 +353,14 @@ footer {
   background-color: rgba(0, 0, 0, 0.475);
   padding: 5px;
   border: 1px solid rgba(0, 0, 0, 1);
-  transform: scale(1.2);
-  transition: all 0.3s ease;
+
 }
 #gh:hover {
   color: rgba(0, 0, 0, 1);
   background-color: rgba(0, 0, 0, 0.475);
   border: 1px solid rgba(0, 0, 0, 1);
   padding: 5px;
-  transform: scale(1.2);
-  transition: all 0.3s ease;
+
 }
 #rt:hover{
   color: rgb(255, 52, 7);
@@ -343,11 +390,11 @@ footer {
 
 #X {
   color: rgba(0, 0, 0, 0.361);
-  transition: all 0.3s ease;
+  
 }
 #gh {
   color: rgba(0, 0, 0, 0.361);
-  transition: all 0.3s ease;
+ 
 }
 #rt{
   color: rgba(255, 53, 7, 0.404);

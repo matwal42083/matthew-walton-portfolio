@@ -8,35 +8,7 @@
 /* Websites color pallet 
    yellow - #dcd80d , light Baby Blue - #4ac6ff, Darknight Blue - #01072c */ 
 
-/* Breadcrumbs Styles */
-.breadcrumbs {
-  font-size: 0.810rem;
-  background-color: var(--light-blue);
-  border-top: 0.125rem solid var(--yellow); /* 2px converted to rem */
-  border-bottom: 0.125rem solid var(--yellow); /* 2px converted to rem */
-  position: relative;
-  padding: 0.0625rem; /* 1px converted to rem */
-  display: flex; /* Use flexbox for layout */
-  list-style: none;
-}
-
-.list-item i {
-  margin-right: 0.625rem; /* 10px converted to rem */
-  vertical-align: middle;
-  position: relative; /* Adjust vertical alignment */
-  left: 0.3125rem; /* 5px converted to rem */
-}
-
-.list-item a {
-  padding-right: 0.25rem; /* 4px converted to rem */
-  color: black;
-}
-
-.breadcrumbs ul {
-  list-style: none;
-  list-style-position: inside;
-}
-
+/* breadcrumb styles that are unique to this page*/
 .breadcrumbs li:nth-child(2)::before {
   content: ">>>";
   margin-right: 2.5rem; /* 40px converted to rem */
@@ -48,13 +20,6 @@
   margin-left: 2.5rem; /* 40px converted to rem */
   color: black;
 }
-
-.breadcrumbs li {
-  display: inline;
-  margin: 0 1.875rem; /* 30px converted to rem */
-  border-radius: 0.3125rem; /* 5px converted to rem */
-}
-
 #crumble4 {
   display: none;
 }
@@ -78,6 +43,23 @@
 .gallery-container {
   margin-top: 1.25rem; /* 20px converted to rem */
   color: black;
+}
+
+.certDetails {
+  background-color: rgba(182, 182, 182, 0.49);
+  font-size: 1.0rem;
+  border-radius: 5px;
+  letter-spacing: 0.020rem;
+  word-spacing: 0.020rem;
+  padding: 0.7rem;
+}
+.projectDetails {
+  background-color: rgba(182, 182, 182, 0.49);
+  font-size: 1.0rem;
+  border-radius: 5px;
+  letter-spacing: 0.020rem;
+  word-spacing: 0.020rem;
+  padding: 0.7rem;
 }
 
 .gallery-grid {
