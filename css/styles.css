@@ -1,37 +1,30 @@
-/* YOUR FONT FAMILY CHOICES
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Anton', sans-serif;
-    font-family: 'Lobster', cursive;
-    font-family: 'Roboto Slab', serif;
-    font-family: 'Bebas Neue', sans-serif;
-*/
-/* Websites color pallet 
-   yellow - #dcd80d , light Baby Blue - #4ac6ff, Darknight Blue - #01072c */ 
+/* Font Family Choices 
+font-family: 'Roboto', sans-serif;
+font-family: 'Anton', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Roboto Slab', serif;
+font-family: 'Bebas Neue', sans-serif;*/
 
+/* Website Color Palette */
 
-
-/* Dark mode styles - make these specific enough */
-
-/* breadcrumbs and the crumbles*/
-
+/* Breadcrumbs and Crumbles */
 .breadcrumbs {
   font-size: 0.810rem;
-  background-color: #4ac6ff;
-  border-top: 2px solid #eeff00;
-  border-bottom: 2px solid #eeff00;
+  background-color: var(--light-blue);
+  border-top: 0.125rem solid var(--yellow); /* 2px converted to rem */
+  border-bottom: 0.125rem solid var(--yellow); /* 2px converted to rem */
   position: relative;
-  padding: 1px;
+  padding: 0.0625rem; /* 1px converted to rem */
   list-style: none;
 }
 
 .list-item i {
-  margin-right: 10px;
- /* Adjust vertical alignment */
+  margin-right: 0.625rem; /* 10px converted to rem */
 }
 
 .list-item a {
-  padding-right: 4px;
-  color:black;
+  padding-right: 0.25rem; /* 4px converted to rem */
+  color: black;
 }
 
 .breadcrumbs ul {
@@ -39,102 +32,50 @@
   list-style-position: inside;
 }
 
-
-
 .breadcrumbs li {
   display: inline;
-  margin: 0rem 1.875rem 0rem 1.875rem;
+  margin: 0 1.875rem; /* 30px converted to rem */
 }
 
+/* Hidden Breadcrumbs */
+#crumble2,
+#crumble3,
+#crumble4 {
+  display: none;
+}
 
-
-
-
-/* hidden breadcrumbs */
-
- #crumble2{
-   display: none;
-   }
-   #crumble3{
-     display: none;
-      }
-    #crumble4{
-     display: none;
-     }
-
-/* The breadcrumbs */
-
+/* Sidebar Highlight */
 .sidebar li:first-child {
   background-color: #fcfbc2;
 }
-
-/* Inside your existing .grid-container styles */
+#eggHead {
+  width: 100px;
+  height: 100px;
+  
+}
+/* Grid Container */
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr; /* This ensures equal width columns */
-  height: 100%; 
-  width: 100%;
-  border: none;
-  padding: 0.3125rem; /* 5px converted to rem */
-  font-family: 'Bebas Neue', sans-serif;
+  padding: 20px;
 }
 .titleBox {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: left;
+  align-items: space-around;
+  padding: 10px;
+  
+
 }
 .bioTitle {
-  position: relative;
-  right: 3.125rem; /* 50px converted to rem */
-}
-#eggHead {
-  width: 6.25rem; /* 100px converted to rem */
-  height: 6.25rem; /* 100px converted to rem */
-  position: relative;
-  right: 15.625rem; /* 250px converted to rem */
-}
-/* Bio content*/
-.bio-content{
-  text-indent: 2rem; /* Modernized indentation */
-  word-spacing: 0.05rem; /* Slightly increased for readability */
-  letter-spacing: 0.02rem; /* Slightly reduced for a cleaner look */
-  font-family: 'Roboto', sans-serif; /* More readable font stack - add fallback fonts */
-  line-height: 1.6; /* Improved line height for readability */
-  margin-bottom: 1rem; /* Consistent spacing between paragraphs */
-  padding: 1.25rem; /* 20px converted to rem */
-  border-radius: 0.3125rem; /* 5px converted to rem */
-  background-color: rgba(238, 238, 238, 0.4); /* Subtle background color with opacity */
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 170px;
 }
 
+.bio-content {
+  font-size: 1rem;
+  background-color: rgba(168, 168, 168, 0.251);
+  padding: 15px;
+  word-spacing: 0.001rem;
+  letter-spacing: 0.001rem;
 
-/* Apply this to your .grid-item */
-.grid-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  position: relative;  
-  padding: 1.5625rem; /* 25px converted to rem */
-  border-radius: 0.3125rem; /* 5px converted to rem */
-  grid-column: 1 / -1; 
-  grid-row: 1 / -1; 
-  overflow: hidden;
-  background-color: #fff;
-  border-top: 0.0625rem solid #eeff00; /* 1px converted to rem */
-  border-bottom: 0.0625rem solid #eeff00; /* 1px converted to rem */
-  border-left: 0.25rem solid #eeff00; /* 4px converted to rem */
-  border-right: 0.25rem solid #eeff00; /* 4px converted to rem */
 }
-
-.grid-item p {
-  width: 100%;
-  margin-bottom: 1rem;   /* Spacing between paragraphs within grid item */
-  color: black;
-}
-
-.grid-item h2 {
-  color: black;
-}
-
-

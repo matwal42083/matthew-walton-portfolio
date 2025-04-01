@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/portfoiloStyles.css" />
-    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/base.css" /> <!-- Shared styles -->
+    <link rel="stylesheet" href="/css/portfoiloStyles.css" /> <!-- Page-specific styles -->
     <script
       src="https://kit.fontawesome.com/36f7f4f045.js"
       crossorigin="anonymous"></script>
@@ -55,212 +55,192 @@
       </li>
     </ul>
   </nav>
-  <main>
-    <section class="flex-container">
-      <div class="flex-item1">
-        <div class="sidebar">
-          <div class="menu-bar" id="menuBar">
-            <i class="fa-solid fa-bars" id="hamburgerBar"></i>
-            <ul class="sidebar-list">
-              <li class="sidebar-list-items" id="Highlight1">
-                <a href="/html/index.html"><i class="fa-solid fa-house"></i>Home</a
-                >
-              </li>
-              <li class="sidebar-list-items" id="Highlight2">
-                <a href="/html/about.html"><i class="fa-solid fa-exclamation-circle"></i>About</a
-                >
-              </li>
-              <li class="sidebar-list-items" id="Highlight3">
-                <a href="/html/portfoilo.html"
-                  ><i class="fa-solid fa-project-diagram"></i>Projects</a
-                >
-              </li>
-              <li class="sidebar-list-items" id="Highlight4">
-                <a href="/html/contact.html"
-                  ><i class="fa-solid fa-phone"></i>Contact</a
-                >
-              </li>
-            </ul>
-         </div>
-        </div>
-        <div class="devCard" id="devCard">
-          <img
-              src="/images/matwalDevCard1.png"
-              width="300"
-              alt="Matthew Walton's Dev Card"
-          />
-        </div>
-        <div class="spotify" id="spotifyContainer">
-          <iframe style="border-radius: 20px"
-           src="https://open.spotify.com/embed/playlist/5WLp2EAJJCzbE4BsIiUw22?utm_source=generator&theme=0" 
-           width="100%" 
-           height="100%" 
-           frameBorder="0" 
-           allowfullscreen=""
-           allow="autoplay;clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-           loading="lazy">
-          </iframe>
+  <section class="flex-container">
+    <aside class="flex-item1" id="aside">
+      <div class="sidebar">
+        <div class="menu-bar" id="menuBar">
+          <i class="fa-solid fa-bars" id="hamburgerBar"></i>
+          <ul class="sidebar-list">
+            <li class="sidebar-list-items" id="Highlight1">
+              <a href="/html/index.html"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li class="sidebar-list-items" id="Highlight2">
+              <a href="/html/about.html"
+                ><i class="fa-solid fa-exclamation-circle"></i>About</a
+              >
+            </li>
+            <li class="sidebar-list-items" id="Highlight3">
+              <a href="/html/portfoilo.html"
+                ><i class="fa-solid fa-project-diagram"></i>Projects</a
+              >
+            </li>
+            <li class="sidebar-list-items" id="Highlight4">
+              <a href="/html/contact.html"
+                ><i class="fa-solid fa-phone"></i>Contact</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="flex-item2"  id="gridItem">
-        <div class="gallery-container">
-          <div class="certification-title">
-            <h2>Certifications</h2>
-              <p>I have a lot of certifications, because I didn't just learned my skills just anywhere's. I went 
-             for the better experience. One is from FullStack Academy, I have multi from sololearn, 
-             then freeCodeCamp and Codecademy. freeCodeCamp and Codecademy is where I really sharpen my skills and 
-             was able to learn more skills as well, which I took that advantage of learning.
-               </p>
-              <hr/>
-            </div>
-           <div class="gallery-grid">
-            <!-- Add your certification items here -->
-            <div class="gallery-item">
-              <img src="/images/matthew-walton-fullstackDiploma.jpg" alt="fullstack diploma">
-              <p>Fullstack Diploma</p>
-            </div>
-            <div class="gallery-item">
-              <img src="/images/HTML_certificate.jpg" alt="HTML Certification">
-              <p>HTML Certification</p>
-            </div>
-            <div class="gallery-item">
-              <img src="/images/CSS_certificate.jpg" alt="CSS Certification">
-              <p>CSS Certification</p>
-            </div>
-            <div class="gallery-item">
-              <img src="/images/JavaScriptCertification.png" alt="HTML Certification">
-              <p>JavaScript Certification</p>
-            </div>
-            <div class="gallery-item">
-              <img src="/images/Responsive-Web-Design_certificate.jpg" alt="Responsive web design Certification">
-              <p>Responsive Certification</p>
-            </div>
-            <div class="gallery-item">
-              <img src="/images/webDevelopment_Certified_SL.jpg" alt="HTML Certification">
-              <p>Web Development Certification</p>
-            </div>
-            <div class="gallery-item">
-              <img src="/images/web-dev-basics_certificate.jpg" alt="HTML Certification">
-              <p>web dev basics Certification</p>
-            </div>
-            <div class="gallery-item">
-              <img src="/images/Responsive-Web-Design.jpg" alt="HTML Certification">
-              <p>Responsive Web Design Certification</p>
-            </div>
-            <div class="gallery-item">
-              <img src="/images/JavaScriptAlgorithms_DataStructures.png" alt="HTML Certification">
-              <p>web dev basics Certification</p>
-            </div>
-            <!-- Add more certifications as needed -->
-          </div>
-         <div class="projects-gallery-title">
-           <h2>Projects Gallery</h2>
-             <p>This is my projects gallery of all of my projects I've done,
-           none of these projects are really big or neither are products. 
-           there simply just practice projects. I'm still learning and I'm focused on 
-           mastering JavaScript and Java, and learn most of JavaScripts frameworks and libraries.
+    </aside>
+    <main class="flex-item2" id="gridItem">
+      <div class="gallery-container">
+        <div class="certification-title">
+          <h2>Certifications</h2>
+            <p>I have a lot of certifications, because I didn't just learned my skills just anywhere's. I went 
+           for the better experience. One is from FullStack Academy, I have multi from sololearn, 
+           then freeCodeCamp and Codecademy. freeCodeCamp and Codecademy is where I really sharpen my skills and 
+           was able to learn more skills as well, which I took that advantage of learning.
              </p>
-             <hr/>
-           </div> 
-           <div class="gallery-grid">
-         <!-- Add your project items here -->
-            <div class="gallery-item">
-              <a href="/projects/project1/portInd.html">project
-               <p>skyline lights, Open the project minimize screen</p>
-               <p>
-                <strong>
-                 <em>freeCodeCamp</em>
-                </strong>
-               </p>
-              </a>
-            </div>
-            <div class="gallery-item">
-              <a href="/projects/project2/index.html">project
-               <p>Space Invaders game that I built along with</p>
-                <p>
-                 <strong>
-                  <em>Anie Kubow</em>
-                </strong>
-               </p>
-              </a>
-            </div>
-            <!-- Add more projects as needed -->
-            <div class="gallery-item">
-              <a href="/projects/project3/">project
-               <p>Rock, Paper, scissors game that I built along with</p>
-                <p>
-                 <strong>
-                  <em>Anie Kubow</em>
-                </strong>
-               </p>
-              </a>
-            </div>
-            <div class="gallery-item">
-              <a href="/projects/project4/">project
-               <p>Type graph of Nutrient Facts Label</p>
-                <p>
-                  <strong>
-                    <em>freeCodeCamp</em>
-                  </strong>
-                </p>
-              </a>  
-            </div>
-            <div class="gallery-item">
-              <a href="/projects/project5/">project
-               <p>Dragon RPG game that I built with</p>
-                <p>
-                 <strong>
-                  <em>freeCodeCamp</em>
-                 </strong>
-                </p>
-              </a>
-             </div>
-            <div class="gallery-item">
-              <a href="/projects/project6/">project
-               <p>To Do App, using HTML, CSS, JS that I built with</p>
-                <p>
-                  <strong>
-                    <em>freeCodeCamp</em>
-                  </strong>
-                </p>
-              </a>
-             </div>
-            <div class="gallery-item">
-              <a href="/projects/project7/">project
-               <p>Binary Converter, enter 5 and watch</p>
-                <p>
-                  <strong>
-                    <em>freeCodeCamp</em>
-                  </strong>
-                </p>
-              </a>
-            </div>
-            <div class="gallery-item">
-              <a href="/projects/project8/">project
-               <p>Rock, Paper, scissors game that I built along with</p>
-                <p>
-                  <strong>
-                    <em>freeCodeCamp</em>
-                  </strong>
-                </p>
-              </a>
-             </div>
-             <div class="gallery-item">
-              <a href="/projects/project9/numberGuesser/">project
-               <p>Number Guesser game</p>
-                <p>
-                  <strong>
-                    <em>Codecademy</em>
-                  </strong>
-                </p>
-              </a>
-             </div>
-       
+            <hr/>
           </div>
+         <div class="gallery-grid">
+          <!-- Add your certification items here -->
+          <div class="gallery-item">
+            <img src="/images/matthew-walton-fullstackDiploma.jpg" alt="fullstack diploma">
+            <p>Fullstack Diploma</p>
+          </div>
+          <div class="gallery-item">
+            <img src="/images/HTML_certificate.jpg" alt="HTML Certification">
+            <p>HTML Certification</p>
+          </div>
+          <div class="gallery-item">
+            <img src="/images/CSS_certificate.jpg" alt="CSS Certification">
+            <p>CSS Certification</p>
+          </div>
+          <div class="gallery-item">
+            <img src="/images/JavaScriptCertification.png" alt="HTML Certification">
+            <p>JavaScript Certification</p>
+          </div>
+          <div class="gallery-item">
+            <img src="/images/Responsive-Web-Design_certificate.jpg" alt="Responsive web design Certification">
+            <p>Responsive Certification</p>
+          </div>
+          <div class="gallery-item">
+            <img src="/images/webDevelopment_Certified_SL.jpg" alt="HTML Certification">
+            <p>Web Development Certification</p>
+          </div>
+          <div class="gallery-item">
+            <img src="/images/web-dev-basics_certificate.jpg" alt="HTML Certification">
+            <p>web dev basics Certification</p>
+          </div>
+          <div class="gallery-item">
+            <img src="/images/Responsive-Web-Design.jpg" alt="HTML Certification">
+            <p>Responsive Web Design Certification</p>
+          </div>
+          <div class="gallery-item">
+            <img src="/images/JavaScriptAlgorithms_DataStructures.png" alt="HTML Certification">
+            <p>web dev basics Certification</p>
+          </div>
+          <!-- Add more certifications as needed -->
+        </div>
+       <div class="projects-gallery-title">
+         <h2>Projects Gallery</h2>
+           <p>This is my projects gallery of all of my projects I've done,
+         none of these projects are really big or neither are products. 
+         there simply just practice projects. I'm still learning and I'm focused on 
+         mastering JavaScript and Java, and learn most of JavaScripts frameworks and libraries.
+           </p>
+           <hr/>
+         </div> 
+         <div class="gallery-grid">
+       <!-- Add your project items here -->
+          <div class="gallery-item">
+            <a href="/projects/project1/portInd.html">project
+             <p>skyline lights, Open the project minimize screen</p>
+             <p>
+              <strong>
+               <em>freeCodeCamp</em>
+              </strong>
+             </p>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="/projects/project2/index.html">project
+             <p>Space Invaders game that I built along with</p>
+              <p>
+               <strong>
+                <em>Anie Kubow</em>
+              </strong>
+             </p>
+            </a>
+          </div>
+          <!-- Add more projects as needed -->
+          <div class="gallery-item">
+            <a href="/projects/project3/">project
+             <p>Rock, Paper, scissors game that I built along with</p>
+              <p>
+               <strong>
+                <em>Anie Kubow</em>
+              </strong>
+             </p>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="/projects/project4/">project
+             <p>Type graph of Nutrient Facts Label</p>
+              <p>
+                <strong>
+                  <em>freeCodeCamp</em>
+                </strong>
+              </p>
+            </a>  
+          </div>
+          <div class="gallery-item">
+            <a href="/projects/project5/">project
+             <p>Dragon RPG game that I built with</p>
+              <p>
+               <strong>
+                <em>freeCodeCamp</em>
+               </strong>
+              </p>
+            </a>
+           </div>
+          <div class="gallery-item">
+            <a href="/projects/project6/">project
+             <p>To Do App, using HTML, CSS, JS that I built with</p>
+              <p>
+                <strong>
+                  <em>freeCodeCamp</em>
+                </strong>
+              </p>
+            </a>
+           </div>
+          <div class="gallery-item">
+            <a href="/projects/project7/">project
+             <p>Binary Converter, enter 5 and watch</p>
+              <p>
+                <strong>
+                  <em>freeCodeCamp</em>
+                </strong>
+              </p>
+            </a>
+          </div>
+          <div class="gallery-item">
+            <a href="/projects/project8/">project
+             <p>Rock, Paper, scissors game that I built along with</p>
+              <p>
+                <strong>
+                  <em>freeCodeCamp</em>
+                </strong>
+              </p>
+            </a>
+           </div>
+           <div class="gallery-item">
+            <a href="/projects/project9/numberGuesser/">project
+             <p>Number Guesser game</p>
+              <p>
+                <strong>
+                  <em>Codecademy</em>
+                </strong>
+              </p>
+            </a>
+           </div>
+     
         </div>
       </div>
-    </section>
-  </main>
+    </main>
+  </section>
   <footer id="footerContainer">
   <div class="footer-container">
     <p>My Social Media and GitHub</p>
@@ -290,6 +270,6 @@
     </ul>
    </div>
  </footer>
-<script src="/js/script.js" async></script>
+<script src="/js/script.js" defer></script>
 </body>
 </html>

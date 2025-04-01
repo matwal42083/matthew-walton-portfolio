@@ -8,16 +8,12 @@
 /* Websites color pallet 
    yellow - #dcd80d , light Baby Blue - #4ac6ff, Darknight Blue - #01072c */ 
 
-
-
-
-
-
+/* Breadcrumbs Styles */
 .breadcrumbs {
   font-size: 0.810rem;
-  background-color: #4ac6ff;
-  border-top: 0.125rem solid #eeff00; /* 2px converted to rem */
-  border-bottom: 0.125rem solid #eeff00; /* 2px converted to rem */
+  background-color: var(--light-blue);
+  border-top: 0.125rem solid var(--yellow); /* 2px converted to rem */
+  border-bottom: 0.125rem solid var(--yellow); /* 2px converted to rem */
   position: relative;
   padding: 0.0625rem; /* 1px converted to rem */
   display: flex; /* Use flexbox for layout */
@@ -35,8 +31,6 @@
   padding-right: 0.25rem; /* 4px converted to rem */
   color: black;
 }
-
-
 
 .breadcrumbs ul {
   list-style: none;
@@ -65,11 +59,12 @@
   display: none;
 }
 
+/* Sidebar Highlight */
 .sidebar li:nth-child(3) {
   background-color: #fcfbcf;
 }
 
-
+/* Main Content Styles */
 .flex-item2 {
   flex: 1;
   background-color: #fff;
@@ -79,6 +74,7 @@
   margin-left: 0.625rem; /* 10px converted to rem */
 }
 
+/* Gallery Section */
 .gallery-container {
   margin-top: 1.25rem; /* 20px converted to rem */
   color: black;
@@ -107,4 +103,41 @@
 .gallery-item a {
   text-decoration: none;
   color: black;
+}
+
+.gallery-item a:hover {
+  color: var(--yellow);
+  text-decoration: underline;
+}
+
+/* Project Details Section */
+.project-details {
+  margin-top: 1.25rem; /* 20px converted to rem */
+  padding: 1.25rem; /* 20px converted to rem */
+  background-color: #fff;
+  border: 0.0625rem solid #ddd; /* 1px converted to rem */
+  border-radius: 0.3125rem; /* 5px converted to rem */
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px converted to rem */
+}
+
+.project-details h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.project-details p {
+  margin: 0.625rem 0; /* 10px converted to rem */
+  line-height: 1.6;
+  color: black;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); /* 160px converted to rem */
+  }
+
+  .flex-item2 {
+    margin-left: 0; /* Remove margin for smaller screens */
+  }
 }

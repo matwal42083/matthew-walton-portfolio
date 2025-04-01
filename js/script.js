@@ -1,3 +1,4 @@
+// DOM Elements
 const toggle = document.getElementById('toggle-btn');
 const body = document.querySelector('body');
 const header = document.getElementById('headerContainer');
@@ -10,36 +11,60 @@ const hamburgerBar = document.getElementById('hamburgerBar');
 const spotify = document.getElementById('spotifyContainer');
 const devCard = document.getElementById('devCard');
 const grid = document.getElementById('gridItem');
-const iconX = document.getElementById('X');
-const iconGhub = document.getElementById('gh');
 const sidebarItems = document.querySelectorAll('.sidebar li');
+const navLinks = document.querySelectorAll('.nav a');
+const toTheSide = document.getElementById('aside');
+const githubIcon = document.getElementById('gh');
+const xIcon = document.getElementById('X');
+
 // Load the theme preference from localStorage
 const currentTheme = localStorage.getItem('theme') || 'dark';
 
-
+// Utility Functions
 function setHoverColor(element, color) {
-  element.addEventListener('mouseover', function() {
+  element.addEventListener('mouseover', function () {
     element.style.color = color;
   });
-  element.addEventListener('mouseout', function() {
+  element.addEventListener('mouseout', function () {
     element.style.color = '';
   });
 }
 
-
-function setHoverBorderColor(elements, color) {
-  elements.forEach(element => {
-    element.addEventListener('mouseover', function() {
-      element.style.borderColor = color;
-    });
-    element.addEventListener('mouseout', function() {
-      element.style.borderColor = '';
-    });
+function setHoverBackgroundColor(element, color) {
+  element.addEventListener('mouseover', function () {
+    element.style.backgroundColor = color;
+  });
+  element.addEventListener('mouseout', function () {
+    element.style.backgroundColor = '';
   });
 }
 
+// Utility Function to Set Hover Behavior with Theme Support
+function setIconHoverBehaviorWithTheme(icon, hoverColorLight, hoverColorDark, defaultColorLight, defaultColorDark, hoverBackgroundLight, hoverBackgroundDark) {
+  const currentTheme = localStorage.getItem('theme') || 'dark';
 
-// Set the initial theme based on the stored preference
+  // Set default color and background based on theme
+  const defaultColor = currentTheme === 'light' ? defaultColorLight : defaultColorDark;
+  const defaultBackground = 'transparent'; // Default background is transparent
+  icon.style.color = defaultColor;
+  icon.style.backgroundColor = defaultBackground;
+
+  // Add hover effect
+  icon.addEventListener('mouseover', function () {
+    const hoverColor = currentTheme === 'light' ? hoverColorLight : hoverColorDark;
+    const hoverBackground = currentTheme === 'light' ? hoverBackgroundLight : hoverBackgroundDark;
+    icon.style.color = hoverColor;
+    icon.style.backgroundColor = hoverBackground;
+  });
+
+  // Revert to default color and background when mouse moves off
+  icon.addEventListener('mouseout', function () {
+    icon.style.color = defaultColor;
+    icon.style.backgroundColor = defaultBackground;
+  });
+}
+
+// Light Mode
 function lightMode() {
   body.style.background = 'white';
   body.style.color = '#01072c';
@@ -50,30 +75,49 @@ function lightMode() {
   breadBorder.style.borderTop = '2px solid rgb(1, 7, 44)';
   breadBorder.style.borderBottom = '2px solid rgb(1, 7, 44)';
   hamburgerBar.style.color = 'rgb(1, 7, 44)';
+  toTheSide.style.backgroundColor = 'white';
   menu.style.background = 'white';
   menu.style.border = '1px solid rgb(1, 7, 44)';
   grid.style.borderTop = '1px solid rgb(1, 7, 44)';
+  grid.style.borderRight = '3px solid rgb(1, 7, 44)';
+  grid.style.borderLeft = '3px solid rgb(1, 7, 44)';
   grid.style.borderBottom = '1px solid rgb(1, 7, 44)';
-  grid.style.borderRight = '4px solid rgb(1, 7, 44)';
-  grid.style.borderLeft = '4px solid rgb(1, 7, 44)';
   footer.style.borderTop = '2px solid rgb(1, 7, 44)';
   footer.style.background = 'white';
   footer.style.color = '#01072c';
   toggle.classList.add('fa-sun');
   toggle.classList.remove('fa-moon');
   toggle.innerText = ' Light';
+
   // Change nav links text color to black
-  const navLinks = document.querySelectorAll('.nav a');
   navLinks.forEach(link => {
     link.style.color = 'black';
     link.style.border = '2px solid rgb(1, 7, 44)';
   });
 
-  setHoverColor(iconX, 'black');
-  setHoverColor(iconGhub, 'black');
-  setHoverBorderColor(sidebarItems, 'rgb(1, 7, 44)');
+  // Change GitHub and X icons to black
+  setIconHoverBehaviorWithTheme(
+    githubIcon,
+    'rgba(0, 0, 0, 1)', // Hover color for light mode
+    'rgba(255, 255, 255, 1)', // Hover color for dark mode
+    'rgba(0, 0, 0, 0.361)', // Default color for light mode
+    'rgba(255, 255, 255, 0.361)', // Default color for dark mode
+    'rgba(0, 0, 0, 0.72)', // Hover background for light mode
+    'rgba(33, 33, 33, 0.57)' // Hover background for dark mode
+  );
+
+  setIconHoverBehaviorWithTheme(
+    xIcon,
+    'rgba(0, 0, 0, 1)', // Hover color for light mode
+    'rgba(255, 255, 255, 1)', // Hover color for dark mode
+    'rgba(0, 0, 0, 0.361)', // Default color for light mode
+    'rgba(255, 255, 255, 0.3)', // Default color for dark mode
+    'rgba(0, 0, 0, 0.75)', // Hover background for light mode
+    'rgba(33, 33, 33, 0.57)' // Hover background for dark mode
+  );
 }
 
+// Dark Mode
 function darkMode() {
   body.style.background = '#01072c';
   body.style.color = 'white';
@@ -84,28 +128,46 @@ function darkMode() {
   breadBorder.style.borderTop = '2px solid rgb(238, 255, 0)';
   breadBorder.style.borderBottom = '2px solid rgb(238, 255, 0)';
   hamburgerBar.style.color = 'rgb(74, 198, 255)';
+  toTheSide.style.backgroundColor = 'rgb(1, 7, 44)';
   menu.style.border = '1px solid rgb(238, 255, 0)';
   menu.style.background = 'rgb(1, 7, 44)';
   grid.style.borderTop = '1px solid rgb(238, 255, 0)';
+  grid.style.borderRight = '3px solid rgb(238, 255, 0)';
+  grid.style.borderLeft = '3px solid rgb(238, 255, 0)';
   grid.style.borderBottom = '1px solid rgb(238, 255, 0)';
-  grid.style.borderRight = '4px solid rgb(238, 255, 0)';
-  grid.style.borderLeft = '4px solid rgb(238, 255, 0)';
   footer.style.borderTop = '2px solid rgb(238, 255, 0)';
   footer.style.background = 'rgb(1, 7, 44)';
   footer.style.color = 'white';
   toggle.classList.add('fa-moon');
   toggle.classList.remove('fa-sun');
   toggle.innerText = ' Dark';
+
   // Change nav links text color to white
-  const navLinks = document.querySelectorAll('.nav a');
   navLinks.forEach(link => {
     link.style.color = 'white';
     link.style.border = '2px solid rgb(238, 255, 0)';
   });
- 
-  setHoverColor(iconX, 'white');
-  setHoverColor(iconGhub, 'white');
-  setHoverBorderColor(sidebarItems, 'rgb(238, 255, 0)');
+
+  // Change GitHub and X icons to white
+  setIconHoverBehaviorWithTheme(
+    githubIcon,
+    'rgba(0, 0, 0, 1)', // Hover color for light mode
+    'rgba(255, 255, 255, 1)', // Hover color for dark mode
+    'rgba(0, 0, 0, 0.361)', // Default color for light mode
+    'rgba(255, 255, 255, 0.361)', // Default color for dark mode
+    'rgba(0, 0, 0, 0.1)', // Hover background for light mode
+    'rgba(255, 255, 255, 0.85)' // Hover background for dark mode
+  );
+
+  setIconHoverBehaviorWithTheme(
+    xIcon,
+    'rgba(0, 0, 0, 1)', // Hover color for light mode
+    'rgba(255, 255, 255, 1)', // Hover color for dark mode
+    'rgba(0, 0, 0, 0.1)', // Default color for light mode
+    'rgba(255, 255, 255, 0.361)', // Default color for dark mode
+    'rgba(0, 0, 0, 0.1)', // Hover background for light mode
+    'rgba(255, 255, 255, 0.76)' // Hover background for dark mode
+  );
 }
 
 // Set the initial theme based on the stored preference
@@ -116,7 +178,7 @@ if (currentTheme === 'light') {
 }
 
 // Event listener for the toggle button
-toggle.addEventListener('click', function() {
+toggle.addEventListener('click', function () {
   if (toggle.classList.contains('fa-sun')) {
     darkMode();
     localStorage.setItem('theme', 'dark');
@@ -126,14 +188,21 @@ toggle.addEventListener('click', function() {
   }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  const currentTheme = localStorage.getItem('theme');
-  if (currentTheme === 'light') {
-    lightMode();
-  } else {
-    darkMode();
-  }
-});
+// Highlight the active sidebar item based on the current page
+function highlightActiveSidebar() {
+  const currentPage = window.location.pathname.split('/').pop();
+  sidebarItems.forEach(item => {
+    const link = item.querySelector('a');
+    if (link && link.getAttribute('href').includes(currentPage)) {
+      item.style.backgroundColor = '#fcfbcf'; // Highlight color
+    } else {
+      item.style.backgroundColor = ''; // Reset color
+    }
+  });
+}
+
+// Call the function to highlight the active sidebar item
+highlightActiveSidebar();
 
 // Delay navigation to allow everything to load
 function delayNavigation(event) {

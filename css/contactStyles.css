@@ -1,20 +1,20 @@
+/* Breadcrumbs Styles */
 .breadcrumbs {
   font-size: 0.810rem;
-  background-color: #4ac6ff;
-  border-top: 2px solid #eeff00;
-  border-bottom: 2px solid #eeff00;
+  background-color: var(--light-blue);
+  border-top: 0.125rem solid var(--yellow); /* 2px converted to rem */
+  border-bottom: 0.125rem solid var(--yellow); /* 2px converted to rem */
   position: relative;
-  padding: 1px;/* Use flexbox for layout */
+  padding: 0.0625rem; /* 1px converted to rem */
   list-style: none;
 }
 
 .list-item i {
-  margin-right: 10px;
- /* Adjust vertical alignment */
+  margin-right: 0.625rem; /* 10px converted to rem */
 }
 
 .list-item a {
-  padding-right: 4px;
+  padding-right: 0.25rem; /* 4px converted to rem */
   color: black;
 }
 
@@ -23,50 +23,26 @@
   list-style-position: inside;
 }
 
-.breadcrumbs li:nth-child(2)::before {
-  content: ">>>";
-  margin-right: 40px;
-  color: black;
-}
-
-.breadcrumbs li:nth-child(2)::after {
-  content: ">>>";
-  margin-left: 40px;
-  color: black;
+.breadcrumbs li {
+  display: inline;
+  margin: 0 1.875rem; /* 30px converted to rem */
 }
 
 .breadcrumbs li:nth-child(3)::after {
   content: ">>>";
-  margin-left: 40px;
+  margin-left: 2.5rem; /* 40px converted to rem */
   color: black;
 }
 
-
-.breadcrumbs li {
-  display: inline;
-  margin: 0rem 1.875rem 0rem 1.875rem;
-}
-
-
-
-
-
-
+/* Sidebar Highlight */
 .sidebar li:nth-child(4) {
   background-color: #fcfbcf;
 }
 
 
-/* Flex container for sidebar and main content */
-
-
-
-/* Contact form container */
-
-
-/* Contact form container */
+/* Contact Form Container */
 .contact-container {
-  max-width: 30rem; /* Set a smaller width for the contact form (480px converted to rem) */
+  max-width: 100rem; /* Set a smaller width for the contact form (480px converted to rem) */
   margin: 0 auto; /* Center the form horizontally within the container */
   padding: 1.25rem; /* 20px converted to rem */
   background-color: #fafafa;
@@ -75,16 +51,20 @@
   justify-content: center; /* Center the form horizontally */
   align-items: center; /* Center the form vertically */
   flex-direction: column;
+  position: relative;
+  left: 50px;
+  width: 100%;
 }
 
-/* Form styles */
+/* Form Styles */
 form {
-  background-color: rgba(202, 237, 255, 0.499);
+  background-color: rgba(165, 165, 209, 0.533);
   padding: 0.9375rem; /* 15px converted to rem */
-  border: 0.0625rem solid #01072c; /* 1px converted to rem */
+  border: 0.0625rem solid var(--dark-blue); /* 1px converted to rem */
   border-radius: 0.3125rem; /* 5px converted to rem */
-  width: 100%; /* Ensure the form takes full width */
-  max-width: 25rem; /* Set a smaller max width for the form (400px converted to rem) */
+  width: 100%;
+  max-width: 100rem; /* Set a smaller max width for the form (400px converted to rem) */
+  
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
@@ -101,38 +81,55 @@ form {
   display: flex;
   flex-direction: column;
   width: 100%; /* Ensure form groups take full width */
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem; /* 15px converted to rem */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .contact-form label {
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem; /* 5px converted to rem */
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%; /* Ensure inputs and textarea take full width */
-  padding: 10px;
-  font-size: 1em;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 0.625rem; /* 10px converted to rem */
+  font-size: 1rem;
+  border: 0.0625rem solid #ccc; /* 1px converted to rem */
+  border-radius: 0.3125rem; /* 5px converted to rem */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .contact-form .submit-btn {
   align-self: center;
-  padding: 10px 40px;
-  font-size: 1em;
-  background-color: #4ac6ff;
-  color: #fff;
+  padding: 0.625rem 2.5rem; /* 10px 40px converted to rem */
+  font-size: 1rem;
+  background-color: var(--light-blue);
+  color: var(--white);
   border: none;
-  border-radius: 5px;
+  border-radius: 0.3125rem; /* 5px converted to rem */
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .contact-form .submit-btn:hover {
   background-color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .sidebar {
+    flex: 0 0 auto;
+    margin-bottom: 1.25rem; /* 20px converted to rem */
+  }
+
+  .contact-container {
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
 }
 
 

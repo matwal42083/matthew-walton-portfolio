@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/aboutStyles.css"/>
-    <link rel="stylesheet" href="/css/base.css"/>
-    
+    <link rel="stylesheet" href="/css/base.css" /> <!-- Shared styles -->
+    <link rel="stylesheet" href="/css/aboutStyles.css" /> <!-- Page-specific styles -->
     <script
       src="https://kit.fontawesome.com/36f7f4f045.js"
       crossorigin="anonymous"></script>
     <title>Matwal Portfolio</title>
   </head>
   <body>
+    <!-- Header -->
     <header>
       <div class="header-container" id="headerContainer">
         <div class="logo">
-          <img src="/images/matwalPicLogo-2.jpg" alt="matwal pic" id="logoImg"/>
+          <img src="/images/matwalPicLogo-2.jpg" alt="matwal pic" id="logoImg" />
           <h1 class="profileName" id="profileTite">
             Matthew Walton <br />
             (Matwal)
@@ -34,6 +34,8 @@
         </div>
       </div>
     </header>
+
+    <!-- Breadcrumb Navigation -->
     <nav class="breadcrumbs" id="breadcrumbs">
       <ul class="crumble">
         <li class="list-item" id="crumble1">
@@ -56,115 +58,101 @@
         </li>
       </ul>
     </nav>
-       <main>
-        <section class="flex-container">
-          <div class="flex-item1">
-            <div class="sidebar">
-              <div class="menu-bar" id="menuBar">
-                <i class="fa-solid fa-bars" id="hamburgerBar"></i>
-                <ul class="sidebar-list">
-                  <li class="sidebar-list-items" id="Highlight1">
-                    <a href="/html/index.html"><i class="fa-solid fa-house"></i>Home</a
-                    >
-                  </li>
-                  <li class="sidebar-list-items" id="Highlight2">
-                    <a href="/html/about.html"><i class="fa-solid fa-exclamation-circle"></i>About</a
-                    >
-                  </li>
-                  <li class="sidebar-list-items" id="Highlight3">
-                    <a href="/html/portfoilo.html"
-                      ><i class="fa-solid fa-project-diagram"></i>Projects</a
-                    >
-                  </li>
-                  <li class="sidebar-list-items" id="Highlight4">
-                    <a href="/html/contact.html"
-                      ><i class="fa-solid fa-phone"></i>Contact</a
-                    >
-                  </li>
-                </ul>
-             </div>
-            </div>
-            <div class="devCard" id="devCard">
-              <img
-                  src="/images/matwalDevCard1.png"
-                  width="300"
-                  alt="Matthew Walton's Dev Card"
-              />
-            </div>
-            <div class="spotify" id="spotifyContainer">
-              <iframe style="border-radius: 20px"
-               src="https://open.spotify.com/embed/playlist/5WLp2EAJJCzbE4BsIiUw22?utm_source=generator&theme=0" 
-               width="100%" 
-               height="100%" 
-               frameBorder="0" 
-               allowfullscreen=""
-               allow="autoplay;clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-               loading="lazy">
-              </iframe>
-            </div>
+
+    <!-- Main Layout -->
+    <section class="flex-container">
+      <!-- Sidebar -->
+      <aside class="flex-item1" id="aside">
+        <div class="sidebar">
+          <div class="menu-bar" id="menuBar">
+            <i class="fa-solid fa-bars" id="hamburgerBar"></i>
+            <ul class="sidebar-list">
+              <li class="sidebar-list-items" id="Highlight1">
+                <a href="/html/index.html"><i class="fa-solid fa-house"></i>Home</a>
+              </li>
+              <li class="sidebar-list-items" id="Highlight2">
+                <a href="/html/about.html"
+                  ><i class="fa-solid fa-exclamation-circle"></i>About</a
+                >
+              </li>
+              <li class="sidebar-list-items" id="Highlight3">
+                <a href="/html/portfoilo.html"
+                  ><i class="fa-solid fa-project-diagram"></i>Projects</a
+                >
+              </li>
+              <li class="sidebar-list-items" id="Highlight4">
+                <a href="/html/contact.html"
+                  ><i class="fa-solid fa-phone"></i>Contact</a
+                >
+              </li>
+            </ul>
           </div>
-        <!--top part of site ends-->
-        <div class="flex-item2" id="gridItem">
-          <div class="grid-container">
-            <div class="grid-item">
-              <h2>Resume</h2>
-              <div class="resume-body">
-                <div class="resumeHeader">
+        </div>
+     
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-item2" id="gridItem">
+        <div class="grid-container" >
+          <div class="grid-item">
+            <h2>Resume</h2>
+            <div class="resume-body">
+              <div class="resumeHeader">
                 <h2>Matthew Walton</h2>
                 <h3>Fullstack Developer</h3>
               </div>
-                <div class="section" id="summary-section">
-                  <h4>Summary</h4>
-                  <p>"I'm Matthew Walton, a FullStack Developer from Springfield, Missouri.  
-                    With three years of experience in coding, I'm passionate about mastering 
-                    JavaScript, Node.js, Java, React, Vue, Angular, SQL, and  PHP. 
-                    I'm a self-directed learner with a keen interest in 
-                    exploring new technologies and expanding my skill set." I haven't started 
-                    my career yet, and I'm very excited to start my career as a fullstack developer.
-                    I'm also wanting to start a community of developers, for contributing to open-source, or
-                    to learn how to build products together as a team and deploy them. I'm not quite sure what
-                    direction I want to go with it, but I do want to offer donations to this community that will 
-                    allow member to access the community tools, resources, team pro accounts. Like npm, GitHub Co-pilot,
-                    font-awesome, figma, slack, google workspace, and much more to offer. I realize myself that their
-                    are many different types of tools and resources that are available but cost can get expensive, But
-                    with a community of developers that regularly donate to the community, contributing and collaborating
-                    with the community own open-source platform that will allow members to access the community workspace, 
-                    blog and vlogs, and chat space to keep the community always connected with it's members. This community 
-                  </p>
-                 </div>
-                 <div class="education" id="education-section">
-                  <h4>Education</h4>
-                  <ul>
-                    <li>Hollister High School || gradated May 17, 2002</li>
-                    <li>Fullstack Academy || Oct 12, 2023</li>
-                    <li>Codecademy || present</li>
-                    <li>Sololearn || continue learning</li>
-                    <li>freeCodeCamp || continue learning</li>
-                  </ul>
-                 </div>
-                 <div class="skills" id="skills-section">
-                 <h2>Skills</h2>
-                 <table>
-                    <tr><th>Skill</th><th>Level</th></tr>
-                    <tr><td>HTML</td><td>Intermediate</td></tr>
-                    <tr><td>CSS</td><td>Intermediate</td></tr>
-                    <tr><td>JavaScript</td><td>Entry Level</td></tr>
-                    <tr><td>React</td><td>Entry Level</td></tr>
-                    <tr><td>Bash/Shall</td><td>Intermediate</td></tr>
-                  </table>
-                </div>
+              <div class="section" id="summary-section">
+                <h4>Summary</h4>
+                <p>"I'm Matthew Walton, a FullStack Developer from Springfield, Missouri.  
+                  With three years of experience in coding, I'm passionate about mastering 
+                  JavaScript, Node.js, Java, React, Vue, Angular, SQL, and  PHP. 
+                  I'm a self-directed learner with a keen interest in 
+                  exploring new technologies and expanding my skill set." I haven't started 
+                  my career yet, and I'm very excited to start my career as a fullstack developer.
+                  I'm also wanting to start a community of developers, for contributing to open-source, or
+                  to learn how to build products together as a team and deploy them. I'm not quite sure what
+                  direction I want to go with it, but I do want to offer donations to this community that will 
+                  allow member to access the community tools, resources, team pro accounts. Like npm, GitHub Co-pilot,
+                  font-awesome, figma, slack, google workspace, and much more to offer. I realize myself that their
+                  are many different types of tools and resources that are available but cost can get expensive, But
+                  with a community of developers that regularly donate to the community, contributing and collaborating
+                  with the community own open-source platform that will allow members to access the community workspace, 
+                  blog and vlogs, and chat space to keep the community always connected with it's members. This community 
+                </p>
+              </div>
+              <div class="education" id="education-section">
+                <h4>Education</h4>
+                <ul>
+                  <li>Hollister High School || gradated May 17, 2002</li>
+                  <li>Fullstack Academy || Oct 12, 2023</li>
+                  <li>Codecademy || present</li>
+                  <li>Sololearn || continue learning</li>
+                  <li>freeCodeCamp || continue learning</li>
+                </ul>
+              </div>
+              <div class="skills" id="skills-section">
+                <h2>Skills</h2>
+                <table>
+                  <tr><th>Skill</th><th>Level</th></tr>
+                  <tr><td>HTML</td><td>Intermediate</td></tr>
+                  <tr><td>CSS</td><td>Intermediate</td></tr>
+                  <tr><td>JavaScript</td><td>Entry Level</td></tr>
+                  <tr><td>React</td><td>Entry Level</td></tr>
+                  <tr><td>Bash/Shall</td><td>Intermediate</td></tr>
+                </table>
               </div>
             </div>
-            <div class="grid-item" id="cover-letter-section">
-              <h2>Cover Letter</h2>
-              <div class="coverLetterContainer">
-                <div class="infoContainer">
+          </div>
+          <div class="grid-item" id="cover-letter-section">
+            <h2>Cover Letter</h2>
+            <div class="coverLetterContainer">
+              <div class="infoContainer">
                 <p><strong>Matthew Walton</strong></p>
                 <p><strong>Fullstack Developer</strong></p>
                 <p>1(417)-755-2354</p>
                 <p>matwal42083@gmail.com</p>
               </div>
-               <p>Dear Hiring Manager,</p>
+              <p>Dear Hiring Manager,</p>
               <p>
                 I am writing to express my interest in the Full-Stack Developer position at your esteemed company. With a strong background in web development and a passion for creating innovative solutions, I am confident in my ability to contribute effectively to your team.
               </p>
@@ -179,13 +167,13 @@
               </p>
               <p>Sincerely,</p>
               <p>Matthew Walton</p>
-            
             </div>
-           </div>
           </div>
         </div>
-      </section>
-    </main>
+      </main>
+    </section>
+
+    <!-- Footer -->
     <footer id="footerContainer">
       <div class="footer-container">
         <p>My Social Media and GitHub</p>
@@ -210,11 +198,11 @@
           </li>
           <li>
             <a href="#"><i class="fa-brands fa-mastodon" id="md"></i></a>
-            </li>
           </li>
         </ul>
       </div>
     </footer>
+
     <script src="/js/script.js" defer></script>
   </body>
 </html>
