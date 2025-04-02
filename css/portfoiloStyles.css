@@ -46,7 +46,7 @@
 }
 
 .certDetails {
-  background-color: rgba(182, 182, 182, 0.49);
+  background-color: #bbbaba3d;
   font-size: 1.0rem;
   border-radius: 5px;
   letter-spacing: 0.020rem;
@@ -54,7 +54,7 @@
   padding: 0.7rem;
 }
 .projectDetails {
-  background-color: rgba(182, 182, 182, 0.49);
+  background-color:#bbbaba3d;
   font-size: 1.0rem;
   border-radius: 5px;
   letter-spacing: 0.020rem;
@@ -69,13 +69,21 @@
 }
 
 .gallery-item {
-  background-color: #eee;
+  background-color: #bbbaba3d;
   padding: 0.625rem; /* 10px converted to rem */
   border: 0.0625rem solid #ddd; /* 1px converted to rem */
   border-radius: 0.3125rem; /* 5px converted to rem */
   text-align: center;
-}
 
+}
+.gallery-item:hover {
+  background-color: var(--dark-blue);
+  transform: scale(1.08);
+  transition: transform 0.3s ease-in;
+  color: var(--light-blue);
+  border: 2px solid var(--light-blue);
+  box-shadow: -5px 5px 8px rgba(66, 65, 65, 0.619);
+}
 .gallery-item img {
   max-width: 100%;
   height: auto;
@@ -88,8 +96,8 @@
 }
 
 .gallery-item a:hover {
-  color: var(--yellow);
-  text-decoration: underline;
+  color: var(--light-blue);
+  text-decoration: none;
 }
 
 /* Project Details Section */

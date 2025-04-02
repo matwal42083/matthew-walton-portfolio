@@ -51,19 +51,21 @@
   margin: 0;
   padding: 1.25rem; /* 20px converted to rem */
   background-color: #f4f4f4;
-  color: black;
+  color: var(--dark-blue);
   text-align: center;
 }
 
 .resumeHeader h2 {
-  background: #cdcdcd54;
-  border-bottom: 0.125rem solid rgba(171, 171, 171, 0.239); /* 2px converted to rem */
+  background: var(--dark-blue);
+  color: var(--light-blue) !important;
+  border-bottom: 0.125rem solid var(--yellow); /* 2px converted to rem */
 }
 
 .resumeHeader h3 {
   position: relative;
   bottom: 1.25rem; /* 20px converted to rem */
-  background-color: #cdcdcd54;
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
 }
 
 .grid-container {
@@ -101,7 +103,7 @@
 }
 
 .education li {
-  background: #eee;
+  background: #ffffff;
   margin: 0.3125rem 0; /* 5px converted to rem */
   padding: 0.625rem; /* 10px converted to rem */
   border-radius: 0.3125rem; /* 5px converted to rem */
@@ -137,8 +139,8 @@
 }
 
 .skills th {
-  background-color: #1d425d;
-  color: #fff;
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
 }
 
 .skills td {

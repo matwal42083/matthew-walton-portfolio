@@ -18,14 +18,70 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px; /* Base font size for rem calculations */
-  font-family: sans-serif;
   background-color: var(--dark-blue);
   color: var(--white);
   box-sizing: border-box;
 
 }
+/* Font styles from google fonts*/
+
+.roboto-slab {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700; /* Regular */
+  font-style: normal;
+}
 
 
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700; /* Regular */
+  font-style: normal;
+}
+
+.ibm-plex-sans {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700; /* Regular */
+  font-style: normal;
+  font-variation-settings: "wdth" 100; /* Adjust width axis */
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-weight: 700; /* Regular */
+  font-style: normal;
+}
+
+.oswald {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700; /* Regular */
+  font-style: normal;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-weight: 700; /* Regular */
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+
+.hubot-sans {
+  font-family: "Hubot Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.cabin {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 /* Smooth transitions for theme changes */
 body,
 header,
@@ -211,6 +267,7 @@ body.dark-mode #gh:hover, body.dark-mode #X:hover {
 .list-item a {
   padding-right: 0.25rem; /* 4px converted to rem */
   color: black;
+  text-decoration: none;
 }
 
 .breadcrumbs ul {
@@ -301,14 +358,14 @@ footer {
   background-color: var(--footer-blue);
   color: var(--light-blue);
   text-align: center;
-  padding: 0.625rem 0; /* 10px converted to rem */
+  padding: 1.5rem; /* 10px converted to rem */
   border-top: 0.125rem solid var(--yellow); /* 2px converted to rem */
 }
 
 .footer-container {
   max-width: 75rem; /* 1200px converted to rem */
   margin: 0 auto;
-  padding: 0 1.25rem; /* 20px converted to rem */
+  padding: 0.850rem; /* 20px converted to rem */
 }
 
 .social-media-list {
@@ -340,78 +397,105 @@ footer {
   top: 100%; /* Position below the icon */
   left: 50%; /* Center the text horizontally */
   transform: translateX(-50%); /* Adjust for centering */
+
 }
 
 #fb:hover {
   color: rgb(0, 132, 255);
-  background-color: rgba(46, 144, 235, 0.624);
+  background-color: rgba(46, 144, 235, 0.163);
   border: 1px solid rgb(0, 132, 255);
-  padding: 5px;
+  border-radius: 10px;
+  padding: 15px;
 }
 #X:hover{
   color: rgba(0, 0, 0, 1);
-  background-color: rgba(0, 0, 0, 0.475);
-  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.163);
+  padding: 15px;
   border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 10px;
 
 }
 #gh:hover {
   color: rgba(0, 0, 0, 1);
-  background-color: rgba(0, 0, 0, 0.475);
+  background-color: rgba(0, 0, 0, 0.163);
   border: 1px solid rgba(0, 0, 0, 1);
-  padding: 5px;
+  padding: 15px;
+  border-radius: 10px;
 
 }
 #rt:hover{
   color: rgb(255, 52, 7);
-  background-color: rgba(255, 52, 7, 0.67);
-  padding: 5px;
+  background-color: rgba(255, 52, 7, 0.163);
+  border: 1px solid rgb(255, 52, 7);
+  padding: 15px;
+  border-radius: 10px;
 }
 #ln:hover {
   color: rgb(27, 120, 207);
-  background-color: rgba(32, 127, 228, 0.408);
+  background-color: rgba(32, 127, 228, 0.163);
+  border: 1px solid rgb(0, 132, 255);
   border-radius: 100%;
-  padding: 10px;
+  padding: 18px;
 }
 #yt:hover{
   color: rgb(255, 7, 7);
-  background-color: rgba(255, 7, 7, 0.67);
-  padding: 5px;
+  background-color: rgba(255, 7, 7, 0.163);
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 10px;
+  padding: 15px;
 }
 #md:hover {
   color: rgb(97, 94, 248);
-  background-color:rgba(97, 94, 248, 0.398);
-  padding: 5px;
+  background-color:rgba(97, 94, 248, 0.163);
+  border: 1px solid rgb(97, 94, 248);
+  border-radius: 10px;
+  padding: 15px;
+
+}
+#dc:hover {
+  color: rgb(97, 94, 248);
+  background-color:rgba(97, 94, 248, 0.163);
+  border: 1px solid rgb(97, 94, 248);
+  border-radius: 10px;
+  padding: 15px;
 
 }
 #fb {
-  color: rgba(0, 112, 216, 0.449);
+  color: rgba(0, 112, 216, 0.317);
 }
 
 #X {
-  color: rgba(0, 0, 0, 0.361);
+  color: rgba(0, 0, 0, 0.317);
   
 }
 #gh {
-  color: rgba(0, 0, 0, 0.361);
+  color: rgba(0, 0, 0, 0.317);
  
 }
 #rt{
-  color: rgba(255, 53, 7, 0.404);
+  color: rgba(255, 53, 7, 0.317);
 }
 #ln {
-  color: rgba(40, 125, 204, 0.449);
+  color: rgba(40, 125, 204, 0.317);
 }
 #yt{
-  color: rgba(250, 2, 2, 0.404);
+  color: rgba(250, 2, 2, 0.317);
 }
 #md {
-  color: rgba(97, 94, 248, 0.417);
+  color: rgba(97, 94, 248, 0.317);
 }
-#fb:hover, #X:hover, #gh:hover, #rt:hover, #ln:hover, #yt:hover, #md:hover {
+#dc {
+  color: rgba(97, 94, 248, 0.317);
+}
+#fb:hover, #X:hover, #gh:hover, #rt:hover, #ln:hover, #yt:hover, #md:hover, #dc:hover {
   transform: scale(1.5) translate(-0px, -10px);
   transition: all 0.3s ease-in;
   margin-right: 20px;
   margin-left: 20px;
+ 
 }
 
+.copyRights {
+  font-size: 0.600rem;
+  
+}

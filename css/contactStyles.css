@@ -27,14 +27,17 @@
   width: 100%;
 }
 
+.contact-container form {
+  border: 0.0625rem solid var(--dark-blue); /* 1px converted to rem */
+}
+
 /* Form Styles */
 form {
-  background-color: rgba(165, 165, 209, 0.533);
+  background-color: #a5a5d1; /* Solid color for better contrast */
   padding: 0.9375rem; /* 15px converted to rem */
   border: 0.0625rem solid var(--dark-blue); /* 1px converted to rem */
   border-radius: 0.3125rem; /* 5px converted to rem */
   width: 100%;
-  /* Set a smaller max width for the form (400px converted to rem) */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
@@ -75,7 +78,6 @@ form {
   font-size: 1rem;
   background-color: var(--light-blue);
   color: var(--white);
-  border: none;
   border-radius: 0.3125rem; /* 5px converted to rem */
   cursor: pointer;
   transition: background-color 0.3s ease;

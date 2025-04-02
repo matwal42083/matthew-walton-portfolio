@@ -8,6 +8,9 @@
     <script
       src="https://kit.fontawesome.com/36f7f4f045.js"
       crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&family=Hubot+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100;0,14..32,400;0,14..32,700;1,14..32,100;1,14..32,400;1,14..32,700&family=Oswald:wght@100;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100;400;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
     <title>Matwal Portfolio</title>
   </head>
   <body>
@@ -16,17 +19,17 @@
       <div class="header-container" id="headerContainer">
         <div class="logo">
           <img src="/images/matwalPicLogo-2.jpg" alt="matwal pic" id="logoImg" />
-          <h1 class="profileName" id="profileTite">
+          <h1 class="profileName roboto" id="profileTite">
             Matthew Walton <br />
             (Matwal)
           </h1>
         </div>
         <div class="nav">
           <ul>
-            <li><a href="/html/index.html">Home</a></li>
-            <li><a href="/html/about.html">About</a></li>
-            <li><a href="/html/portfoilo.html">Portfolio</a></li>
-            <li><a href="/html/contact.html">Contact</a></li>
+            <li><a href="/html/index.html" class="oswald">Home</a></li>
+            <li><a href="/html/about.html" class="oswald">About</a></li>
+            <li><a href="/html/portfoilo.html" class="oswald">Portfolio</a></li>
+            <li><a href="/html/contact.html" class="oswald">Contact</a></li>
           </ul>
         </div>
         <div class="toggle-btn">
@@ -39,20 +42,20 @@
     <nav class="breadcrumbs" id="breadcrumbs">
       <ul class="crumble">
         <li class="list-item" id="crumble1">
-          <a href="/html/index.html"><i class="fa-solid fa-house"></i>Home</a>
+          <a href="/html/index.html" class="oswald"><i class="fa-solid fa-house"></i>Home</a>
         </li>
         <li class="list-item" id="crumble2">
-          <a href="/html/about.html"
+          <a href="/html/about.html" class="oswald"
             ><i class="fa-solid fa-exclamation-circle"></i>About</a
           >
         </li>
         <li class="list-item" id="crumble3">
-          <a href="/html/portfoilo.html"
+          <a href="/html/portfoilo.html" class="oswald"
             ><i class="fa-solid fa-diagram-project"></i>Portfolio</a
           >
         </li>
         <li class="list-item" id="crumble4">
-          <a href="/html/contact.html"
+          <a href="/html/contact.html" class="oswald"
             ><i class="fa-solid fa-phone"></i>Contact</a
           >
         </li>
@@ -68,20 +71,20 @@
             <i class="fa-solid fa-bars" id="hamburgerBar"></i>
             <ul class="sidebar-list">
               <li class="sidebar-list-items" id="Highlight1">
-                <a href="/html/index.html"><i class="fa-solid fa-house"></i>Home</a>
+                <a href="/html/index.html" class="oswald"><i class="fa-solid fa-house"></i>Home</a>
               </li>
               <li class="sidebar-list-items" id="Highlight2">
-                <a href="/html/about.html"
+                <a href="/html/about.html" class="oswald"
                   ><i class="fa-solid fa-exclamation-circle"></i>About</a
                 >
               </li>
               <li class="sidebar-list-items" id="Highlight3">
-                <a href="/html/portfoilo.html"
+                <a href="/html/portfoilo.html" class="oswald"
                   ><i class="fa-solid fa-project-diagram"></i>Projects</a
                 >
               </li>
               <li class="sidebar-list-items" id="Highlight4">
-                <a href="/html/contact.html"
+                <a href="/html/contact.html" class="oswald"
                   ><i class="fa-solid fa-phone"></i>Contact</a
                 >
               </li>
@@ -93,17 +96,17 @@
 
       <!-- Main Content -->
       <main class="flex-item2" id="gridItem">
-        <div class="grid-container" >
+        <div class="grid-container">
           <div class="grid-item">
-            <h2>Resume</h2>
+            <h2 class="ibm-plex-sans">Resume</h2>
             <div class="resume-body">
               <div class="resumeHeader">
-                <h2>Matthew Walton</h2>
-                <h3>Fullstack Developer</h3>
+                <h2 class="ibm-plex-sans">Matthew Walton</h2>
+                <h3 class="ibm-plex-sans">Fullstack Developer</h3>
               </div>
               <div class="section" id="summary-section">
-                <h4>Summary</h4>
-                <p>"I'm Matthew Walton, a FullStack Developer from Springfield, Missouri.  
+                <h4 class="ibm-plex-sans">Summary</h4>
+                <p class="playfair-display">"I'm Matthew Walton, a FullStack Developer from Springfield, Missouri.  
                   With three years of experience in coding, I'm passionate about mastering 
                   JavaScript, Node.js, Java, React, Vue, Angular, SQL, and  PHP. 
                   I'm a self-directed learner with a keen interest in 
@@ -121,52 +124,64 @@
                 </p>
               </div>
               <div class="education" id="education-section">
-                <h4>Education</h4>
+                <h4 class="ibm-plex-sans">Education</h4>
                 <ul>
-                  <li>Hollister High School || gradated May 17, 2002</li>
-                  <li>Fullstack Academy || Oct 12, 2023</li>
-                  <li>Codecademy || present</li>
-                  <li>Sololearn || continue learning</li>
-                  <li>freeCodeCamp || continue learning</li>
+                  <li class="roboto">Hollister High School || gradated May 17, 2002</li>
+                  <li class="roboto">Fullstack Academy || Oct 12, 2023</li>
+                  <li class="roboto">Codecademy || present</li>
+                  <li class="roboto">Sololearn || continue learning</li>
+                  <li class="roboto">freeCodeCamp || continue learning</li>
                 </ul>
               </div>
               <div class="skills" id="skills-section">
-                <h2>Skills</h2>
+                <h2 class="ibm-plex-sans">Skills</h2>
                 <table>
-                  <tr><th>Skill</th><th>Level</th></tr>
-                  <tr><td>HTML</td><td>Intermediate</td></tr>
-                  <tr><td>CSS</td><td>Intermediate</td></tr>
-                  <tr><td>JavaScript</td><td>Entry Level</td></tr>
-                  <tr><td>React</td><td>Entry Level</td></tr>
-                  <tr><td>Bash/Shall</td><td>Intermediate</td></tr>
+                  <tr><th class="oswald">Hard Skill</th><th class="oswald">Level</th></tr>
+                  <tr><td class="roboto-slab">HTML</td><td class="roboto-slab">Intermediate</td></tr>
+                  <tr><td class="roboto-slab">CSS</td><td class="roboto-slab">Intermediate</td></tr>
+                  <tr><td class="roboto-slab">JavaScript</td><td class="roboto-slab">Entry Level</td></tr>
+                  <tr><td class="roboto-slab">React</td><td class="roboto-slab">Entry Level</td></tr>
+                  <tr><td class="roboto-slab">Bash/Shall</td><td class="roboto-slab">Intermediate</td></tr>
+                  <tr><td class="roboto-slab">Git & GitHub</td><td class="roboto-slab">Intermediate</td></tr>
+                </table>
+              </div>
+              <div class="skills" id="soft-skills-section">
+                <table>
+                  <tr><th class="oswald">Soft Skill</th><th class="oswald">Level</th></tr>
+                  <tr><td class="roboto-slab">Email</td><td class="roboto-slab">Intermediate</td></tr>
+                  <tr><td class="roboto-slab">Google spreadsheets</td><td class="roboto-slab">Intermediate</td></tr>
+                  <tr><td class="roboto-slab">Googles products</td><td class="roboto-slab">Entry Level</td></tr>
+                  <tr><td></td><td></td></tr>
+                  <tr><td></td><td></td></tr>
+                  <tr><td></td><td></td></tr>
                 </table>
               </div>
             </div>
           </div>
           <div class="grid-item" id="cover-letter-section">
-            <h2>Cover Letter</h2>
+            <h2 class="ibm-plex-sans">Cover Letter</h2>
             <div class="coverLetterContainer">
               <div class="infoContainer">
-                <p><strong>Matthew Walton</strong></p>
-                <p><strong>Fullstack Developer</strong></p>
-                <p>1(417)-755-2354</p>
-                <p>matwal42083@gmail.com</p>
+                <p class="hubot-sans"><strong>Matthew Walton</strong></p>
+                <p class="hubot-sans"><strong>Fullstack Developer</strong></p>
+                <p class="hubot-sans">1(417)-755-2354</p>
+                <p class="hubot-sans">matwal42083@gmail.com</p>
               </div>
-              <p>Dear Hiring Manager,</p>
-              <p>
+              <p class="playfair-display">Dear Hiring Manager,</p>
+              <p class="playfair-display">
                 I am writing to express my interest in the Full-Stack Developer position at your esteemed company. With a strong background in web development and a passion for creating innovative solutions, I am confident in my ability to contribute effectively to your team.
               </p>
-              <p>
+              <p class="playfair-display">
                 Over the past three years, I have honed my skills in JavaScript and React, developing a deep understanding of front-end and back-end technologies. My experience at Fullstack Academy has equipped me with the knowledge and practical skills necessary to excel in a fast-paced development environment.
               </p>
-              <p>
+              <p class="playfair-display">
                 I am particularly drawn to your company because of your commitment to innovation and excellence. I am eager to bring my expertise in coding and my enthusiasm for learning new technologies to your team. I am also excited about the opportunity to collaborate with other talented developers and contribute to meaningful projects.
               </p>
-              <p>
+              <p class="playfair-display">
                 Thank you for considering my application. I look forward to the opportunity to discuss how my skills and experiences align with your needs. Please feel free to contact me at your earliest convenience to schedule an interview.
               </p>
-              <p>Sincerely,</p>
-              <p>Matthew Walton</p>
+              <p class="playfair-display">Sincerely,</p>
+              <p class="playfair-display">Matthew Walton</p>
             </div>
           </div>
         </div>
@@ -176,28 +191,63 @@
     <!-- Footer -->
     <footer id="footerContainer">
       <div class="footer-container">
-        <p>My Social Media and GitHub</p>
+        <p class="playfair-display">My Social Media and GitHub</p>
         <ul class="social-media-list">
           <li>
-            <a href="#"><i class="fa-brands fa-square-facebook" id="fb" data-name="Facebook"></i></a>
+            <a href="#" class="roboto"
+              ><i
+                class="fa-brands fa-square-facebook"
+                id="fb"
+                data-name="Facebook"
+              ></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-square-x-twitter" id="X" data-name="X"></i></a>
+            <a href="#" class="ibm-plex-sans"
+              ><i class="fa-brands fa-square-x-twitter" id="X" data-name="X"></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-square-github" id="gh" data-name="GitHub"></i></a>
+            <a href="#" class="hubot-sans"
+              ><i
+                class="fa-brands fa-square-github"
+                id="gh"
+                data-name="GitHub"
+              ></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-square-reddit" id="rt" data-name="Reddit"></i></a>
+            <a href="#" class="ibm-plex-sans"
+              ><i
+                class="fa-brands fa-square-reddit"
+                id="rt"
+                data-name="Reddit"
+              ></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-linkedin" id="ln" data-name="LinkedIn"></i></a>
+            <a href="#" class="roboto-slab"
+              ><i class="fa-brands fa-linkedin" id="ln" data-name="LinkedIn"></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-square-youtube" id="yt" data-name="YouTube"></i></a>
+            <a href="#" class="roboto"
+              ><i
+                class="fa-brands fa-square-youtube"
+                id="yt"
+                data-name="YouTube"
+              ></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-mastodon" id="md" data-name="Mastodon"></i></a>
+            <a href="#" class="cabin"
+              ><i class="fa-brands fa-mastodon" id="md" data-name="mastodon"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="hubot-sans"
+              ><i class="fa-brands fa-discord" id="dc" data-name="Discord"></i
+            ></a>
           </li>
         </ul>
       </div>

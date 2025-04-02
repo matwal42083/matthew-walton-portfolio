@@ -13,7 +13,7 @@ const devCard = document.getElementById('devCard');
 const grid = document.getElementById('gridItem');
 const sidebarItems = document.querySelectorAll('.sidebar li');
 const navLinks = document.querySelectorAll('.nav a');
-const toTheSide = document.getElementById('aside');
+const side = document.getElementById('aside');
 const githubIcon = document.getElementById('gh');
 const xIcon = document.getElementById('X');
 
@@ -67,24 +67,26 @@ function setIconHoverBehaviorWithTheme(icon, hoverColorLight, hoverColorDark, de
 // Light Mode
 function lightMode() {
   body.style.background = 'white';
-  body.style.color = '#01072c';
   header.style.background = 'white';
-  header.style.color = '#01072c';
-  logoBorder.style.border = '2px solid rgb(1, 7, 44)';
+  side.style.background = 'white';
+  menu.style.background = 'white';
+  grid.style.background = 'white';
+  footer.style.background = 'white';
+  body.style.color = '#01072c';
   LogoName.style.color = 'rgb(1, 7, 44)';
+  header.style.color = '#01072c';
+  hamburgerBar.style.color = 'rgb(1, 7, 44)';
+  grid.style.color = 'rgb(1, 7, 44)';
+  footer.style.color = '#01072c';
+  logoBorder.style.border = '2px solid rgb(1, 7, 44)';
   breadBorder.style.borderTop = '2px solid rgb(1, 7, 44)';
   breadBorder.style.borderBottom = '2px solid rgb(1, 7, 44)';
-  hamburgerBar.style.color = 'rgb(1, 7, 44)';
-  toTheSide.style.backgroundColor = 'white';
-  menu.style.background = 'white';
   menu.style.border = '1px solid rgb(1, 7, 44)';
   grid.style.borderTop = '1px solid rgb(1, 7, 44)';
   grid.style.borderRight = '3px solid rgb(1, 7, 44)';
   grid.style.borderLeft = '3px solid rgb(1, 7, 44)';
   grid.style.borderBottom = '1px solid rgb(1, 7, 44)';
   footer.style.borderTop = '2px solid rgb(1, 7, 44)';
-  footer.style.background = 'white';
-  footer.style.color = '#01072c';
   toggle.classList.add('fa-sun');
   toggle.classList.remove('fa-moon');
   toggle.innerText = ' Light';
@@ -98,46 +100,48 @@ function lightMode() {
   // Change GitHub and X icons to black
   setIconHoverBehaviorWithTheme(
     githubIcon,
-    'rgba(0, 0, 0, 1)', // Hover color for light mode
-    'rgba(255, 255, 255, 1)', // Hover color for dark mode
-    'rgba(0, 0, 0, 0.361)', // Default color for light mode
-    'rgba(255, 255, 255, 0.361)', // Default color for dark mode
-    'rgba(0, 0, 0, 0.72)', // Hover background for light mode
-    'rgba(33, 33, 33, 0.57)' // Hover background for dark mode
+    'rgb(255, 255, 255)', // Hover color for light mode
+    'rgb(9, 9, 9)', // Hover color for dark mode
+    'rgba(0, 0, 0, 0.317)', // Default color for light mode
+    'rgba(255, 255, 255, 0.317)', // Default color for dark mode
+    'rgba(0, 0, 0, 0.1632)', // Hover background for light mode
+    'rgba(33, 33, 33,0.163)' // Hover background for dark mode
   );
 
   setIconHoverBehaviorWithTheme(
     xIcon,
-    'rgba(0, 0, 0, 1)', // Hover color for light mode
-    'rgba(255, 255, 255, 1)', // Hover color for dark mode
+    'rgb(255, 255, 255)', // Hover color for light mode
+    'rgb(0, 0, 0)', // Hover color for dark mode
     'rgba(0, 0, 0, 0.361)', // Default color for light mode
     'rgba(255, 255, 255, 0.3)', // Default color for dark mode
-    'rgba(0, 0, 0, 0.75)', // Hover background for light mode
-    'rgba(33, 33, 33, 0.57)' // Hover background for dark mode
+    'rgba(0, 0, 0,0.163)', // Hover background for light mode
+    'rgba(33, 33, 33, 0.163)' // Hover background for dark mode
   );
 }
 
 // Dark Mode
 function darkMode() {
   body.style.background = '#01072c';
-  body.style.color = 'white';
   header.style.background = '#01072c';
+  menu.style.background = 'rgb(1, 7, 44)';
+  grid.style.background = 'rgb(1, 7, 44)';
+  side.style.background = 'rgb(1, 7, 44)';
+  footer.style.background = 'rgb(1, 7, 44)';
+  body.style.color = 'white';
   header.style.color = 'white';
-  logoBorder.style.border = '2px solid rgb(238, 255, 0)';
   LogoName.style.color = 'rgb(74, 198, 255)';
+  hamburgerBar.style.color = 'rgb(74, 198, 255)';
+  grid.style.color = 'white';
+  footer.style.color = 'white';
+  logoBorder.style.border = '2px solid rgb(238, 255, 0)';
   breadBorder.style.borderTop = '2px solid rgb(238, 255, 0)';
   breadBorder.style.borderBottom = '2px solid rgb(238, 255, 0)';
-  hamburgerBar.style.color = 'rgb(74, 198, 255)';
-  toTheSide.style.backgroundColor = 'rgb(1, 7, 44)';
   menu.style.border = '1px solid rgb(238, 255, 0)';
-  menu.style.background = 'rgb(1, 7, 44)';
   grid.style.borderTop = '1px solid rgb(238, 255, 0)';
   grid.style.borderRight = '3px solid rgb(238, 255, 0)';
   grid.style.borderLeft = '3px solid rgb(238, 255, 0)';
   grid.style.borderBottom = '1px solid rgb(238, 255, 0)';
   footer.style.borderTop = '2px solid rgb(238, 255, 0)';
-  footer.style.background = 'rgb(1, 7, 44)';
-  footer.style.color = 'white';
   toggle.classList.add('fa-moon');
   toggle.classList.remove('fa-sun');
   toggle.innerText = ' Dark';
@@ -151,22 +155,22 @@ function darkMode() {
   // Change GitHub and X icons to white
   setIconHoverBehaviorWithTheme(
     githubIcon,
-    'rgba(0, 0, 0, 1)', // Hover color for light mode
-    'rgba(255, 255, 255, 1)', // Hover color for dark mode
+    'rgb(254, 254, 254)', // Hover color for light mode
+    'rgb(0, 0, 0)', // Hover color for dark mode
     'rgba(0, 0, 0, 0.361)', // Default color for light mode
-    'rgba(255, 255, 255, 0.361)', // Default color for dark mode
+    'rgba(255, 255, 255, 0.163)', // Default color for dark mode
     'rgba(0, 0, 0, 0.1)', // Hover background for light mode
-    'rgba(255, 255, 255, 0.85)' // Hover background for dark mode
+    'rgba(255, 255, 255, 0.163)' // Hover background for dark mode
   );
 
   setIconHoverBehaviorWithTheme(
     xIcon,
-    'rgba(0, 0, 0, 1)', // Hover color for light mode
-    'rgba(255, 255, 255, 1)', // Hover color for dark mode
-    'rgba(0, 0, 0, 0.1)', // Default color for light mode
-    'rgba(255, 255, 255, 0.361)', // Default color for dark mode
+    'rgb(255, 255, 255)', // Hover color for light mode
+    'rgb(0, 0, 0)', // Hover color for dark mode
+    'rgba(0, 0, 0, 0.23)', // Default color for light mode
+    'rgba(255, 255, 255, 0.163)', // Default color for dark mode
     'rgba(0, 0, 0, 0.1)', // Hover background for light mode
-    'rgba(255, 255, 255, 0.76)' // Hover background for dark mode
+    'rgba(255, 255, 255, 0.163)' // Hover background for dark mode
   );
 }
 
@@ -231,12 +235,12 @@ socialMediaIcons.forEach(icon => {
   const textElement = document.createElement('span');
   textElement.textContent = socialMediaName;
   textElement.style.position = 'absolute';
-  textElement.style.fontSize = '0.75rem'; // Smaller font size
+  textElement.style.fontSize = '0.625rem'; // Smaller font size
   textElement.style.color = 'inherit'; // Match the icon's color
   textElement.style.visibility = 'hidden'; // Initially hidden
   textElement.style.opacity = '0'; // Initially invisible
-  textElement.style.transition = 'visibility 0.3s ease, opacity 0.3s ease';
-  textElement.style.top = '100%'; // Position below the icon
+  textElement.style.transition = 'visibility 1.3s ease, opacity 0.3s ease';
+  textElement.style.top = '90%'; // Position below the icon
   textElement.style.left = '50%'; // Center the text horizontally
   textElement.style.transform = 'translateX(-50%)'; // Adjust for centering
   textElement.style.whiteSpace = 'nowrap'; // Prevent text wrapping

@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/base.css" /> <!-- Shared styles -->
-    <link rel="stylesheet" href="/css/styles.css" /> <!-- Page-specific styles -->
+    <link rel="stylesheet" href="/css/base.css" />
+    <!-- Shared styles -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- Page-specific styles -->
     <script
       src="https://kit.fontawesome.com/36f7f4f045.js"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&family=Hubot+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100;0,14..32,400;0,14..32,700;1,14..32,100;1,14..32,400;1,14..32,700&family=Oswald:wght@100;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100;400;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
     <title>Matwal Portfolio</title>
   </head>
   <body>
@@ -15,18 +21,22 @@
     <header>
       <div class="header-container" id="headerContainer">
         <div class="logo">
-          <img src="/images/matwalPicLogo-2.jpg" alt="matwal pic" id="logoImg" />
-          <h1 class="profileName" id="profileTite">
+          <img
+            src="/images/matwalPicLogo-2.jpg"
+            alt="matwal pic"
+            id="logoImg"
+          />
+          <h1 class="profileName roboto" id="profileTite">
             Matthew Walton <br />
             (Matwal)
           </h1>
         </div>
         <div class="nav">
           <ul>
-            <li><a href="/html/index.html">Home</a></li>
-            <li><a href="/html/about.html">About</a></li>
-            <li><a href="/html/portfoilo.html">Portfolio</a></li>
-            <li><a href="/html/contact.html">Contact</a></li>
+            <li><a href="/html/index.html" class="oswald">Home</a></li>
+            <li><a href="/html/about.html" class="oswald">About</a></li>
+            <li><a href="/html/portfoilo.html" class="oswald">Portfolio</a></li>
+            <li><a href="/html/contact.html" class="oswald">Contact</a></li>
           </ul>
         </div>
         <div class="toggle-btn">
@@ -39,7 +49,7 @@
     <nav class="breadcrumbs" id="breadcrumbs">
       <ul class="crumble">
         <li class="list-item" id="crumble1">
-          <a href="/html/index.html"><i class="fa-solid fa-house"></i>Home</a>
+          <a href="/html/index.html" class="oswald"><i class="fa-solid fa-house"></i>Home</a>
         </li>
         <li class="list-item" id="crumble2">
           <a href="/html/about.html"
@@ -68,93 +78,148 @@
             <i class="fa-solid fa-bars" id="hamburgerBar"></i>
             <ul class="sidebar-list">
               <li class="sidebar-list-items" id="Highlight1">
-                <a href="/html/index.html"><i class="fa-solid fa-house"></i>Home</a>
+                <a href="/html/index.html" class="oswald"
+                  ><i class="fa-solid fa-house"></i>Home</a
+                >
               </li>
               <li class="sidebar-list-items" id="Highlight2">
-                <a href="/html/about.html"
+                <a href="/html/about.html" class="oswald"
                   ><i class="fa-solid fa-exclamation-circle"></i>About</a
                 >
               </li>
               <li class="sidebar-list-items" id="Highlight3">
-                <a href="/html/portfoilo.html"
+                <a href="/html/portfoilo.html" class="oswald"
                   ><i class="fa-solid fa-project-diagram"></i>Projects</a
                 >
               </li>
               <li class="sidebar-list-items" id="Highlight4">
-                <a href="/html/contact.html"
+                <a href="/html/contact.html" class="oswald"
                   ><i class="fa-solid fa-phone"></i>Contact</a
                 >
               </li>
             </ul>
           </div>
         </div>
-  
       </aside>
 
       <!-- Main Content -->
-      <main class="flex-item2" id="gridItem">
-        <div class="grid-container">
-            <div class="titleBox">
-              <img src="/images/professorEggHead.png" alt="professorEggHead" id="eggHead">
-              <h2 class="bioTitle">Matthew Walton bio</h2>
-            </div>
-            <p class="bio-content">
-              I’m Matthew Walton, I also use the screen name or username matwal042083. You can pretty much find me almost everywhere
-              online under this screen name or username. I’m a Fullstack Engineer from Springfield Missouri. I attended Fullstack
-              Academy and graduated in October 2023. I didn’t start looking for a job right away because I felt that I needed to 
-              learn more, lots more. So I’ve been learning and teaching myself on freeCodeCamp and Codeacademy. I’ve learned a 
-              lot from Fullstack Academy but I still feel that I need to learn more. I know that I’m going to be consistently 
-              learning new things as I advance throughout my whole career. I’ve learned a lot about computers throughout my childhood 
-              in the 80’s and 90’s. I was 6 years old, the first time I started playing around with computers. 
-              My grandpa just bought one and was very excited about it. My grandpa was the one who encouraged me to learn 
-              them. So he made a point to teach me. Back in those days, there was no Windows OS. Only MS-Dos OS, which was a 
-              operating system in the 80s and it was kind of a pain in the ass. It was a command-line interface system, So I started 
-              on CLI to operate, run programs, and navigate file systems on a computer. Just to run a simple program, you had 
-              to commend and tell it what to do. Then Windows came out and was most recommended to have Windows on your computer, so 
-              my grandpa got it. One day my grandpa told me that I needed to learn a lot about computers and to become an IT professional 
-              because he told me when I grew up that, everybody would have a computer and everyone would be carrying a handheld computer. 
-              I looked at him like he was crazy. I stated “Why”, he stated “You just don’t understand, You're too young to even comprehend 
-              this. But this will be important to you, for everything. One day, that's how you're going to be able to apply for a job, rent 
-              a house buy one request deliveries, taxi rides, or order food at a restaurant. About damn ner everything”. At the time, I didn’t 
-              take him seriously. Until 2006, when the first iPhone commerce came out. I was wowed by that, It was a big wholly shit moment for me, 
-              because this was told to me by my grandpa. For a long time, I thought that he was just jerking my chain about it. Today is 2025 and now 
-              I fully believe him. He would be impressed by everything that’s out now. I was a teenager when the internet came out for the first 
-              time. I was excited about it. These were the days of the Netscape. Which was an internet browser and service provider as well. Then 
-              AOL came out, It was a service provider and a browser as well. I was a big user of Napster, the shared music files system. Back then, 
-              guys like me looked up to Sean Parker and Sean Fanning. Two 19-year-old childhood friends who grew up together, and later on built Napster. 
-              Napster was very impressive back then. There was nothing like it. It was a shared music file system, which means that your sharing music with 
-              other people. It starts with someone uploading files to the system, then someone else searches for the music then downloads it. Then more people 
-              upload more music files with a wider range. Every time you search for music, it looks for the closest computer that has it, and then it returns 
-              a list of all the closest to farthest of that one particular song, artist, or album depending on what you searched. Each item on the 
-              list has the song title, artist name, duration of the song, album title, the location of the computer it’s on, how long to download it, 
-              then a progress bar for download progress, then there was a way to tell if the song or whatever it was, if its safe, secure and not a 
-              virus. The bad part about Napster is that you had to be careful, very careful. Because you're actually at risk of accidentally downloading 
-              a virus. That was the first thing you had to check for, if it was safe and secure, one wrong move and it was a bad day for anybody that didn’t 
-              pay attention. Nowadays I use Spotify to collect my music files and create playlists. I continued to play around with computers until I was 16 
-              years old and even built my first computer and worked with it in my computer class in high school. Then one day, I just stopped. This is one big 
-              regret, that I have in my life. I started to feel that I was being watched, because of a certain occurs. One time, I walked away from my computer 
-              and went back to it and saw that my mouse was moving across my screen when no one was doing it, so I thought. There were other things as well. I 
-              have never worked in the IT industry, I’ve worked in the restaurant industry for about five years working at various restaurants as a line cook, 
-              pre-cook, bus table, host, and serve tables. I’ve worked as a houseman at the hotel once and liked it. I worked in the medical field for about 18 
-              years as a CNA, and CMT. I was a Certified Nursing Assistant and a Certified Med Tech, For the last 6 years of my medical career, I was a BHT behavioral 
-              health Tech working with troubled teenagers. Then I started working at Amazon in 2021 at the STL3 fulfillment center in Brookline Missouri. Then I learned 
-              about the Career Choice program at Amazon. So I decided to get back into IT, and by this point, I had serious thoughts about it. Then I made my decision about 
-              it. I remember that I was really into Web Development back in the day.
-            </p>
-            
-            <p class="bio-content">
-              I then started to get a head start and I was shocked to find that there was a lot of 
-              information out there about Web Development. I found the learning platforms and started to teach myself how to code. I started with HTML 5 and flew through 
-              it fast, CSS 3 was the same until I started doing JavaScript. At first learning JavaScript, I was lost and the platform that I was on didn’t teach it very 
-              well. I didn’t even know how to do anything on the terminal for a minute, Now I do. Now I know how to deal with the terminal and mess around with it. I didn’t 
-              know Git or Github that well and now I do. I have sharpened my CLI commands, Git, GitHub, JavaScript, and much more. My dreams are to master JavaScript and Java, 
-              SQL, PHP, React, Vue, Angular, TypeScript and Devvit by Reddit. I want my first developer job, to be with a good company that has a team to work with and learn 
-              more from, I want to be able to grow my soft and hard skills with this company and become a Master Fullstack Engineer. 
-              I want to build cross-platform websites and apps that are cross-platform with each other. I also want to learn about 
-              Security, Data engineering, Network engineering, computer administration, and more for extracurricular activities. 
-              I have collected a lot of certifications and want to do the COMP TIA+, Security, Data, Networking, and for Development 
-              Certifications.
-            </p>
+      <main class="flex-item2" >
+        <div class="grid-container" id="gridItem">
+          <div class="titleBox">
+            <img
+              src="/images/professorEggHead.png"
+              alt="professorEggHead"
+              id="eggHead"
+            />
+            <h2 class="bioTitle ibm-plex-sans">Matthew Walton bio</h2>
+          </div>
+          <p class="bio-content playfair-display">
+            I’m Matthew Walton, I also use the screen name or username
+            matwal042083. You can pretty much find me almost everywhere online
+            under this screen name or username. I’m a Fullstack Engineer from
+            Springfield Missouri. I attended Fullstack Academy and graduated in
+            October 2023. I didn’t start looking for a job right away because I
+            felt that I needed to learn more, lots more. So I’ve been learning
+            and teaching myself on freeCodeCamp and Codeacademy. I’ve learned a
+            lot from Fullstack Academy but I still feel that I need to learn
+            more. I know that I’m going to be consistently learning new things
+            as I advance throughout my whole career. I’ve learned a lot about
+            computers throughout my childhood in the 80’s and 90’s. I was 6
+            years old, the first time I started playing around with computers.
+            My grandpa just bought one and was very excited about it. My grandpa
+            was the one who encouraged me to learn them. So he made a point to
+            teach me. Back in those days, there was no Windows OS. Only MS-Dos
+            OS, which was a operating system in the 80s and it was kind of a
+            pain in the ass. It was a command-line interface system, So I
+            started on CLI to operate, run programs, and navigate file systems
+            on a computer. Just to run a simple program, you had to commend and
+            tell it what to do. Then Windows came out and was most recommended
+            to have Windows on your computer, so my grandpa got it. One day my
+            grandpa told me that I needed to learn a lot about computers and to
+            become an IT professional because he told me when I grew up that,
+            everybody would have a computer and everyone would be carrying a
+            handheld computer. I looked at him like he was crazy. I stated
+            “Why”, he stated “You just don’t understand, You're too young to
+            even comprehend this. But this will be important to you, for
+            everything. One day, that's how you're going to be able to apply for
+            a job, rent a house buy one request deliveries, taxi rides, or order
+            food at a restaurant. About damn ner everything”. At the time, I
+            didn’t take him seriously. Until 2006, when the first iPhone
+            commerce came out. I was wowed by that, It was a big wholly shit
+            moment for me, because this was told to me by my grandpa. For a long
+            time, I thought that he was just jerking my chain about it. Today is
+            2025 and now I fully believe him. He would be impressed by
+            everything that’s out now. I was a teenager when the internet came
+            out for the first time. I was excited about it. These were the days
+            of the Netscape. Which was an internet browser and service provider
+            as well. Then AOL came out, It was a service provider and a browser
+            as well. I was a big user of Napster, the shared music files system.
+            Back then, guys like me looked up to Sean Parker and Sean Fanning.
+            Two 19-year-old childhood friends who grew up together, and later on
+            built Napster. Napster was very impressive back then. There was
+            nothing like it. It was a shared music file system, which means that
+            your sharing music with other people. It starts with someone
+            uploading files to the system, then someone else searches for the
+            music then downloads it. Then more people upload more music files
+            with a wider range. Every time you search for music, it looks for
+            the closest computer that has it, and then it returns a list of all
+            the closest to farthest of that one particular song, artist, or
+            album depending on what you searched. Each item on the list has the
+            song title, artist name, duration of the song, album title, the
+            location of the computer it’s on, how long to download it, then a
+            progress bar for download progress, then there was a way to tell if
+            the song or whatever it was, if its safe, secure and not a virus.
+            The bad part about Napster is that you had to be careful, very
+            careful. Because you're actually at risk of accidentally downloading
+            a virus. That was the first thing you had to check for, if it was
+            safe and secure, one wrong move and it was a bad day for anybody
+            that didn’t pay attention. Nowadays I use Spotify to collect my
+            music files and create playlists. I continued to play around with
+            computers until I was 16 years old and even built my first computer
+            and worked with it in my computer class in high school. Then one
+            day, I just stopped. This is one big regret, that I have in my life.
+            I started to feel that I was being watched, because of a certain
+            occurs. One time, I walked away from my computer and went back to it
+            and saw that my mouse was moving across my screen when no one was
+            doing it, so I thought. There were other things as well. I have
+            never worked in the IT industry, I’ve worked in the restaurant
+            industry for about five years working at various restaurants as a
+            line cook, pre-cook, bus table, host, and serve tables. I’ve worked
+            as a houseman at the hotel once and liked it. I worked in the
+            medical field for about 18 years as a CNA, and CMT. I was a
+            Certified Nursing Assistant and a Certified Med Tech, For the last 6
+            years of my medical career, I was a BHT behavioral health Tech
+            working with troubled teenagers. Then I started working at Amazon in
+            2021 at the STL3 fulfillment center in Brookline Missouri. Then I
+            learned about the Career Choice program at Amazon. So I decided to
+            get back into IT, and by this point, I had serious thoughts about
+            it. Then I made my decision about it. I remember that I was really
+            into Web Development back in the day.
+          </p>
+
+          <p class="bio-content playfair-display">
+            I then started to get a head start and I was shocked to find that
+            there was a lot of information out there about Web Development. I
+            found the learning platforms and started to teach myself how to
+            code. I started with HTML 5 and flew through it fast, CSS 3 was the
+            same until I started doing JavaScript. At first learning JavaScript,
+            I was lost and the platform that I was on didn’t teach it very well.
+            I didn’t even know how to do anything on the terminal for a minute,
+            Now I do. Now I know how to deal with the terminal and mess around
+            with it. I didn’t know Git or Github that well and now I do. I have
+            sharpened my CLI commands, Git, GitHub, JavaScript, and much more.
+            My dreams are to master JavaScript and Java, SQL, PHP, React, Vue,
+            Angular, TypeScript and Devvit by Reddit. I want my first developer
+            job, to be with a good company that has a team to work with and
+            learn more from, I want to be able to grow my soft and hard skills
+            with this company and become a Master Fullstack Engineer. I want to
+            build cross-platform websites and apps that are cross-platform with
+            each other. I also want to learn about Security, Data engineering,
+            Network engineering, computer administration, and more for
+            extracurricular activities. I have collected a lot of certifications
+            and want to do the COMP TIA+, Security, Data, Networking, and for
+            Development Certifications.
+          </p>
         </div>
       </main>
     </section>
@@ -162,31 +227,69 @@
     <!-- Footer -->
     <footer id="footerContainer">
       <div class="footer-container">
-        <p>My Social Media and GitHub</p>
+        <p class="playfair-display">My Social Media and GitHub</p>
+          <p class="copyRights roboto">&copy; 2025 Matthew Walton. All rights reserved.</p>
+       
         <ul class="social-media-list">
           <li>
-            <a href="#"><i class="fa-brands fa-square-facebook" id="fb" data-name="Facebook"></i></a>
+            <a href="#" class="roboto"
+              ><i
+                class="fa-brands fa-square-facebook"
+                id="fb"
+                data-name="Facebook"
+              ></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-square-x-twitter" id="X" data-name="X"></i></a>
+            <a href="#" class="ibm-plex-sans"
+              ><i class="fa-brands fa-square-x-twitter" id="X" data-name="X"></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-square-github" id="gh" data-name="GitHub"></i></a>
+            <a href="#" class="hubot-sans"
+              ><i
+                class="fa-brands fa-square-github"
+                id="gh"
+                data-name="GitHub"
+              ></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-square-reddit" id="rt" data-name="Reddit"></i></a>
+            <a href="#" class="ibm-plex-sans"
+              ><i
+                class="fa-brands fa-square-reddit"
+                id="rt"
+                data-name="Reddit"
+              ></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-linkedin" id="ln" data-name="LinkedIn"></i></a>
+            <a href="#" class="roboto-slab"
+              ><i class="fa-brands fa-linkedin" id="ln" data-name="LinkedIn"></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-square-youtube" id="yt" data-name="YouTube"></i></a>
+            <a href="#" class="roboto"
+              ><i
+                class="fa-brands fa-square-youtube"
+                id="yt"
+                data-name="YouTube"
+              ></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-mastodon" id="md" data-name="Mastodon"></i></a>
+            <a href="#" class="cabin"
+              ><i class="fa-brands fa-mastodon" id="md" data-name="mastodon"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#" class="hubot-sans"
+              ><i class="fa-brands fa-discord" id="dc" data-name="Discord"></i
+            ></a>
           </li>
         </ul>
       </div>
+     
     </footer>
 
     <script src="/js/script.js" defer></script>

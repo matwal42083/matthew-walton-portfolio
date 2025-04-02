@@ -8,6 +8,9 @@
     <script
       src="https://kit.fontawesome.com/36f7f4f045.js"
       crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&family=Hubot+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100;0,14..32,400;0,14..32,700;1,14..32,100;1,14..32,400;1,14..32,700&family=Oswald:wght@100;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100;400;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
     <title>Matwal Portfolio</title>
   </head>
 <body>
@@ -15,17 +18,17 @@
     <div class="header-container" id="headerContainer">
       <div class="logo">
         <img src="/images/matwalPicLogo-2.jpg" alt="matwal pic" id="logoImg"/>
-        <h1 class="profileName" id="profileTite">
+        <h1 class="profileName roboto" id="profileTite">
           Matthew Walton <br />
           (Matwal)
         </h1>
       </div>
       <div class="nav">
         <ul>
-          <li><a href="/html/index.html">Home</a></li>
-          <li><a href="/html/about.html">About</a></li>
-          <li><a href="/html/portfoilo.html">Portfolio</a></li>
-          <li><a href="/html/contact.html">Contact</a></li>
+          <li><a href="/html/index.html" class="oswald">Home</a></li>
+          <li><a href="/html/about.html" class="oswald">About</a></li>
+          <li><a href="/html/portfoilo.html" class="oswald">Portfolio</a></li>
+          <li><a href="/html/contact.html" class="oswald">Contact</a></li>
         </ul>
       </div>
       <div class="toggle-btn">
@@ -36,20 +39,20 @@
   <nav class="breadcrumbs" id="breadcrumbs">
     <ul class="crumble">
       <li class="list-item" id="crumble1">
-        <a href="/html/index.html"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="/html/index.html" class="oswald"><i class="fa-solid fa-house"></i>Home</a>
       </li>
       <li class="list-item" id="crumble2">
-        <a href="/html/about.html"
+        <a href="/html/about.html" class="oswald"
           ><i class="fa-solid fa-exclamation-circle"></i>About</a
         >
       </li>
       <li class="list-item" id="crumble3">
-        <a href="/html/portfoilo.html"
+        <a href="/html/portfoilo.html" class="oswald"
           ><i class="fa-solid fa-diagram-project"></i>Portfolio</a
         >
       </li>
       <li class="list-item" id="crumble4">
-        <a href="/html/contact.html"
+        <a href="/html/contact.html" class="oswald"
           ><i class="fa-solid fa-phone"></i>Contact</a
         >
       </li>
@@ -62,20 +65,20 @@
           <i class="fa-solid fa-bars" id="hamburgerBar"></i>
           <ul class="sidebar-list">
             <li class="sidebar-list-items" id="Highlight1">
-              <a href="/html/index.html"><i class="fa-solid fa-house"></i>Home</a>
+              <a href="/html/index.html" class="oswald"><i class="fa-solid fa-house"></i>Home</a>
             </li>
             <li class="sidebar-list-items" id="Highlight2">
-              <a href="/html/about.html"
+              <a href="/html/about.html" class="oswald"
                 ><i class="fa-solid fa-exclamation-circle"></i>About</a
               >
             </li>
             <li class="sidebar-list-items" id="Highlight3">
-              <a href="/html/portfoilo.html"
+              <a href="/html/portfoilo.html" class="oswald"
                 ><i class="fa-solid fa-project-diagram"></i>Projects</a
               >
             </li>
             <li class="sidebar-list-items" id="Highlight4">
-              <a href="/html/contact.html"
+              <a href="/html/contact.html" class="oswald"
                 ><i class="fa-solid fa-phone"></i>Contact</a
               >
             </li>
@@ -86,8 +89,8 @@
     <main class="flex-item2" id="gridItem">
       <div class="gallery-container">
         <div class="certification-title">
-          <h2>Certifications</h2>
-            <p class="certDetails">I have a lot of certifications, because I didn't just learned my skills just anywhere's. I went 
+          <h2 class="inter">Certifications</h2>
+            <p class="certDetails playfair-display">I have a lot of certifications, because I didn't just learned my skills just anywhere's. I went 
            for the better experience. One is from FullStack Academy, I have multi from sololearn, 
            then freeCodeCamp and Codecademy. freeCodeCamp and Codecademy is where I really sharpen my skills and 
            was able to learn more skills as well, which I took that advantage of learning.
@@ -98,57 +101,59 @@
           <!-- Add your certification items here -->
           <div class="gallery-item">
             <img src="/images/matthew-walton-fullstackDiploma.jpg" alt="fullstack diploma">
-            <p>Fullstack Diploma</p>
+            <p class="hubot-sans">Fullstack Diploma</p>
           </div>
           <div class="gallery-item">
             <img src="/images/HTML_certificate.jpg" alt="HTML Certification">
-            <p>HTML Certification</p>
+            <p class="hubot-sans">HTML Certification</p>
           </div>
           <div class="gallery-item">
             <img src="/images/CSS_certificate.jpg" alt="CSS Certification">
-            <p>CSS Certification</p>
+            <p class="hubot-sans">CSS Certification</p>
           </div>
           <div class="gallery-item">
             <img src="/images/JavaScriptCertification.png" alt="HTML Certification">
-            <p>JavaScript Certification</p>
+            <p class="hubot-sans">JavaScript Certification</p>
           </div>
           <div class="gallery-item">
             <img src="/images/Responsive-Web-Design_certificate.jpg" alt="Responsive web design Certification">
-            <p>Responsive Certification</p>
+            <p class="hubot-sans">Responsive Certification</p>
           </div>
           <div class="gallery-item">
             <img src="/images/webDevelopment_Certified_SL.jpg" alt="HTML Certification">
-            <p>Web Development Certification</p>
+            <p class="hubot-sans">Web Development Certification</p>
           </div>
           <div class="gallery-item">
             <img src="/images/web-dev-basics_certificate.jpg" alt="HTML Certification">
-            <p>web dev basics Certification</p>
+            <p class="hubot-sans">web dev basics Certification</p>
           </div>
           <div class="gallery-item">
             <img src="/images/Responsive-Web-Design.jpg" alt="HTML Certification">
-            <p>Responsive Web Design Certification</p>
+            <p class="hubot-sans">Responsive Web Design Certification</p>
           </div>
           <div class="gallery-item">
             <img src="/images/JavaScriptAlgorithms_DataStructures.png" alt="HTML Certification">
-            <p>web dev basics Certification</p>
+            <p class="hubot-sans">web dev basics Certification</p>
           </div>
           <!-- Add more certifications as needed -->
         </div>
        <div class="projects-gallery-title">
-         <h2>Projects Gallery</h2>
-           <p class="projectDetails">This is my projects gallery of all of my projects I've done,
+         <h2 class="inter">Projects Gallery</h2>
+           <p class="projectDetails playfair-display">This is my projects gallery of all of my projects I've done,
          none of these projects are really big or neither are products. 
          there simply just practice projects. I'm still learning and I'm focused on 
          mastering JavaScript and Java, and learn most of JavaScripts frameworks and libraries.
+         If you going into these projects, to checkout what they are, to come back here. Just click on 
+         the browsers back button.
            </p>
            <hr/>
          </div> 
          <div class="gallery-grid">
        <!-- Add your project items here -->
           <div class="gallery-item">
-            <a href="/projects/project1/portInd.html">project
-             <p>skyline lights, Open the project minimize screen</p>
-             <p>
+            <a href="/projects/project1/portInd.html" class="hubot-sans">project
+             <p class="hubot-sans">skyline lights, Open the project minimize screen</p>
+             <p class="hubot-sans">
               <strong>
                <em>freeCodeCamp</em>
               </strong>
@@ -156,9 +161,9 @@
             </a>
           </div>
           <div class="gallery-item">
-            <a href="/projects/project2/index.html">project
-             <p>Space Invaders game that I built along with</p>
-              <p>
+            <a href="/projects/project2/index.html" class="hubot-sans">project
+             <p class="hubot-sans">Space Invaders game that I built along with</p>
+              <p class="hubot-sans">
                <strong>
                 <em>Anie Kubow</em>
               </strong>
@@ -167,9 +172,9 @@
           </div>
           <!-- Add more projects as needed -->
           <div class="gallery-item">
-            <a href="/projects/project3/">project
-             <p>Rock, Paper, scissors game that I built along with</p>
-              <p>
+            <a href="/projects/project3/" class="hubot-sans">project
+             <p class="hubot-sans">Rock, Paper, scissors game that I built along with</p>
+              <p class="hubot-sans">
                <strong>
                 <em>Anie Kubow</em>
               </strong>
@@ -177,9 +182,9 @@
             </a>
           </div>
           <div class="gallery-item">
-            <a href="/projects/project4/">project
-             <p>Type graph of Nutrient Facts Label</p>
-              <p>
+            <a href="/projects/project4/" class="hubot-sans">project
+             <p class="hubot-sans">Type graph of Nutrient Facts Label</p>
+              <p class="hubot-sans">
                 <strong>
                   <em>freeCodeCamp</em>
                 </strong>
@@ -187,9 +192,9 @@
             </a>  
           </div>
           <div class="gallery-item">
-            <a href="/projects/project5/">project
-             <p>Dragon RPG game that I built with</p>
-              <p>
+            <a href="/projects/project5/" class="hubot-sans">project
+             <p class="hubot-sans">Dragon RPG game that I built with</p>
+              <p class="hubot-sans">
                <strong>
                 <em>freeCodeCamp</em>
                </strong>
@@ -197,9 +202,9 @@
             </a>
            </div>
           <div class="gallery-item">
-            <a href="/projects/project6/">project
-             <p>To Do App, using HTML, CSS, JS that I built with</p>
-              <p>
+            <a href="/projects/project6/" class="hubot-sans">project
+             <p class="hubot-sans">To Do App, using HTML, CSS, JS that I built with</p>
+              <p class="hubot-sans">
                 <strong>
                   <em>freeCodeCamp</em>
                 </strong>
@@ -207,9 +212,9 @@
             </a>
            </div>
           <div class="gallery-item">
-            <a href="/projects/project7/">project
-             <p>Binary Converter, enter 5 and watch</p>
-              <p>
+            <a href="/projects/project7/" class="hubot-sans">project
+             <p class="hubot-sans">Binary Converter, enter 5 and watch</p>
+              <p class="hubot-sans">
                 <strong>
                   <em>freeCodeCamp</em>
                 </strong>
@@ -217,9 +222,9 @@
             </a>
           </div>
           <div class="gallery-item">
-            <a href="/projects/project8/">project
-             <p>Rock, Paper, scissors game that I built along with</p>
-              <p>
+            <a href="/projects/project8/" class="hubot-sans">project
+             <p class="hubot-sans">Rock, Paper, scissors game that I built along with</p>
+              <p class="hubot-sans">
                 <strong>
                   <em>freeCodeCamp</em>
                 </strong>
@@ -227,9 +232,9 @@
             </a>
            </div>
            <div class="gallery-item">
-            <a href="/projects/project9/numberGuesser/">project
-             <p>Number Guesser game</p>
-              <p>
+            <a href="/projects/project9/numberGuesser/" class="hubot-sans">project
+             <p class="hubot-sans">Number Guesser game</p>
+              <p class="hubot-sans">
                 <strong>
                   <em>Codecademy</em>
                 </strong>
@@ -243,32 +248,67 @@
   </section>
   <footer id="footerContainer">
     <div class="footer-container">
-      <p>My Social Media and GitHub</p>
+      <p class="playfair-display">My Social Media and GitHub</p>
       <ul class="social-media-list">
         <li>
-          <a href="#"><i class="fa-brands fa-square-facebook" id="fb" data-name="Facebook"></i></a>
+          <a href="#" class="roboto"
+            ><i
+              class="fa-brands fa-square-facebook"
+              id="fb"
+              data-name="Facebook"
+            ></i
+          ></a>
         </li>
         <li>
-          <a href="#"><i class="fa-brands fa-square-x-twitter" id="X" data-name="X"></i></a>
+          <a href="#" class="ibm-plex-sans"
+            ><i class="fa-brands fa-square-x-twitter" id="X" data-name="X"></i
+          ></a>
         </li>
         <li>
-          <a href="#"><i class="fa-brands fa-square-github" id="gh" data-name="GitHub"></i></a>
+          <a href="#" class="hubot-sans"
+            ><i
+              class="fa-brands fa-square-github"
+              id="gh"
+              data-name="GitHub"
+            ></i
+          ></a>
         </li>
         <li>
-          <a href="#"><i class="fa-brands fa-square-reddit" id="rt" data-name="Reddit"></i></a>
+          <a href="#" class="ibm-plex-sans"
+            ><i
+              class="fa-brands fa-square-reddit"
+              id="rt"
+              data-name="Reddit"
+            ></i
+          ></a>
         </li>
         <li>
-          <a href="#"><i class="fa-brands fa-linkedin" id="ln" data-name="LinkedIn"></i></a>
+          <a href="#" class="roboto-slab"
+            ><i class="fa-brands fa-linkedin" id="ln" data-name="LinkedIn"></i
+          ></a>
         </li>
         <li>
-          <a href="#"><i class="fa-brands fa-square-youtube" id="yt" data-name="YouTube"></i></a>
+          <a href="#" class="roboto"
+            ><i
+              class="fa-brands fa-square-youtube"
+              id="yt"
+              data-name="YouTube"
+            ></i
+          ></a>
         </li>
         <li>
-          <a href="#"><i class="fa-brands fa-mastodon" id="md" data-name="Mastodon"></i></a>
+          <a href="#" class="cabin"
+            ><i class="fa-brands fa-mastodon" id="md" data-name="mastodon"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" class="hubot-sans"
+            ><i class="fa-brands fa-discord" id="dc" data-name="Discord"></i
+          ></a>
         </li>
       </ul>
     </div>
- </footer>
+  </footer>
 <script src="/js/script.js" defer></script>
 </body>
 </html>
