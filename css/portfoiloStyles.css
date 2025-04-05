@@ -83,6 +83,8 @@
   color: var(--light-blue);
   border: 2px solid var(--light-blue);
   box-shadow: -5px 5px 8px rgba(66, 65, 65, 0.619);
+  outline: 2px solid var(--yellow);
+  outline-offset: 2px;
 }
 .gallery-item img {
   max-width: 100%;

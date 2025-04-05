@@ -2,18 +2,16 @@
 const toggle = document.getElementById('toggle-btn');
 const body = document.querySelector('body');
 const header = document.getElementById('headerContainer');
-const footer = document.getElementById('footerContainer');
+const navLinks = document.querySelectorAll('.nav a');
 const logoBorder = document.getElementById('logoImg');
 const LogoName = document.querySelector('h1');
 const breadBorder = document.getElementById('breadcrumbs');
 const menu = document.getElementById('menuBar');
 const hamburgerBar = document.getElementById('hamburgerBar');
-const spotify = document.getElementById('spotifyContainer');
-const devCard = document.getElementById('devCard');
 const grid = document.getElementById('gridItem');
 const sidebarItems = document.querySelectorAll('.sidebar li');
-const navLinks = document.querySelectorAll('.nav a');
 const side = document.getElementById('aside');
+const footer = document.getElementById('footerContainer');
 const githubIcon = document.getElementById('gh');
 const xIcon = document.getElementById('X');
 
@@ -66,12 +64,12 @@ function setIconHoverBehaviorWithTheme(icon, hoverColorLight, hoverColorDark, de
 
 // Light Mode
 function lightMode() {
-  body.style.background = 'white';
-  header.style.background = 'white';
-  side.style.background = 'white';
-  menu.style.background = 'white';
-  grid.style.background = 'white';
-  footer.style.background = 'white';
+  body.style.backgroundColor = 'white';
+  header.style.backgroundColor = 'white';
+  side.style.backgroundColor = 'white';
+  menu.style.backgroundColor = 'white';
+  grid.style.backgroundColor = 'white';
+  footer.style.backgroundColor = 'white';
   body.style.color = '#01072c';
   LogoName.style.color = 'rgb(1, 7, 44)';
   header.style.color = '#01072c';
@@ -121,12 +119,12 @@ function lightMode() {
 
 // Dark Mode
 function darkMode() {
-  body.style.background = '#01072c';
-  header.style.background = '#01072c';
-  menu.style.background = 'rgb(1, 7, 44)';
-  grid.style.background = 'rgb(1, 7, 44)';
-  side.style.background = 'rgb(1, 7, 44)';
-  footer.style.background = 'rgb(1, 7, 44)';
+  body.style.backgroundColor = '#01072c';
+  header.style.backgroundColor = '#01072c';
+  menu.style.backgroundColor = 'rgb(1, 7, 44)';
+  grid.style.backgroundCOlor = 'rgb(1, 7, 44)';
+  side.style.backgroundColor = 'rgb(1, 7, 44)';
+  footer.style.backgroundColor = 'rgb(1, 7, 44)';
   body.style.color = 'white';
   header.style.color = 'white';
   LogoName.style.color = 'rgb(74, 198, 255)';
@@ -145,7 +143,7 @@ function darkMode() {
   toggle.classList.add('fa-moon');
   toggle.classList.remove('fa-sun');
   toggle.innerText = ' Dark';
-
+ 
   // Change nav links text color to white
   navLinks.forEach(link => {
     link.style.color = 'white';
@@ -216,7 +214,7 @@ function delayNavigation(event) {
   // Add a delay (e.g., 500ms)
   setTimeout(() => {
     window.location.href = targetUrl; // Navigate to the target URL
-  }, 500); // Adjust the delay time as needed
+  }, 100); // Adjust the delay time as needed
 }
 
 // Attach the delayNavigation function to all links

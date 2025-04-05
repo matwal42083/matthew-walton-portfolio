@@ -1,5 +1,17 @@
 /* Breadcrumbs Styles */
 
+.breadcrumbs li:nth-child(1)::after {
+  content: ">>>";
+  margin-left: 2.5rem; /* 40px converted to rem */
+  color: black;
+}
+
+.breadcrumbs li:nth-child(2)::after {
+  content: ">>>";
+  margin-left: 2.5rem; /* 40px converted to rem */
+  color: black;
+}
+
 
 .breadcrumbs li:nth-child(3)::after {
   content: ">>>";
@@ -33,13 +45,27 @@
 
 /* Form Styles */
 form {
-  background-color: #a5a5d1; /* Solid color for better contrast */
+  background-color:var(--dark-blue); /* Solid color for better contrast */
+  color: var(--light-blue);
   padding: 0.9375rem; /* 15px converted to rem */
   border: 0.0625rem solid var(--dark-blue); /* 1px converted to rem */
   border-radius: 0.3125rem; /* 5px converted to rem */
   width: 100%;
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.625rem; 
+  color: var(--light-blue);
+}   
+
+.details {
+  font-size: 1rem;
+  margin-bottom: 0.625rem;
+  color: var(--light-blue);
+}
+
 
 .contact-form {
   display: flex;
@@ -56,10 +82,12 @@ form {
   width: 100%; /* Ensure form groups take full width */
   margin-bottom: 0.9375rem; /* 15px converted to rem */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  
 }
 
 .contact-form label {
   margin-bottom: 0.3125rem; /* 5px converted to rem */
+  color: var(--light-blue);
 }
 
 .contact-form input,
