@@ -233,7 +233,8 @@ socialMediaIcons.forEach(icon => {
   const textElement = document.createElement('span');
   textElement.textContent = socialMediaName;
   textElement.style.position = 'absolute';
-  textElement.style.fontSize = '0.625rem'; // Smaller font size
+  textElement.style.fontSize = '1.0rem'; // Smaller font size
+
   textElement.style.color = 'inherit'; // Match the icon's color
   textElement.style.visibility = 'hidden'; // Initially hidden
   textElement.style.opacity = '0'; // Initially invisible

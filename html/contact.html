@@ -95,79 +95,94 @@
       </aside>
 
       <!-- Main Content -->
-      <main class="flex-item2" >
-        <div class="contact-container"id="gridItem">
-          <form action="/submit_form" method="post" class="contact-form">
-            <h2 class="title ibm-plex-sans">Contact Form</h2>
-            <p class="details hubot-sans">
-              Please fill out the form below if you're interested in my
-              computer abilities.
-            </p>
-            <div class="form-group">
-              <label for="name" class="ibm-plex-sans">Name:</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your Name"
-                pattern="[a-zA-Z0-9\s]+"
-                minlength="2"
-                maxlength="50"
-                class="hubot-sans"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="email" class="ibm-plex-sans">Email:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your Email"
-                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-                class="hubot-sans"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="phone" class="ibm-plex-sans">Phone:</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="Your Phone Number"
-                pattern="^[+\d()./ -]{8,20}$"
-                class="hubot-sans"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="company" class="ibm-plex-sans">Company:</label>
-              <input
-                type="text"
-                id="company"
-                name="company"
-                placeholder="Your Company"
-                pattern="^[a-zA-Z0-9\s]+"
-                class="hubot-sans"
-                minlength="3"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="message" class="ibm-plex-sans">Message:</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Your Message"
-                rows = "4"
-                cols="50"
-                class="hubot-sans"
-                required
-              ></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Submit</button>
-          </form>
+      <main class="flex-item2" > 
+       <div class="contact-container"id="gridItem">
+        <form action="https://script.google.com/macros/s/AKfycbwPdAWQoXe80R3Ujp5y9ybCSd_ZtJtMWjfYCivYeKcm/dev" method="post" class="contact-form">
+          <h2 class="title ibm-plex-sans">Contact Form</h2>
+          <p class="details hubot-sans">
+            Please fill out the form below if you're interested in my
+            computer abilities.
+          </p>
+          <div class="form-group">
+            <label for="name" class="ibm-plex-sans">First Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="firstName"
+              placeholder="Your Name"
+              pattern="[a-zA-Z0-9\s]+"
+              minlength="2"
+              maxlength="50"
+              class="hubot-sans"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="name" class="ibm-plex-sans">Last Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="lastName"
+              placeholder="Your Name"
+              pattern="[a-zA-Z0-9\s]+"
+              minlength="2"
+              maxlength="50"
+              class="hubot-sans"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email" class="ibm-plex-sans">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+              class="hubot-sans"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone" class="ibm-plex-sans">Phone:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Your Phone Number"
+              pattern="^[+\d()./ -]{8,20}$"
+              class="hubot-sans"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="company" class="ibm-plex-sans">Company:</label>
+            <input
+              type="text"
+              id="company"
+              name="company"
+              placeholder="Your Company"
+              pattern="^[a-zA-Z0-9\s]+"
+              class="hubot-sans"
+              minlength="3"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message" class="ibm-plex-sans">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message"
+              rows = "4"
+              cols="50"
+              class="hubot-sans"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+         
         </div>
       </main>
     </section>
