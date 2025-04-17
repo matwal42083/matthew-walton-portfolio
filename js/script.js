@@ -261,3 +261,99 @@ socialMediaIcons.forEach(icon => {
   });
 });
 
+const validation = new JustValidate('#form');
+
+validation
+  .addField('#firstName', [
+    {
+      rule: 'required',
+      errorMessage: 'first name is required'
+    },
+    {
+      rule: 'minLength',
+      value: 3,
+      errorMessage: 'Name must be at least 3 characters',
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+      errorMessage: 'Name must not exceed 30 characters',
+    },
+  ])
+  .addField('#lastName', [
+    {
+        rule: 'required',
+        errorMessage: 'first name is required'
+    },
+    {
+      rule: 'minLength',
+      value: 3,
+      errorMessage: 'Name must be at least 3 characters',
+    },
+    {
+      rule: 'maxLength',
+      value: 30,
+      errorMessage: 'Name must not exceed 30 characters',
+    },
+  ])
+  .addField('#email', [
+    {
+      rule: 'required',
+      errorMessage: 'Email is required',
+    },
+    {
+      rule:'customRegexp',
+      value: /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/,
+      errorMessage: 'Email is invalid!',
+    },
+  ])
+  .addField('#phone', [
+    {
+      rule: 'required',
+      errorMessage: 'phone is required',
+    },
+    {
+      rule: 'customRegexp',
+      value: /^[+\d()./ -]{8,20}$/,
+      errorMessage: 'phone is invalid!',
+
+    }
+  ])
+    .addField('#company', [
+      {
+        rule: 'required',
+        errorMessage: 'Your company name is required',
+      },
+      {
+        rule: 'minLength', // Corrected rule name
+        value: 3,
+        errorMessage: 'Your company name is too short',
+      },
+      {
+        rule: 'maxLength',
+        value: 30,
+        errorMessage: 'Your company name is too long',
+      },
+      {
+        rule: 'customRegexp',
+        value: /^[a-zA-Z0-9\s]+$/,
+        errorMessage: 'Your company name contains invalid characters',
+      },
+    ])
+  .addField('#message', [
+    {
+      rule: 'required',
+      errorMessage:'Please leave a message for the reason of your submission'   
+    },
+    {
+      rule: 'minLength',
+      value: 10,
+      errorMessage: 'Your message is too short',
+    },
+    {
+      rule: 'maxLength',
+      value: 1000,
+      errorMessage: 'Are you writing a book?, Your message is way too long',
+    }
+  
+  ]);

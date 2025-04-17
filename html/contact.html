@@ -97,7 +97,7 @@
       <!-- Main Content -->
       <main class="flex-item2" > 
        <div class="contact-container"id="gridItem">
-        <form action="https://script.google.com/macros/s/AKfycbwPdAWQoXe80R3Ujp5y9ybCSd_ZtJtMWjfYCivYeKcm/dev" method="post" class="contact-form">
+        <form action="#" id="form" method="post" class="contact-form">
           <h2 class="title ibm-plex-sans">Contact Form</h2>
           <p class="details hubot-sans">
             Please fill out the form below if you're interested in my
@@ -107,28 +107,22 @@
             <label for="name" class="ibm-plex-sans">First Name:</label>
             <input
               type="text"
-              id="name"
+              id="firstName"
               name="firstName"
               placeholder="Your Name"
-              pattern="[a-zA-Z0-9\s]+"
-              minlength="2"
-              maxlength="50"
               class="hubot-sans"
-              required
+              
             />
           </div>
           <div class="form-group">
             <label for="name" class="ibm-plex-sans">Last Name:</label>
             <input
               type="text"
-              id="name"
+              id="lastName"
               name="lastName"
               placeholder="Your Name"
-              pattern="[a-zA-Z0-9\s]+"
-              minlength="2"
-              maxlength="50"
               class="hubot-sans"
-              required
+              
             />
           </div>
           <div class="form-group">
@@ -138,9 +132,9 @@
               id="email"
               name="email"
               placeholder="Your Email"
-              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+              
               class="hubot-sans"
-              required
+             
             />
           </div>
           <div class="form-group">
@@ -150,9 +144,9 @@
               id="phone"
               name="phone"
               placeholder="Your Phone Number"
-              pattern="^[+\d()./ -]{8,20}$"
+            
               class="hubot-sans"
-              required
+          
             />
           </div>
           <div class="form-group">
@@ -162,10 +156,9 @@
               id="company"
               name="company"
               placeholder="Your Company"
-              pattern="^[a-zA-Z0-9\s]+"
+              
               class="hubot-sans"
-              minlength="3"
-              required
+            
             />
           </div>
           <div class="form-group">
@@ -177,7 +170,7 @@
               rows = "4"
               cols="50"
               class="hubot-sans"
-              required
+        
             ></textarea>
           </div>
           <button type="submit" class="submit-btn">Submit</button>
@@ -251,7 +244,7 @@
         </ul>
       </div>
     </footer>
-
     <script src="/js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/just-validate@latest/dist/just-validate.min.js"></script>
   </body>
 </html>
