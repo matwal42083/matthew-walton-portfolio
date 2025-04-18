@@ -8,6 +8,7 @@
     <script
       src="https://kit.fontawesome.com/36f7f4f045.js"
       crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/just-validate@latest/dist/just-validate.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400;1,700&family=Hubot+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100;0,14..32,400;0,14..32,700;1,14..32,100;1,14..32,400;1,14..32,700&family=Oswald:wght@100;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100;400;700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
@@ -97,14 +98,14 @@
       <!-- Main Content -->
       <main class="flex-item2" > 
        <div class="contact-container"id="gridItem">
-        <form action="#" id="form" method="post" class="contact-form">
+        <form id="form" action="#" method="post" class="contact-form">
           <h2 class="title ibm-plex-sans">Contact Form</h2>
           <p class="details hubot-sans">
             Please fill out the form below if you're interested in my
             computer abilities.
           </p>
           <div class="form-group">
-            <label for="name" class="ibm-plex-sans">First Name:</label>
+            <label for="firstName" class="ibm-plex-sans">First Name:</label>
             <input
               type="text"
               id="firstName"
@@ -113,9 +114,10 @@
               class="hubot-sans"
               
             />
+            <small class="error-message" id="firstNameError"></small>
           </div>
           <div class="form-group">
-            <label for="name" class="ibm-plex-sans">Last Name:</label>
+            <label for="lastName" class="ibm-plex-sans">Last Name:</label>
             <input
               type="text"
               id="lastName"
@@ -124,6 +126,7 @@
               class="hubot-sans"
               
             />
+            <small class="error-message" id="lastNameError"></small>
           </div>
           <div class="form-group">
             <label for="email" class="ibm-plex-sans">Email:</label>
@@ -136,6 +139,7 @@
               class="hubot-sans"
              
             />
+            <small class="error-message" id="emailError"></small>
           </div>
           <div class="form-group">
             <label for="phone" class="ibm-plex-sans">Phone:</label>
@@ -148,6 +152,7 @@
               class="hubot-sans"
           
             />
+            <small class="error-message" id="phoneError"></small>
           </div>
           <div class="form-group">
             <label for="company" class="ibm-plex-sans">Company:</label>
@@ -160,6 +165,7 @@
               class="hubot-sans"
             
             />
+            <small class="error-message" id="companyError"></small>
           </div>
           <div class="form-group">
             <label for="message" class="ibm-plex-sans">Message:</label>
@@ -172,6 +178,7 @@
               class="hubot-sans"
         
             ></textarea>
+            <small class="error-message" id="messageError"></small>
           </div>
           <button type="submit" class="submit-btn">Submit</button>
         </form>
@@ -244,7 +251,6 @@
         </ul>
       </div>
     </footer>
-    <script src="/js/script.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/just-validate@latest/dist/just-validate.min.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>

@@ -115,5 +115,20 @@ form {
   background-color: #555;
 }
 
+.error-message {
+  color: red; /* Make the error message text red */
+  font-size: 0.9rem; /* Adjust the font size */
+  display: block; /* Ensure the error message is displayed */
+  margin-top: 0.25rem; /* Add some spacing between the input and the error message */
+}
 
+input.invalid,
+textarea.invalid {
+  border: 2px solid red;
+}
+
+input.valid,
+textarea.valid {
+  border: 2px solid green;
+}
 
