@@ -1,3 +1,5 @@
+
+//Form Validation Script
 document.getElementById('form').addEventListener('submit', function (event) {
   event.preventDefault(); // Prevent form submission
 

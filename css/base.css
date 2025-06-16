@@ -3,7 +3,9 @@
   /* Color Variables */
   --yellow: #dcd80d;
   --light-blue: #4ac6ff;
+  --lightBlueInactive: #41afe24a;
   --dark-blue: #01072c;
+  --formBackground: #01072caf;
   --white: #ffffff;
   --gray: #ababab5f;
   --black: #000000;
@@ -96,94 +98,8 @@ h1,
 #gridItem {
   transition: all 0.5s ease;
 }
-
+/*
 /* Light and Dark Mode Styles */
-body.light-mode {
-  background: var(--white);
-  color: var(--dark-blue);
-}
-
-body.dark-mode {
-  background: var(--dark-blue);
-  color: var(--white);
-}
-
-body.light-mode header,
-body.light-mode footer {
-  background: var(--white);
-  color: var(--dark-blue);
-}
-
-body.dark-mode header,
-body.dark-mode footer {
-  background: var(--dark-blue);
-  color: var(--white);
-}
-
-body.light-mode .nav a {
-  color: var(--black);
-}
-
-body.dark-mode .nav a {
-  color: var(--white);
-}
-
-body.light-mode .sidebar li {
-  background-color: var(--gray);
-  color: var(--black);
-}
-
-body.dark-mode .sidebar li {
-  background-color: var(--dark-blue);
-  color: var(--white);
-}
-
-body.light-mode .sidebar li:hover,
-body.dark-mode .sidebar li:hover {
-  background-color: var(--light-blue);
-  color: var(--dark-blue);
-}
-
-body.light-mode .devCard img {
-  background-color: var(--light-blue);
-  border: 0.0625rem solid var(--yellow); /* 1px converted to rem */
-}
-
-body.dark-mode .devCard img {
-  background-color: var(--dark-blue);
-  border: 0.0625rem solid var(--white); /* 1px converted to rem */
-}
-
-body.light-mode .spotify {
-  background-color: rgb(31, 31, 31);
-  border: 0.0625rem solid rgba(37, 255, 37, 0.935); /* 1px converted to rem */
-}
-
-body.dark-mode .spotify {
-  background-color: var(--dark-blue);
-  border: 0.0625rem solid var(--white); /* 1px converted to rem */
-}
-
-/* Light Mode */
-body.light-mode #gh, body.light-mode #X {
-  color: rgba(0, 0, 0, 0.361); 
-
-}
-
-body.light-mode #gh:hover, body.light-mode #X:hover {
-  color: rgba(0, 0, 0, 1); 
-  background-color: rgba(248, 248, 248, 0.72);
-}
-
-/* Dark Mode */
-body.dark-mode #gh, body.dark-mode #X {
-  color: rgba(255, 255, 255, 0.361); /* Transparent white */
-}
-
-body.dark-mode #gh:hover, body.dark-mode #X:hover {
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(245, 245, 245, 0.508);
-}
 
 /* Header Styles */
 .header-container {

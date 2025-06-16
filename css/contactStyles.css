@@ -45,7 +45,7 @@
 
 /* Form Styles */
 form {
-  background-color:var(--dark-blue); /* Solid color for better contrast */
+  background-color:var(--formBackground); /* Solid color for better contrast */
   color: var(--light-blue);
   padding: 0.9375rem; /* 15px converted to rem */
   border: 0.0625rem solid var(--dark-blue); /* 1px converted to rem */
@@ -112,7 +112,7 @@ form {
 }
 
 .contact-form .submit-btn:hover {
-  background-color: #555;
+  background-color: #108fcf;
 }
 
 .error-message {

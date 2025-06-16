@@ -119,18 +119,19 @@ function lightMode() {
 
 // Dark Mode
 function darkMode() {
-  body.style.backgroundColor = '#01072c';
   header.style.backgroundColor = '#01072c';
+  header.style.color = 'white';
+  LogoName.style.color = 'rgb(74, 198, 255)';
+  toggle.classList.add('fa-moon');
+  toggle.classList.remove('fa-sun');
+  toggle.innerText = ' Dark';
+  body.style.backgroundColor = '#01072c';
+  body.style.color = 'white';
   menu.style.backgroundColor = 'rgb(1, 7, 44)';
   grid.style.backgroundCOlor = 'rgb(1, 7, 44)';
   side.style.backgroundColor = 'rgb(1, 7, 44)';
-  footer.style.backgroundColor = 'rgb(1, 7, 44)';
-  body.style.color = 'white';
-  header.style.color = 'white';
-  LogoName.style.color = 'rgb(74, 198, 255)';
   hamburgerBar.style.color = 'rgb(74, 198, 255)';
   grid.style.color = 'white';
-  footer.style.color = 'white';
   logoBorder.style.border = '2px solid rgb(238, 255, 0)';
   breadBorder.style.borderTop = '2px solid rgb(238, 255, 0)';
   breadBorder.style.borderBottom = '2px solid rgb(238, 255, 0)';
@@ -139,10 +140,10 @@ function darkMode() {
   grid.style.borderRight = '3px solid rgb(238, 255, 0)';
   grid.style.borderLeft = '3px solid rgb(238, 255, 0)';
   grid.style.borderBottom = '1px solid rgb(238, 255, 0)';
+  footer.style.color = 'white';
+  footer.style.backgroundColor = 'rgb(1, 7, 44)';
   footer.style.borderTop = '2px solid rgb(238, 255, 0)';
-  toggle.classList.add('fa-moon');
-  toggle.classList.remove('fa-sun');
-  toggle.innerText = ' Dark';
+
  
   // Change nav links text color to white
   navLinks.forEach(link => {
@@ -208,16 +209,12 @@ highlightActiveSidebar();
 
 // Delay navigation to allow everything to load
 function delayNavigation(event) {
-  event.preventDefault(); // Prevent the default navigation behavior
-  const targetUrl = event.currentTarget.href; // Get the target URL
-
-  // Add a delay (e.g., 500ms)
+  event.preventDefault();
+  const targetUrl = event.currentTarget.href;
   setTimeout(() => {
-    window.location.href = targetUrl; // Navigate to the target URL
-  }, 100); // Adjust the delay time as needed
+    window.location.href = targetUrl;
+  }, 1000);
 }
-
-// Attach the delayNavigation function to all links
 document.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', delayNavigation);
 });
