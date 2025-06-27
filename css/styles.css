@@ -10,7 +10,10 @@ font-family: 'Bebas Neue', sans-serif;*/
 /* Breadcrumbs and Crumbles */
 
 
-
+aside {
+  position: absolute;
+  right: 70px
+}
 
 /* Hidden Breadcrumbs */
 #crumble2,

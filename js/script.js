@@ -3,11 +3,7 @@ const toggle = document.getElementById('toggle-btn');
 const body = document.querySelector('body');
 const header = document.getElementById('headerContainer');
 const navLinks = document.querySelectorAll('.nav a');
-const logoBorder = document.getElementById('logoImg');
-const LogoName = document.querySelector('h1');
-const breadBorder = document.getElementById('breadcrumbs');
 const menu = document.getElementById('menuBar');
-const hamburgerBar = document.getElementById('hamburgerBar');
 const grid = document.getElementById('gridItem');
 const sidebarItems = document.querySelectorAll('.sidebar li');
 const side = document.getElementById('aside');
@@ -64,30 +60,21 @@ function setIconHoverBehaviorWithTheme(icon, hoverColorLight, hoverColorDark, de
 
 // Light Mode
 function lightMode() {
-  body.style.backgroundColor = 'white';
   header.style.backgroundColor = 'white';
-  side.style.backgroundColor = 'white';
-  menu.style.backgroundColor = 'white';
-  grid.style.backgroundColor = 'white';
-  footer.style.backgroundColor = 'white';
-  body.style.color = '#01072c';
-  LogoName.style.color = 'rgb(1, 7, 44)';
-  header.style.color = '#01072c';
-  hamburgerBar.style.color = 'rgb(1, 7, 44)';
-  grid.style.color = 'rgb(1, 7, 44)';
-  footer.style.color = '#01072c';
-  logoBorder.style.border = '2px solid rgb(1, 7, 44)';
-  breadBorder.style.borderTop = '2px solid rgb(1, 7, 44)';
-  breadBorder.style.borderBottom = '2px solid rgb(1, 7, 44)';
-  menu.style.border = '1px solid rgb(1, 7, 44)';
-  grid.style.borderTop = '1px solid rgb(1, 7, 44)';
-  grid.style.borderRight = '3px solid rgb(1, 7, 44)';
-  grid.style.borderLeft = '3px solid rgb(1, 7, 44)';
-  grid.style.borderBottom = '1px solid rgb(1, 7, 44)';
-  footer.style.borderTop = '2px solid rgb(1, 7, 44)';
+  header.style.color = 'black';
   toggle.classList.add('fa-sun');
   toggle.classList.remove('fa-moon');
   toggle.innerText = ' Light';
+  body.style.backgroundColor = 'white';
+  body.style.color = 'black';
+  menu.style.backgroundColor = 'rgb(239, 240, 244)';
+  side.style.backgroundColor = 'rgb(248, 249, 251)';
+  grid.style.backgroundCOlor = 'rgb(247, 247, 251)';
+  grid.style.color = 'black';
+  footer.style.color = 'black';
+  footer.style.backgroundColor = 'rgb(247, 247, 249)';
+
+ 
 
   // Change nav links text color to black
   navLinks.forEach(link => {
@@ -121,28 +108,17 @@ function lightMode() {
 function darkMode() {
   header.style.backgroundColor = '#01072c';
   header.style.color = 'white';
-  LogoName.style.color = 'rgb(74, 198, 255)';
   toggle.classList.add('fa-moon');
   toggle.classList.remove('fa-sun');
   toggle.innerText = ' Dark';
   body.style.backgroundColor = '#01072c';
   body.style.color = 'white';
   menu.style.backgroundColor = 'rgb(1, 7, 44)';
-  grid.style.backgroundCOlor = 'rgb(1, 7, 44)';
   side.style.backgroundColor = 'rgb(1, 7, 44)';
-  hamburgerBar.style.color = 'rgb(74, 198, 255)';
+  grid.style.backgroundCOlor = 'rgb(1, 7, 44)';
   grid.style.color = 'white';
-  logoBorder.style.border = '2px solid rgb(238, 255, 0)';
-  breadBorder.style.borderTop = '2px solid rgb(238, 255, 0)';
-  breadBorder.style.borderBottom = '2px solid rgb(238, 255, 0)';
-  menu.style.border = '1px solid rgb(238, 255, 0)';
-  grid.style.borderTop = '1px solid rgb(238, 255, 0)';
-  grid.style.borderRight = '3px solid rgb(238, 255, 0)';
-  grid.style.borderLeft = '3px solid rgb(238, 255, 0)';
-  grid.style.borderBottom = '1px solid rgb(238, 255, 0)';
   footer.style.color = 'white';
   footer.style.backgroundColor = 'rgb(1, 7, 44)';
-  footer.style.borderTop = '2px solid rgb(238, 255, 0)';
 
  
   // Change nav links text color to white
