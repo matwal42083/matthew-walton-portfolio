@@ -1,5 +1,4 @@
 // DOM Elements
-const toggle = document.getElementById('toggle-btn');
 const body = document.querySelector('body');
 const header = document.getElementById('headerContainer');
 const navLinks = document.querySelectorAll('.nav a');
@@ -10,6 +9,7 @@ const side = document.getElementById('aside');
 const footer = document.getElementById('footerContainer');
 const githubIcon = document.getElementById('gh');
 const xIcon = document.getElementById('X');
+const themeSwitch = document.getElementById('theme-switch');
 
 // Load the theme preference from localStorage
 const currentTheme = localStorage.getItem('theme') || 'dark';
@@ -62,14 +62,11 @@ function setIconHoverBehaviorWithTheme(icon, hoverColorLight, hoverColorDark, de
 function lightMode() {
   header.style.backgroundColor = 'white';
   header.style.color = 'black';
-  toggle.classList.add('fa-sun');
-  toggle.classList.remove('fa-moon');
-  toggle.innerText = ' Light';
   body.style.backgroundColor = 'white';
   body.style.color = 'black';
   menu.style.backgroundColor = 'rgb(239, 240, 244)';
   side.style.backgroundColor = 'rgb(248, 249, 251)';
-  grid.style.backgroundCOlor = 'rgb(247, 247, 251)';
+  grid.style.backgroundColor = 'rgb(247, 247, 251)';
   grid.style.color = 'black';
   footer.style.color = 'black';
   footer.style.backgroundColor = 'rgb(247, 247, 249)';
@@ -85,22 +82,22 @@ function lightMode() {
   // Change GitHub and X icons to black
   setIconHoverBehaviorWithTheme(
     githubIcon,
-    'rgb(255, 255, 255)', // Hover color for light mode
-    'rgb(9, 9, 9)', // Hover color for dark mode
-    'rgba(0, 0, 0, 0.317)', // Default color for light mode
-    'rgba(255, 255, 255, 0.317)', // Default color for dark mode
-    'rgba(0, 0, 0, 0.1632)', // Hover background for light mode
-    'rgba(33, 33, 33,0.163)' // Hover background for dark mode
+    'rgba(255, 255, 255, 1)', // Hover color for light mode
+    'rgba(29, 29, 29, 1)', // Hover background for light mode
+    'rgba(0, 0, 0, 0.28)', // Default color for light mode
+    'rgba(251, 250, 250, 1)', // Default color for dark mode
+    'rgba(8, 8, 8, 0.65)', // Hover color for dark mode
+    'rgba(236, 228, 228, 0.31)' // Hover background for dark mode
   );
 
   setIconHoverBehaviorWithTheme(
     xIcon,
-    'rgb(255, 255, 255)', // Hover color for light mode
-    'rgb(0, 0, 0)', // Hover color for dark mode
-    'rgba(0, 0, 0, 0.361)', // Default color for light mode
-    'rgba(255, 255, 255, 0.3)', // Default color for dark mode
-    'rgba(0, 0, 0,0.163)', // Hover background for light mode
-    'rgba(33, 33, 33, 0.163)' // Hover background for dark mode
+    'rgba(255, 255, 255, 1)', // Hover color for light mode
+    'rgba(29, 29, 29, 1)', // Hover background for light mode
+    'rgba(0, 0, 0, 0.28)', // Default color for light mode
+    'rgba(251, 250, 250, 1)', // Default color for dark mode
+    'rgba(8, 8, 8, 0.65)', // Hover color for dark mode
+    'rgba(236, 228, 228, 0.31)' // Hover background for dark mode
   );
 }
 
@@ -108,14 +105,11 @@ function lightMode() {
 function darkMode() {
   header.style.backgroundColor = '#01072c';
   header.style.color = 'white';
-  toggle.classList.add('fa-moon');
-  toggle.classList.remove('fa-sun');
-  toggle.innerText = ' Dark';
   body.style.backgroundColor = '#01072c';
   body.style.color = 'white';
   menu.style.backgroundColor = 'rgb(1, 7, 44)';
   side.style.backgroundColor = 'rgb(1, 7, 44)';
-  grid.style.backgroundCOlor = 'rgb(1, 7, 44)';
+  grid.style.backgroundColor = 'rgb(1, 7, 44)';
   grid.style.color = 'white';
   footer.style.color = 'white';
   footer.style.backgroundColor = 'rgb(1, 7, 44)';
@@ -130,35 +124,39 @@ function darkMode() {
   // Change GitHub and X icons to white
   setIconHoverBehaviorWithTheme(
     githubIcon,
-    'rgb(254, 254, 254)', // Hover color for light mode
-    'rgb(0, 0, 0)', // Hover color for dark mode
-    'rgba(0, 0, 0, 0.361)', // Default color for light mode
-    'rgba(255, 255, 255, 0.163)', // Default color for dark mode
-    'rgba(0, 0, 0, 0.1)', // Hover background for light mode
-    'rgba(255, 255, 255, 0.163)' // Hover background for dark mode
+    'rgba(255, 255, 255, 1)', // Hover color for light mode
+    'rgba(29, 29, 29, 1)', // Hover background for light mode
+    'rgba(0, 0, 0, 0.28)', // Default color for light mode
+    'rgba(251, 250, 250, 1)', // Default color for dark mode
+    'rgba(8, 8, 8, 0.65)', // Hover color for dark mode
+    'rgba(236, 228, 228, 0.31)' // Hover background for dark mode
   );
 
   setIconHoverBehaviorWithTheme(
     xIcon,
-    'rgb(255, 255, 255)', // Hover color for light mode
-    'rgb(0, 0, 0)', // Hover color for dark mode
-    'rgba(0, 0, 0, 0.23)', // Default color for light mode
-    'rgba(255, 255, 255, 0.163)', // Default color for dark mode
-    'rgba(0, 0, 0, 0.1)', // Hover background for light mode
-    'rgba(255, 255, 255, 0.163)' // Hover background for dark mode
+    'rgba(255, 255, 255, 1)', // Hover color for light mode
+    'rgba(29, 29, 29, 1)', // Hover background for light mode
+    'rgba(0, 0, 0, 0.28)', // Default color for light mode
+    'rgba(251, 250, 250, 1)', // Default color for dark mode
+    'rgba(8, 8, 8, 0.65)', // Hover color for dark mode
+    'rgba(236, 228, 228, 0.31)' // Hover background for dark mode
   );
 }
 
-// Set the initial theme based on the stored preference
-if (currentTheme === 'light') {
-  lightMode();
-} else {
+
+
+// Set initial state based on localStorage
+if (localStorage.getItem('theme') === 'dark') {
+  themeSwitch.checked = true;
   darkMode();
+} else {
+  themeSwitch.checked = false;
+  lightMode();
 }
 
-// Event listener for the toggle button
-toggle.addEventListener('click', function () {
-  if (toggle.classList.contains('fa-sun')) {
+// Event listener for the slider switch
+themeSwitch.addEventListener('change', function () {
+  if (themeSwitch.checked) {
     darkMode();
     localStorage.setItem('theme', 'dark');
   } else {
@@ -183,17 +181,7 @@ function highlightActiveSidebar() {
 // Call the function to highlight the active sidebar item
 highlightActiveSidebar();
 
-// Delay navigation to allow everything to load
-function delayNavigation(event) {
-  event.preventDefault();
-  const targetUrl = event.currentTarget.href;
-  setTimeout(() => {
-    window.location.href = targetUrl;
-  }, 1000);
-}
-document.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', delayNavigation);
-});
+
 
 // Social Media Icons with Text
 const socialMediaIcons = document.querySelectorAll('.social-media-list i');
@@ -233,4 +221,43 @@ socialMediaIcons.forEach(icon => {
     textElement.style.opacity = '0';
   });
 });
+
+// Set hover listeners for GitHub and X icons only once
+function setSocialIconHover(icon, light, dark, lightBg, darkBg) {
+  icon.addEventListener('mouseenter', function () {
+    if (themeSwitch.checked) {
+      icon.style.color = dark;
+      icon.style.backgroundColor = darkBg;
+    } else {
+      icon.style.color = light;
+      icon.style.backgroundColor = lightBg;
+    }
+  });
+  icon.addEventListener('mouseleave', function () {
+    // Reset to current theme's default
+    if (themeSwitch.checked) {
+      icon.style.color = '#fff';
+      icon.style.backgroundColor = 'transparent';
+    } else {
+      icon.style.color = '#181717';
+      icon.style.backgroundColor = 'transparent';
+    }
+  });
+}
+
+setSocialIconHover(
+  githubIcon,
+  '#181717', // GitHub black for light mode
+  '#fff',    // White for dark mode
+  'transparent',
+  'transparent'
+);
+
+setSocialIconHover(
+  xIcon,
+  '#181717', // X black for light mode
+  '#fff',    // White for dark mode
+  'transparent',
+  'transparent'
+);
 
