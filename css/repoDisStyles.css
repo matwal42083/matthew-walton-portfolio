@@ -1,0 +1,95 @@
+html, body {
+    margin: 0;  
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(249, 249, 249);
+    color: black;
+    font-size: 16px; 
+}
+
+#GitHub_Icon {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    vertical-align: center;
+    padding: 4px;
+    
+    
+}
+
+header {
+   color: white;
+}
+
+#repoHeader {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #000000ea;
+    border-bottom: 0.125rem solid #ccc;
+   
+}
+#repoContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-evenly;
+    gap: 1rem;
+    padding: 1rem;
+   
+    list-style: none;
+    list-style-position: inside;
+    list-style-type: none;
+}
+#div_Card {
+    background-color: #bbbaba3d;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 200px;
+}
+
+#div_Card a {
+    text-decoration: none;
+    color: black;
+    
+  
+
+}
+
+#div_Card .repo-name {
+    font-size: 0.775rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+    
+#div-Card .repo-description {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+#div_Card .repo-owner {
+    font-size: 0.75rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+#div_Card .repo-stats {
+    font-size: 0.75rem;
+    color: #777;
+    margin-bottom: 0.5rem;
+}
+#div_Card .repo-updated {
+    font-size: 0.75rem;
+    color: #777;
+}
+p {
+    font-size: 0.830rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    
+}
