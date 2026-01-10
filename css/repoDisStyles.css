@@ -45,51 +45,112 @@ header {
     list-style-type: none;
 }
 #div_Card {
-    background-color: #bbbaba3d;
-    border-radius: 0.5rem;
-    padding: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 10px;
+    padding: 1.5rem;
     margin: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     width: 250px;
-    height: 200px;
+    height: 220px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr auto auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-#div_Card a {
-    text-decoration: none;
-    color: black;
-    
-  
+#div_Card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    border-color: #4ac6ff;
+}
 
+#repo_link {
+    text-decoration: none;
+    color: inherit;
 }
 
 #div_Card .repo-name {
-    font-size: 0.775rem;
-    margin-top: 0.5rem;
-    font-weight: bold;
-    margin-bottom: 0.25rem;
-}
+    margin-bottom: 0.8rem;
+    text-align: left;
+    grid-column: 1 / -1;
+    width: 100%;
     
-#div-Card .repo-description {
-    font-size: 0.85rem;
-    margin-bottom: 0.5rem;
 }
-#div_Card .repo-owner {
-    font-size: 0.75rem;
+#div_Card .repo-name h3 {
+    margin: 0;
+    width: 100%;
+    font-size: 1.2rem;
+    padding:10px 15px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: black;
+}
+
+#div_Card .repo-description {
+    overflow: hidden;
+    margin-bottom: 1rem;
+    text-align: left;
+    grid-column: 1 / -1;
+}
+#div_Card .repo-description p {
+    margin: 0;
+    font-size: 0.9rem;
     color: #555;
-    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.4;
+}
+
+#div_Card .repo-owner {
+    font-size: 0.8rem;
+    color: #888;
+    text-align: left;
+    margin-bottom: 0.25rem;
+    grid-column: 1 / -1;
+
 }
 #div_Card .repo-stats {
-    font-size: 0.75rem;
-    color: #777;
-    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-align: left;
+    align-self: end;
 }
 #div_Card .repo-updated {
     font-size: 0.75rem;
-    color: #777;
+    color: #aaa;
+    text-align: right;
+    margin-top: 0;
+    align-self: end;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 110px;
 }
+
 p {
     font-size: 0.830rem;
     line-height: 1.6;
     margin-bottom: 1rem;
     
+}
+
+footer {
+    text-align: center;
+    background-color: #000000ea;
+    color: white;
+    border-top: 0.125rem solid #ccc;
+    
+}
+.footer_Container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
 }

@@ -25,14 +25,15 @@ fetch(`https://api.github.com/users/${username}/repos`)
     data.forEach(repo => {
       const listItem = document.createElement('li');
       // Create a link to the repo
-      listItem.innerHTML = `<div id="div_Card"><a href="${repo.html_url}" target="_blank">
-      <div class="repo-name">${repo.name}</div>
-      <div class="repo-description">${repo.description || 'No description'} - </div>
-      <div class="repo-owner"> By: ${repo.owner.login}</div>
+      listItem.innerHTML = `<a href="${repo.html_url}" target="_blank" id="repo_link"><div id="div_Card">
+      <div class="repo-name">
+      <h3>${repo.name}</h3>
+      </div>
+      <div class="repo-description"><p>${repo.description || 'No description'} - </p></div>
       <div class="repo-stats" id="forks-counts">⭐ ${repo.stargazers_count} | 🍴 ${repo.forks_count}</div>
+      <div class="repo-owner"> By: ${repo.owner.login}</div>
       <div class="repo-updated">${repo.updated_at}</div>
-      </a>
-     </div>`;
+      </div></a>`;
       repoList.appendChild(listItem);
     });
   })
